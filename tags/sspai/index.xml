@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sspai on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/sspai/</link>
+    <description>Recent content in sspai on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 09 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/sspai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chrome，但是 without Google</title>
+      <link>https://iduan.me/posts/chrome-without-google/</link>
+      <pubDate>Fri, 09 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/chrome-without-google/</guid>
+      <description>作为新时代浏览器领域的王者，Google Chrome 自 2008 年 9 月 2 日公布以来，一路过五关斩六将，送走了不少竞争对手。依托其背后的 Chromium 开源项目，第三方纷纷推</description>
+    </item>
+    <item>
+      <title>恢复浏览器空白页，还你纯净冲浪体验</title>
+      <link>https://iduan.me/posts/clear-newtab/</link>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/clear-newtab/</guid>
+      <description>我只想要个纯净的空白页当新标签页…… 怎么就这么难啊？ Matrix 首页推荐 近日，少数派首页出现了一篇名为《把握浏览器的「门面」：少数派作者们都在用什么启</description>
+    </item>
+    <item>
+      <title>巧用 Windows 远程桌面，跨设备操作自如切换</title>
+      <link>https://iduan.me/posts/windows-remote-desktop/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/windows-remote-desktop/</guid>
+      <description>平常在工作中我都使用公司提供的 Windows 台式机，通常我还会带上自己的笔记本电脑。当我需要处理一些私事时，就能避免在办公电脑上留存个人数据，~同时也方</description>
+    </item>
+    <item>
+      <title>巧用开源方案，零成本实现验证码短信转发</title>
+      <link>https://iduan.me/posts/forwarding-messages-from-android-to-iphone/</link>
+      <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/forwarding-messages-from-android-to-iphone/</guid>
+      <description>减少重复切换和操作，双机党们再也不用收到验证码的时候到处找备机啦。 为了能够用两个微信彻底分离工作和生活，又苦于 iPhone 不能双开微信，我开始使用 Android 手</description>
+    </item>
+    <item>
+      <title>iOS「辅助功能」里你可能不知道的那些小技巧</title>
+      <link>https://iduan.me/posts/ios-accessibility-features-tips/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/ios-accessibility-features-tips/</guid>
+      <description>大家是否还记得，在那个 iPhone 操作依赖 Home 键的时代，有些朋友为了延长 Home 按键的寿命，特意打开了辅助设置中的 AssistiveTouch 。随着 iPhone 交互与设计的不断进化，带 Home 键的 iPhone 已</description>
+    </item>
+    <item>
+      <title>在 M1 Mac 设备中解决 Minecraft Error 255</title>
+      <link>https://iduan.me/posts/m1-mac-minecraft-error-255/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/m1-mac-minecraft-error-255/</guid>
+      <description>如果你是 M1 Mac 且在安装 Forge API 后无法正常进入 Minecraft，并报错 Error 255 或是 GLFW Error 65544，那么这篇文章将能解决你的问题。 Apple 在去年年底发布了 M1 芯</description>
+    </item>
+    <item>
+      <title>你的 MacBook 电池管家 — AlDente Pro 使用体验</title>
+      <link>https://iduan.me/posts/experience-of-aldente-pro/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/experience-of-aldente-pro/</guid>
+      <description>前段时间我开始使用一款 MacBook 专用的电池管理软件 AlDente，AlDente 可以读写 MacBook 内置 SMC 芯片，即使你的 MacBook 一直连接电源线，AlDente 也会根</description>
+    </item>
+    <item>
+      <title>华山个人游，独自登山的不完全记录</title>
+      <link>https://iduan.me/posts/huashan-mountain-tour-2021/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/huashan-mountain-tour-2021/</guid>
+      <description>华山，是五岳之中的西岳，雅称「太华山」，位于陕西省渭南市华阴市。因其山势险峻，一直有「奇险天下第一山」的说法。民间传说《沉香救母》中的故事就</description>
+    </item>
+    <item>
+      <title>使用 SafeInCloud 管理密码，我还发现了这些好用法</title>
+      <link>https://iduan.me/posts/usage-of-the-safeincloud/</link>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/usage-of-the-safeincloud/</guid>
+      <description>本文主要介绍跨平台密码管理软件 SafeInCloud 的日常使用技巧。关于 SafeInCloud 的基本功能介绍，建议阅读少数派文章：《搞定密码管理，我选 SafeInCloud》。 快速</description>
+    </item>
+    <item>
+      <title>618的百元好物——iPhone 用户的外出随身快充套装</title>
+      <link>https://iduan.me/posts/aukey-powerbank-momax-cable/</link>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/aukey-powerbank-momax-cable/</guid>
+      <description>多年以来 iPhone 凭借迷你的电池容量、「五福一安」，以及被官方称为「超速了」的 20W 「快充」，致使 iPhone 用户成为共享充电宝的忠实客户。我只有一个 20000 mAh 的充电宝</description>
+    </item>
+    <item>
+      <title>努比亚红魔散热背夹</title>
+      <link>https://iduan.me/posts/nubia-redmagic-radiator/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/nubia-redmagic-radiator/</guid>
+      <description>我是一个手游党，主力机是一台 2019 年发布的 iPhone 11。作为上一代 iPhone，性能虽然还不算太落伍，但是 iPhone 这蹩脚的散热设计，在持续游戏场景下的表现实</description>
+    </item>
+    <item>
+      <title>这台 Mac 不 Pro — M1 MacBook Air 简单上手体验</title>
+      <link>https://iduan.me/posts/m1-macbook-air/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/m1-macbook-air/</guid>
+      <description>一、写在前面 上月初，我不得不换掉我用了将近 7 年的宏碁笔记本。那是我还在读书的时候入手的电脑，转眼间校园的时光早已不再，这个曾经陪伴我的「小伙</description>
+    </item>
+    <item>
+      <title>搞定密码管理，我选 SafeInCloud</title>
+      <link>https://iduan.me/posts/safeincloud/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/safeincloud/</guid>
+      <description>随着大家对个人信息安全的重视，越来越多的人开始尝试使用专用密码管理软件来存储各个网站的账号信息。少数派也曾经推荐过几款密码管理软件，比如大名</description>
+    </item>
+  </channel>
+</rss>
