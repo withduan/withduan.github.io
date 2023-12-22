@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="generator" content="Hugo 0.121.1">
+
+  
+  <meta name="description" content="Some description">
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://iduan.me/apple-touch-icon.png">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="https://iduan.me/favicon-32x32.png">
+
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="https://iduan.me/favicon-16x16.png">
+
+  
+  <link rel="manifest" href="https://iduan.me/site.webmanifest">
+
+  
+  <link rel="mask-icon" href="https://iduan.me/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <link rel="stylesheet" href="https://iduan.me/css/bootstrap.min.css" />
+
+  
+  <title>巧用 Windows 远程桌面，跨设备操作自如切换 | 💬 JL DUAN‘s Blog</title>
+  
+
+  <style>
+body {
+  min-width: 300px;
+}
+
+.custom-navbar {
+  margin-bottom: 1em;
+  height: 60px;
+}
+
+.custom-navbar a {
+  display: inline-block; 
+  padding: 18px 0;
+  margin-right: 1em; 
+  font-weight: bold; 
+}
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  text-decoration: none; 
+}
+
+@media print {
+  .custom-navbar {
+    display: none;
+  }
+}
+
+article {
+  padding-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  background-color: #fff;
+}
+
+
+
+body {
+  color: #212529;
+}
+
+
+
+a {
+  color: #007bff;
+}
+
+
+
+a:hover,
+a:focus {
+  color: #0056b3;
+}
+
+
+
+.custom-navbar {
+  background-color: #212529;
+}
+
+
+
+.custom-navbar a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+.container {
+  max-width: 800px;
+}
+
+
+
+pre {
+  display: block;
+  padding: 9.5px;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit; 
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+code {
+  padding: 2px 4px;
+  color: inherit; 
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: .9em;
+}
+
+
+
+blockquote,
+.blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 1em;
+  border-left: 5px solid #6c757d;
+}
+
+</style>
+</head>
+
+<body>
+  <nav class="custom-navbar">
+  <div class="container">
+    <strong><span style="color:#FFFFFF;">💬 JL DUAN‘s Blog  </span></strong><span style="color:#FFFFFF;">丨</span>
+    
+    <a href="/">文章</a>
+    
+    <a href="/tags/">tags</a>
+    
+    <a href="/about/">关于</a>
+    
+    <a href="/index.xml">RSS</a>
+    
+  </div>
+</nav>
+  
+  <div class="container">
+    <article>
+      <h4>巧用 Windows 远程桌面，跨设备操作自如切换</h4>
+2022/03/30
+
+
+<code><a href="https://iduan.me/tags/windows">windows</a></code>
+
+
+<code><a href="https://iduan.me/tags/macos">macos</a></code>
+
+</br>
+</br>
+<p>平常在工作中我都使用公司提供的 Windows 台式机，通常我还会带上自己的笔记本电脑。当我需要处理一些私事时，就能避免在办公电脑上留存个人数据，~同时也方便摸鱼。~这样的习惯导致我时常要在两台设备之间切换，办公桌本来就比较小，电脑来回挪动，使用起来非常不便。</p>
+<p>办公用的显示器是 1600*900 分辨率 + VGA 接口，我在淘宝搜索 “USB C 转 VGA”，转换器最低 20 元左右就可以到手。VGA 诞生于 1987 年，USB C 诞生于 2014 年，这前后跨越 27 年的联动真的让人非常感动，但是我实在不想继续壮大我的转换器阵营了。</p>
+<p>那究竟还有没有办法能让我在一个屏幕上切换操作两个设备呢？后来我发现，只要利用 Windows 系统自带的远程桌面功能，就可以轻松解决这个烦恼。</p>
+<h4 id="step1-在受控端启用远程桌面功能">Step.1 在受控端启用远程桌面功能</h4>
+<p>远程桌面功能在 Windows 系统里是默认关闭的。以 Windows 10 系统为例，在设置 - 系统 - 远程桌面中，手动启用远程桌面即可。</p>
+<p>注：Windows 家庭版系统不支持远程桌面功能。</p>
+<p><img src="https://cdn.sspai.com/2022/03/28/bc91208a451e12e5e3502dc0a1c45106.png" alt=""></p>
+<h4 id="step2-在控制端安装-microsoft-remote-desktop-客户端">Step.2 在控制端安装 Microsoft Remote Desktop 客户端</h4>
+<p>控制端演示以 Mac 电脑为例。控制 Windows 系统需要安装远程桌面 macOS 客户端，我们需要在 Mac App Store 中安装 Microsoft Remote Desktop。</p>
+<p>不知因何原因，该软件正式版未在国区 App Store 上架，微软仅在官网公布了 beta 版本的下载链接。你可以通过我在 MacUpdater 中获取到的链接下载 Microsoft Remote Desktop 正式版本。</p>
+<p>beta 版同样可以正常安装使用，正式版与 beta 版除了软件图标颜色不同之外，二者~都不支持简体中文~在使用体验上并无差异。</p>
+<p>下载链接：<a href="https://apps.apple.com/app/microsoft-remote-desktop/id1295203466?mt=12">Mac App Store</a>｜<a href="https://sspai.com/link?target=https%3A%2F%2Fofficecdn-microsoft-com.akamaized.net%2Fpr%2FC1297A47-86C4-4C1F-97FA-950631F94777%2FMacAutoupdate%2FMicrosoft_Remote_Desktop_10.7.6_installer.pkg">Ver. 10.7.6 直链</a>｜<a href="https://sspai.com/link?target=https%3A%2F%2Fgo.microsoft.com%2Ffwlink%2F%3Flinkid%3D868963">最新正式版</a>｜<a href="https://sspai.com/link?target=https%3A%2F%2Finstall.appcenter.ms%2Forgs%2Frdmacios-k2vy%2Fapps%2Fmicrosoft-remote-desktop-for-mac%2Fdistribution_groups%2Fall-users-of-microsoft-remote-desktop-for-mac">App Center</a>（beta）</p>
+<p><img src="https://cdn.sspai.com/2022/03/28/f6587fce46c8b0eec7724f86426cb088.png" alt="">红蓝 CP ？</p>
+<h4 id="step3-配置远程桌面">Step.3 配置远程桌面</h4>
+<p>运行 Microsoft Remote Desktop，点击 “Add PC” 添加 Windows 设备。</p>
+<p>PC name 填写 Windows 电脑的局域网 IP 地址；点击 User account 右侧的下拉选项，选择 “Add User Account”，分别输入 Windows 电脑的用户名和密码，点击 “Add” 保存；</p>
+<p><img src="https://cdn.sspai.com/2022/03/28/a8a3a5e662faf800582c1ab96fd01b7f.png" alt=""></p>
+<p>在 General 选项卡中，可以在 Friendly name 中填入受控端备注名称，方便识别你的设备，如 “办公电脑”；</p>
+<p>切换到 Display 选项卡，依次勾选 “Optimize for Retina displays” 、“Update the session resolution on resize”，这两个选项可以提高远程桌面画面清晰度。如果不喜欢全屏显示远程桌面，可以取消 “Start session in full screen” 的勾选，这样远程桌面就会以窗口模式运行。</p>
+<p><img src="https://cdn.sspai.com/2022/03/28/8c4c78b3aa943d7496f6f6446d3cf718.png" alt=""></p>
+<p>继续切换到 Devices &amp; Audio 选项卡，这里可以设置是否将受控 Windows 电脑的部分设备重定向至控制端，剪贴板是默认开启的，其余打印机、智能卡等设备可以根据自己的需求选择是否启用重定向。</p>
+<p><img src="https://cdn.sspai.com/2022/03/28/b6223efebe8e818c1f630159cf6e66af.png" alt=""></p>
+<p>修改完毕后，点击 “Add” 保存配置。</p>
+<h4 id="step4-连接远程桌面">Step.4 连接远程桌面</h4>
+<p>回到软件主界面，这时我们已经可以看到刚才配置好的远程桌面，双击该配置即可进行连接。</p>
+<p><img src="https://cdn.sspai.com/2022/03/28/6f8b10c835d1d7211f918397499d9875.png" alt=""></p>
+<p>开启远程桌面后，受控端（RDP Host）会生成一个自签名证书用于加密。由于该证书并非 macOS 系统信任的根证书颁发机构所颁发，系统会提醒 “Your connection may not be secure”。此时选择 “Continue” 即可继续连接。</p>
+<p><img src="https://cdn.sspai.com/2022/03/28/6201af3b08d564091e305b67e4bf0306.png" alt=""></p>
+<p>如果你不想每次都遇到这个提示，也可以点击 “Show Certificate”，勾选 “Always trust &lt; 设备名称 &gt; when connecting to &lt; 设备 IP 地址 &gt; “ 选项即可信任此证书。</p>
+<p><img src="https://cdn.sspai.com/2022/03/28/644962000b672098773ae4f8c486d572.png" alt=""></p>
+<p>不出意外的话，此时 Microsoft Remote Desktop 客户端已经显示出 Windows 系统桌面了，受控端设备会自动进入锁屏状态。由于控制端与受控端是在同一局域网环境下，远程桌面操作起来几乎没有延迟，窗口动画偶尔会出现轻微掉帧的情况，总体来说影响不大。</p>
+<p><img src="https://cdn.sspai.com/2022/03/28/40c69b8d97479400ffbc570a9dc2a21e.png" alt=""></p>
+<h4 id="参考资料">参考资料：</h4>
+<p><a href="https://sspai.com/link?target=https%3A%2F%2Fdocs.microsoft.com%2Fzh-cn%2Fwindows-server%2Fremote%2Fremote-desktop-services%2Fclients%2Fremote-desktop-client-faq%23how-do-i-set-up-a-pc-for-remote-desktop-">远程桌面客户端常见问题解答｜Microsof</a><a href="https://sspai.com/link?target=https%3A%2F%2Fdocs.microsoft.com%2Fzh-cn%2Fwindows-server%2Fremote%2Fremote-desktop-services%2Fclients%2Fremote-desktop-client-faq%23how-do-i-set-up-a-pc-for-remote-desktop-">t Docs</a></p>
+<p><a href="https://sspai.com/link?target=https%3A%2F%2Fdocs.microsoft.com%2Fzh-cn%2Fwindows-server%2Fremote%2Fremote-desktop-services%2Fclients%2Fremote-desktop-mac">macOS 客户端入门｜Microsoft Docs</a></p>
+<blockquote>
+<p>© 本文著作权归作者 <a href="https://sspai.com/u/iduan/updates">@JLDUAN</a> 所有，并授权少数派独家使用，未经少数派许可，不得转载使用。
+原文地址 <a href="https://sspai.com/post/72345">sspai.com</a></p>
+</blockquote>
+
+    </article>
+  </div>
+  <footer>
+<p style="color:#999999">
+<p style="text-align:center;">
+<small>
+©️2016-2023 💬 JL DUAN‘s Blog.
+</br>
+CC <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a>
+</small>
+</p>
+</p>
+</footer>
+
+  
+  
+  
+  <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-123456789-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+
+  
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#216942",
+      "text": "#b2d192"
+    },
+    "button": {
+      "background": "#afed71"
+    }
+  }
+})});
+</script>
+
+</body>
+
+</html>

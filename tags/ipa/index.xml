@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ipa on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/ipa/</link>
+    <description>Recent content in ipa on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 07 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/ipa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>利用 Apple 个人开发者账户创建可用于 ipa 自签名的证书</title>
+      <link>https://iduan.me/posts/creating-certificate-for-ipa-signing/</link>
+      <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/creating-certificate-for-ipa-signing/</guid>
+      <description>&lt;p&gt;iOS 平台利用开发者证书自签名，可以实现侧载 ipa（签名安装 App Store 之外的软件）的效果，轻松满足多开微信、注入插件、净化 App 等需求。由于之前注册工作微信的关系，我也有了 App 多开的需求，于是开始接触这方面的内容。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

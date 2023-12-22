@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ios on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/ios/</link>
+    <description>Recent content in ios on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/ios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>iOS「辅助功能」里你可能不知道的那些小技巧</title>
+      <link>https://iduan.me/posts/ios-accessibility-features-tips/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/ios-accessibility-features-tips/</guid>
+      <description>大家是否还记得，在那个 iPhone 操作依赖 Home 键的时代，有些朋友为了延长 Home 按键的寿命，特意打开了辅助设置中的 AssistiveTouch 。随着 iPhone 交互与设计的不断进化，带 Home 键的 iPhone 已</description>
+    </item>
+  </channel>
+</rss>

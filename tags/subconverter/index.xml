@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>subconverter on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/subconverter/</link>
+    <description>Recent content in subconverter on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 30 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/subconverter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>subconverter 部署记录</title>
+      <link>https://iduan.me/posts/subconverter-self-hosting/</link>
+      <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/subconverter-self-hosting/</guid>
+      <description>&lt;p&gt;我在 Mac 上一直使用 &lt;a href=&#34;https://github.com/yichengchen/clashX&#34;&gt;Clash X Pro&lt;/a&gt; 作为主力工具。 其 UI 简洁明了，使用起来也比较方便。但是比起 Clash for Windows ，它不方便添加个人规则。如果你直接修改配置文件，在下次更新远程节点时也会失效。更何况 FQ 配置文件内容复杂、篇幅又长，修改其内容时，经常因为一个莫名其妙的空格、亦或是其他细节问题导致配置文件无法被 Clash 读取。&lt;/p&gt;&#xA;&lt;p&gt;长期以来，我都是在新老配置文件之间复制粘贴自己需要的片段，因此迫切希望实现服务商处导出的配置可以和私人配置自动合并，省去这些烦人操作。近期发现了 &lt;a href=&#34;https://github.com/tindy2013/subconverter&#34;&gt;subconverter&lt;/a&gt; 这个超级棒的工具，可以完美解决我的烦恼。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

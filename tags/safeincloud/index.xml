@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>safeincloud on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/safeincloud/</link>
+    <description>Recent content in safeincloud on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 25 Jun 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/safeincloud/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用 SafeInCloud 管理密码，我还发现了这些好用法</title>
+      <link>https://iduan.me/posts/usage-of-the-safeincloud/</link>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/usage-of-the-safeincloud/</guid>
+      <description>本文主要介绍跨平台密码管理软件 SafeInCloud 的日常使用技巧。关于 SafeInCloud 的基本功能介绍，建议阅读少数派文章：《搞定密码管理，我选 SafeInCloud》。 快速</description>
+    </item>
+    <item>
+      <title>搞定密码管理，我选 SafeInCloud</title>
+      <link>https://iduan.me/posts/safeincloud/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/safeincloud/</guid>
+      <description>随着大家对个人信息安全的重视，越来越多的人开始尝试使用专用密码管理软件来存储各个网站的账号信息。少数派也曾经推荐过几款密码管理软件，比如大名</description>
+    </item>
+  </channel>
+</rss>

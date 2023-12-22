@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>minecraft on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/minecraft/</link>
+    <description>Recent content in minecraft on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 30 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/minecraft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在 M1 Mac 设备中解决 Minecraft Error 255</title>
+      <link>https://iduan.me/posts/m1-mac-minecraft-error-255/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/m1-mac-minecraft-error-255/</guid>
+      <description>如果你是 M1 Mac 且在安装 Forge API 后无法正常进入 Minecraft，并报错 Error 255 或是 GLFW Error 65544，那么这篇文章将能解决你的问题。 Apple 在去年年底发布了 M1 芯</description>
+    </item>
+  </channel>
+</rss>

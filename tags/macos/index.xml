@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>macOS on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/macos/</link>
+    <description>Recent content in macOS on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 25 Oct 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/macos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>屏蔽 macOS 更新？我有新招</title>
+      <link>https://iduan.me/posts/disable-macos-update/</link>
+      <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/disable-macos-update/</guid>
+      <description>&lt;p&gt;随着年纪增长，对系统更新这件事似乎不那么热衷了，现在觉得设备只要能用就不想更新。iOS/iPadOS 可以通过安装 tvOS 描述文件轻松屏蔽系统更新，但是 macOS 显然就没有这样便捷的方法。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>巧用 Windows 远程桌面，跨设备操作自如切换</title>
+      <link>https://iduan.me/posts/windows-remote-desktop/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/windows-remote-desktop/</guid>
+      <description>平常在工作中我都使用公司提供的 Windows 台式机，通常我还会带上自己的笔记本电脑。当我需要处理一些私事时，就能避免在办公电脑上留存个人数据，~同时也方</description>
+    </item>
+    <item>
+      <title>在 M1 Mac 设备中解决 Minecraft Error 255</title>
+      <link>https://iduan.me/posts/m1-mac-minecraft-error-255/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/m1-mac-minecraft-error-255/</guid>
+      <description>如果你是 M1 Mac 且在安装 Forge API 后无法正常进入 Minecraft，并报错 Error 255 或是 GLFW Error 65544，那么这篇文章将能解决你的问题。 Apple 在去年年底发布了 M1 芯</description>
+    </item>
+    <item>
+      <title>你的 MacBook 电池管家 — AlDente Pro 使用体验</title>
+      <link>https://iduan.me/posts/experience-of-aldente-pro/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/experience-of-aldente-pro/</guid>
+      <description>前段时间我开始使用一款 MacBook 专用的电池管理软件 AlDente，AlDente 可以读写 MacBook 内置 SMC 芯片，即使你的 MacBook 一直连接电源线，AlDente 也会根</description>
+    </item>
+    <item>
+      <title>使用 SafeInCloud 管理密码，我还发现了这些好用法</title>
+      <link>https://iduan.me/posts/usage-of-the-safeincloud/</link>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/usage-of-the-safeincloud/</guid>
+      <description>本文主要介绍跨平台密码管理软件 SafeInCloud 的日常使用技巧。关于 SafeInCloud 的基本功能介绍，建议阅读少数派文章：《搞定密码管理，我选 SafeInCloud》。 快速</description>
+    </item>
+    <item>
+      <title>这台 Mac 不 Pro — M1 MacBook Air 简单上手体验</title>
+      <link>https://iduan.me/posts/m1-macbook-air/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/m1-macbook-air/</guid>
+      <description>一、写在前面 上月初，我不得不换掉我用了将近 7 年的宏碁笔记本。那是我还在读书的时候入手的电脑，转眼间校园的时光早已不再，这个曾经陪伴我的「小伙</description>
+    </item>
+    <item>
+      <title>搞定密码管理，我选 SafeInCloud</title>
+      <link>https://iduan.me/posts/safeincloud/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/safeincloud/</guid>
+      <description>随着大家对个人信息安全的重视，越来越多的人开始尝试使用专用密码管理软件来存储各个网站的账号信息。少数派也曾经推荐过几款密码管理软件，比如大名</description>
+    </item>
+  </channel>
+</rss>

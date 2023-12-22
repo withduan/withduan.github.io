@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>windows on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/windows/</link>
+    <description>Recent content in windows on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 30 Mar 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>巧用 Windows 远程桌面，跨设备操作自如切换</title>
+      <link>https://iduan.me/posts/windows-remote-desktop/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/windows-remote-desktop/</guid>
+      <description>平常在工作中我都使用公司提供的 Windows 台式机，通常我还会带上自己的笔记本电脑。当我需要处理一些私事时，就能避免在办公电脑上留存个人数据，~同时也方</description>
+    </item>
+  </channel>
+</rss>

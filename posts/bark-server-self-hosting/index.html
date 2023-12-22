@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="generator" content="Hugo 0.121.1">
+
+  
+  <meta name="description" content="Some description">
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://iduan.me/apple-touch-icon.png">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="https://iduan.me/favicon-32x32.png">
+
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="https://iduan.me/favicon-16x16.png">
+
+  
+  <link rel="manifest" href="https://iduan.me/site.webmanifest">
+
+  
+  <link rel="mask-icon" href="https://iduan.me/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <link rel="stylesheet" href="https://iduan.me/css/bootstrap.min.css" />
+
+  
+  <title>自建 Bark 后端服务 | 💬 JL DUAN‘s Blog</title>
+  
+
+  <style>
+body {
+  min-width: 300px;
+}
+
+.custom-navbar {
+  margin-bottom: 1em;
+  height: 60px;
+}
+
+.custom-navbar a {
+  display: inline-block; 
+  padding: 18px 0;
+  margin-right: 1em; 
+  font-weight: bold; 
+}
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  text-decoration: none; 
+}
+
+@media print {
+  .custom-navbar {
+    display: none;
+  }
+}
+
+article {
+  padding-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  background-color: #fff;
+}
+
+
+
+body {
+  color: #212529;
+}
+
+
+
+a {
+  color: #007bff;
+}
+
+
+
+a:hover,
+a:focus {
+  color: #0056b3;
+}
+
+
+
+.custom-navbar {
+  background-color: #212529;
+}
+
+
+
+.custom-navbar a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+.container {
+  max-width: 800px;
+}
+
+
+
+pre {
+  display: block;
+  padding: 9.5px;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit; 
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+code {
+  padding: 2px 4px;
+  color: inherit; 
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: .9em;
+}
+
+
+
+blockquote,
+.blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 1em;
+  border-left: 5px solid #6c757d;
+}
+
+</style>
+</head>
+
+<body>
+  <nav class="custom-navbar">
+  <div class="container">
+    <strong><span style="color:#FFFFFF;">💬 JL DUAN‘s Blog  </span></strong><span style="color:#FFFFFF;">丨</span>
+    
+    <a href="/">文章</a>
+    
+    <a href="/tags/">tags</a>
+    
+    <a href="/about/">关于</a>
+    
+    <a href="/index.xml">RSS</a>
+    
+  </div>
+</nav>
+  
+  <div class="container">
+    <article>
+      <h4>自建 Bark 后端服务</h4>
+2022/04/08
+
+
+<code><a href="https://iduan.me/tags/bark">bark</a></code>
+
+
+<code><a href="https://iduan.me/tags/bark-server">bark-server</a></code>
+
+
+<code><a href="https://iduan.me/tags/self-hosting">self-hosting</a></code>
+
+</br>
+</br>
+<p><a href="https://www.v2ex.com/t/467407">Bark</a> 是一款可以给 iPhone 发送自定义推送的服务，你可以利用 Bark 做一些有趣的事情，比如我之前分享的：<a href="https://sspai.com/post/71054">配合 SmsForward 转发 Android 设备的短信至 iPhone</a>。Bark 本身提供后端服务，同时也开源了服务端代码，你可以利用 docker 轻松在服务器端部署私有化 Bark 后端服务。</p>
+<p>之前在博客有<a href="https://iduan.me/archives/4/">提到过</a>我闲置了一个腾讯云虚拟主机，由于域名备案的关系，现在无法正常使用。我想与其闲置在那里，不如拿来做点有趣的事情。</p>
+<p>我本身对服务器这方面不是特别了解，看到 Bark 后端只提供了 docker 这一种部署方式。本来可以在腾讯云服务器的管理面板中直接重置系统镜像为 docker，这时忽然想起来，之前建站经常要用到的宝塔面板就可以安装 docker 管理器，宝塔面板里编辑服务器里的文件也比较方便，所以就先安装了宝塔面板，方便我后续进行操作。</p>
+<p>按照官方的<a href="https://day.app/2018/06/bark-server-document/">教程</a>，我成功地在服务器中部署好了 Bark 后端服务。本来想解析一个二级域名<code>push.iduan.me</code>在这台服务器上，方便配置。谁知解析生效还没过 10 分钟，就被腾讯云拦截了，由于这个域名还没有备案，按照相关法律法规的要求，解析是无法生效的，因此在配置后端服务时，只能填写 IP 地址，不过影响也不大～</p>
+<p>最麻烦的是给这个自建的后端服务添加 SSL 支持，官方教程只是阐述了怎么部署支持 http 访问的后端，根本没提 SSL 的事情。以前在宝塔面板里为网站开启 https 访问的方法在这里完全行不通，为此又耗费大量时间去网络中搜索，等这套后端服务彻底搞好的时候已经是半夜两点了……</p>
+<p>以下是服务搭建过程中开启 SSL 的一点点笔记：</p>
+<h4 id="为-ip-地址申请-ssl-证书">✍🏻为 IP 地址申请 SSL 证书</h4>
+<p>大部分云服务商不支持为 IP 地址申请 SSL 证书，可以访问 <a href="https://zerossl.com/">ZeroSSL</a> 申请 IP 地址的SSL证书，免费账户申请的证书有效期只有三个月，而且不支持自动续签。</p>
+<p>将签发的证书（两个<code>.crt</code>文件，一个<code>.key</code>文件）上传至<code>/www/server/nginx/conf/cert</code>目录下（没有 cert 文件夹就新建一个）</p>
+<h4 id="为服务器启用-ssl">✍🏻为服务器启用 SSL</h4>
+<p>修改 <code>/www/server/nginx/conf</code> 路径下 <code>nginx.conf</code> 配置文件，添加以下内容：</p>
+<pre tabindex="0"><code>server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    server_name 1.2.3.4;
+    add_header Strict-Transport-Security &#34;max-age=31536000; includeSubdomains; preload&#34;;
+    ssl_certificate cert/certificate.crt;
+    ssl_certificate_key cert/private.key;
+    ssl_session_timeout 1d;
+    ssl_session_cache shared:SSL:50m;
+    ssl_session_tickets off;
+    ssl_protocols TLSv1.2;
+    ssl_ciphers &#39;ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256&#39;;
+    ssl_prefer_server_ciphers on;
+    ssl_stapling on;
+    ssl_stapling_verify on;
+    ssl_trusted_certificate cert/ca_bundle.crt;
+    location / {
+       proxy_pass http://127.0.0.1:8080;
+    }
+</code></pre><p>注意：</p>
+<ul>
+<li>请将第4行中的<code>1.2.3.4</code>修改为服务器 IP 地址；</li>
+<li><code>cert/certificate.crt</code>、<code>cert/private.key</code>和<code>cert/ca_bundle.crt</code>均为相对路径下存放的证书文件，绝对路径为：<code>/www/server/nginx/conf/cert</code></li>
+</ul>
+<h4 id="解决部分-android-app-连接-bark-后端服务时报错的问题">✍🏻解决部分 Android App 连接 Bark 后端服务时报错的问题</h4>
+<p>开启 SSL 之后，在部分 Android 应用内访问服务器后端地址时可能会报错“java security cert.CertPathValidatorException: Trust anchor for certification path not found”，原因是后端服务在部署 SSL 时缺少了中间证书。</p>
+<p>你可以利用 <a href="https://www.myssl.cn/tools/downloadchain.html">https://www.myssl.cn/tools/downloadchain.html</a> 这个工具，使用已有的<code>cert/certificate.crt</code>文件快速生成中间证书，最后会得到<code>chain.crt</code>这个文件。</p>
+<p>用文本编辑器打开<code>certificate.crt</code>，在所有代码后面依次添加<code>ca_bundle.crt</code>、<code>chain.crt</code>这两个文件里的内容，最后的效果应该是这样的：</p>
+<pre tabindex="0"><code>-----BEGIN CERTIFICATE-----
+这里是 certificate.crt 原本的所有内容
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+这里是 ca_bundle.crt 文件中的所有内容
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+这里是 chain.crt 文件中的所有内容
+-----END CERTIFICATE-----
+</code></pre><p>保存文件，用这个编辑之后的<code>certificate.crt</code>文件替换服务器中之前上传的的<code>certificate.crt</code>，个别应用中报错的问题即可解决。</p>
+    </article>
+  </div>
+  <footer>
+<p style="color:#999999">
+<p style="text-align:center;">
+<small>
+©️2016-2023 💬 JL DUAN‘s Blog.
+</br>
+CC <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a>
+</small>
+</p>
+</p>
+</footer>
+
+  
+  
+  
+  <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-123456789-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+
+  
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#216942",
+      "text": "#b2d192"
+    },
+    "button": {
+      "background": "#afed71"
+    }
+  }
+})});
+</script>
+
+</body>
+
+</html>

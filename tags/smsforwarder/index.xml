@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>smsforwarder on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/smsforwarder/</link>
+    <description>Recent content in smsforwarder on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 26 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/smsforwarder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>巧用开源方案，零成本实现验证码短信转发</title>
+      <link>https://iduan.me/posts/forwarding-messages-from-android-to-iphone/</link>
+      <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/forwarding-messages-from-android-to-iphone/</guid>
+      <description>减少重复切换和操作，双机党们再也不用收到验证码的时候到处找备机啦。 为了能够用两个微信彻底分离工作和生活，又苦于 iPhone 不能双开微信，我开始使用 Android 手</description>
+    </item>
+  </channel>
+</rss>

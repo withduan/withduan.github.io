@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="generator" content="Hugo 0.121.1">
+
+  
+  <meta name="description" content="Some description">
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://iduan.me/apple-touch-icon.png">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="https://iduan.me/favicon-32x32.png">
+
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="https://iduan.me/favicon-16x16.png">
+
+  
+  <link rel="manifest" href="https://iduan.me/site.webmanifest">
+
+  
+  <link rel="mask-icon" href="https://iduan.me/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <link rel="stylesheet" href="https://iduan.me/css/bootstrap.min.css" />
+
+  
+  <title>屏蔽 macOS 更新？我有新招 | 💬 JL DUAN‘s Blog</title>
+  
+
+  <style>
+body {
+  min-width: 300px;
+}
+
+.custom-navbar {
+  margin-bottom: 1em;
+  height: 60px;
+}
+
+.custom-navbar a {
+  display: inline-block; 
+  padding: 18px 0;
+  margin-right: 1em; 
+  font-weight: bold; 
+}
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  text-decoration: none; 
+}
+
+@media print {
+  .custom-navbar {
+    display: none;
+  }
+}
+
+article {
+  padding-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  background-color: #fff;
+}
+
+
+
+body {
+  color: #212529;
+}
+
+
+
+a {
+  color: #007bff;
+}
+
+
+
+a:hover,
+a:focus {
+  color: #0056b3;
+}
+
+
+
+.custom-navbar {
+  background-color: #212529;
+}
+
+
+
+.custom-navbar a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+.container {
+  max-width: 800px;
+}
+
+
+
+pre {
+  display: block;
+  padding: 9.5px;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit; 
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+code {
+  padding: 2px 4px;
+  color: inherit; 
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: .9em;
+}
+
+
+
+blockquote,
+.blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 1em;
+  border-left: 5px solid #6c757d;
+}
+
+</style>
+</head>
+
+<body>
+  <nav class="custom-navbar">
+  <div class="container">
+    <strong><span style="color:#FFFFFF;">💬 JL DUAN‘s Blog  </span></strong><span style="color:#FFFFFF;">丨</span>
+    
+    <a href="/">文章</a>
+    
+    <a href="/tags/">tags</a>
+    
+    <a href="/about/">关于</a>
+    
+    <a href="/index.xml">RSS</a>
+    
+  </div>
+</nav>
+  
+  <div class="container">
+    <article>
+      <h4>屏蔽 macOS 更新？我有新招</h4>
+2022/10/25
+
+
+<code><a href="https://iduan.me/tags/macos">macOS</a></code>
+
+</br>
+</br>
+<p>随着年纪增长，对系统更新这件事似乎不那么热衷了，现在觉得设备只要能用就不想更新。iOS/iPadOS 可以通过安装 tvOS 描述文件轻松屏蔽系统更新，但是 macOS 显然就没有这样便捷的方法。</p>
+<p>网络中流传的<code>sudo softwareupdate --ignore &quot;XXXXX&quot;</code>终端命令，早在 macOS 10.15.5 之后便失效了。</p>
+<blockquote>
+<p>我记得 tvOS 描述文件要保持最新的版本，比如一台安装 tvOS15 描述文件的 iOS15 设备，无法屏蔽 iOS16的更新提醒，需要在 iOS16 发布以后，将描述文件同步换成 tvOS16 的，这样才能继续达到屏蔽效果。</p>
+</blockquote>
+<p>最近想到一个新的思路：我在 iPhone 中一直用 Quantumult X 配合规则集，将 Apple 负责检测 iOS 系统更新的相关服务器域名设置为「REJECT」，同样可以达到屏蔽更新的效果。</p>
+<p>这种方法唯一的缺点是：需要 Quantumult X 始终开启，但是我手机上的 Quantumult X 本来就是常开的，这一点对我来说倒是毫无影响。</p>
+<p>而我的电脑也是常开 Clash X，如果使用相同的方法，是不是也能在 macOS 中产生同样的效果呢？</p>
+<p>既然思路来了，说干就干。Clash X 自带日志功能，手动触发一次系统更新检测，通过 Clash X 日志可以发现，系统连接了<code>swdist.apple.com</code>、<code>gdmf.apple.com</code>、<code>swscan.apple.com</code>、<code>configuration.apple.com</code>这4个域名，我猜测 Apple 可能是通过这四个域名检测 macOS 设备的升级信息。</p>
+<p>再通过网络搜索<a href="https://www.zhihu.com/question/430182990">参考资料</a>，还发现了<code>swcdn.apple.com</code>、<code>swquery.apple.com</code>、<code>swdownload.apple.com</code>可能也是 Apple 用于更新检测的业务域名。</p>
+<p>将上述 7 个域名和神机规则 DivineEngine 中屏蔽 iOS 更新的<a href="https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Filter/Extra/Apple/BlockiOSUpdate.list">规则集</a>再进行合并，得到一个包含 10 个域名的列表：</p>
+<pre><code>mesu.apple.com
+gdmf.apple.com
+updates-http.cdn-apple.com
+xp.apple.com
+swdist.apple.com
+swscan.apple.com
+configuration.apple.com
+swcdn.apple.com
+swquery.apple.com
+swdownload.apple.com
+</code></pre>
+<p>将以上 10 个域名添加到 Clash X 的规则集中，并设置策略为 REJECT，macOS 更新提示果然消失了。</p>
+<p>除了 Clash X，其他「网络调试软件」也可以进行类似设置，理论上也可以达到屏蔽效果。</p>
+<p>当然，你也可以修改 macOS 内的 hosts 文件，将相关域名都指向 <code>127.0.0.1</code>，理论上也可以达到屏蔽效果。</p>
+<p>你也可以在路由器（如果路由器支持的话）中修改hosts设置，将相关域名都指向 <code>127.0.0.1</code>，理论上也可以达到屏蔽效果。</p>
+<p>倘若未来 Apple 使用新的域名用于系统更新检测，只要把新增域名在网络调试软件里设置为 REJECT，或者指向<code>127.0.0.1</code>，理论上也可以达到屏蔽效果。</p>
+    </article>
+  </div>
+  <footer>
+<p style="color:#999999">
+<p style="text-align:center;">
+<small>
+©️2016-2023 💬 JL DUAN‘s Blog.
+</br>
+CC <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a>
+</small>
+</p>
+</p>
+</footer>
+
+  
+  
+  
+  <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-123456789-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+
+  
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#216942",
+      "text": "#b2d192"
+    },
+    "button": {
+      "background": "#afed71"
+    }
+  }
+})});
+</script>
+
+</body>
+
+</html>

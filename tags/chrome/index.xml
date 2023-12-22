@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>chrome on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/chrome/</link>
+    <description>Recent content in chrome on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 09 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/chrome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chrome，但是 without Google</title>
+      <link>https://iduan.me/posts/chrome-without-google/</link>
+      <pubDate>Fri, 09 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/chrome-without-google/</guid>
+      <description>作为新时代浏览器领域的王者，Google Chrome 自 2008 年 9 月 2 日公布以来，一路过五关斩六将，送走了不少竞争对手。依托其背后的 Chromium 开源项目，第三方纷纷推</description>
+    </item>
+    <item>
+      <title>恢复浏览器空白页，还你纯净冲浪体验</title>
+      <link>https://iduan.me/posts/clear-newtab/</link>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/clear-newtab/</guid>
+      <description>我只想要个纯净的空白页当新标签页…… 怎么就这么难啊？ Matrix 首页推荐 近日，少数派首页出现了一篇名为《把握浏览器的「门面」：少数派作者们都在用什么启</description>
+    </item>
+  </channel>
+</rss>

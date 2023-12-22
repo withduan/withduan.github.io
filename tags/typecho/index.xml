@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>typecho on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/typecho/</link>
+    <description>Recent content in typecho on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 01 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/typecho/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>只要活得够久……</title>
+      <link>https://iduan.me/posts/typecho-update-20220401/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/typecho-update-20220401/</guid>
+      <description>&lt;p&gt;Typecho 在愚人节更新 1.2 版本，而距离其上一次更新已经过去了 1616 天……&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Typecho 功能优化小结</title>
+      <link>https://iduan.me/posts/typecho-optimization/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/typecho-optimization/</guid>
+      <description>&lt;p&gt;Typecho 是我在大学时就发现的一个博客程序，相比起流行的 WordPress，它的优势是代码更加轻量化，默认主题风格非常的简洁，适合我这种不喜欢过多折腾的用户。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

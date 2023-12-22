@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>newtab on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/newtab/</link>
+    <description>Recent content in newtab on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 21 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/newtab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>恢复浏览器空白页，还你纯净冲浪体验</title>
+      <link>https://iduan.me/posts/clear-newtab/</link>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/clear-newtab/</guid>
+      <description>我只想要个纯净的空白页当新标签页…… 怎么就这么难啊？ Matrix 首页推荐 近日，少数派首页出现了一篇名为《把握浏览器的「门面」：少数派作者们都在用什么启</description>
+    </item>
+  </channel>
+</rss>

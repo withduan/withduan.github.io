@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="generator" content="Hugo 0.121.1">
+
+  
+  <meta name="description" content="Some description">
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://iduan.me/apple-touch-icon.png">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="https://iduan.me/favicon-32x32.png">
+
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="https://iduan.me/favicon-16x16.png">
+
+  
+  <link rel="manifest" href="https://iduan.me/site.webmanifest">
+
+  
+  <link rel="mask-icon" href="https://iduan.me/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <link rel="stylesheet" href="https://iduan.me/css/bootstrap.min.css" />
+
+  
+  <title>Typecho 功能优化小结 | 💬 JL DUAN‘s Blog</title>
+  
+
+  <style>
+body {
+  min-width: 300px;
+}
+
+.custom-navbar {
+  margin-bottom: 1em;
+  height: 60px;
+}
+
+.custom-navbar a {
+  display: inline-block; 
+  padding: 18px 0;
+  margin-right: 1em; 
+  font-weight: bold; 
+}
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  text-decoration: none; 
+}
+
+@media print {
+  .custom-navbar {
+    display: none;
+  }
+}
+
+article {
+  padding-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  background-color: #fff;
+}
+
+
+
+body {
+  color: #212529;
+}
+
+
+
+a {
+  color: #007bff;
+}
+
+
+
+a:hover,
+a:focus {
+  color: #0056b3;
+}
+
+
+
+.custom-navbar {
+  background-color: #212529;
+}
+
+
+
+.custom-navbar a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+.container {
+  max-width: 800px;
+}
+
+
+
+pre {
+  display: block;
+  padding: 9.5px;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit; 
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+code {
+  padding: 2px 4px;
+  color: inherit; 
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: .9em;
+}
+
+
+
+blockquote,
+.blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 1em;
+  border-left: 5px solid #6c757d;
+}
+
+</style>
+</head>
+
+<body>
+  <nav class="custom-navbar">
+  <div class="container">
+    <strong><span style="color:#FFFFFF;">💬 JL DUAN‘s Blog  </span></strong><span style="color:#FFFFFF;">丨</span>
+    
+    <a href="/">文章</a>
+    
+    <a href="/tags/">tags</a>
+    
+    <a href="/about/">关于</a>
+    
+    <a href="/index.xml">RSS</a>
+    
+  </div>
+</nav>
+  
+  <div class="container">
+    <article>
+      <h4>Typecho 功能优化小结</h4>
+2022/03/10
+
+
+<code><a href="https://iduan.me/tags/blog">blog</a></code>
+
+
+<code><a href="https://iduan.me/tags/typecho">typecho</a></code>
+
+</br>
+</br>
+<p>Typecho 是我在大学时就发现的一个博客程序，相比起流行的 WordPress，它的优势是代码更加轻量化，默认主题风格非常的简洁，适合我这种不喜欢过多折腾的用户。</p>
+<p>然而因其更新周期过于佛系（Typecho 上次更新是在 2017 年……）在多年的使用过程中，也会遇到一些问题或者是使用习惯差异，需要对其进行修改。</p>
+<h5 id="1删除域名中的www">1.删除域名中的<code>www</code></h5>
+<p>域名解析并不是 Typecho 自身的问题，但和网站最终展示效果相关，去除网址中的<code>www</code>可以使网站地址更加简洁。</p>
+<p>另外当你申请免费https证书时，<code>www.iduan.me</code>和<code>iduan.me</code>需要分别申请证书，如果强制跳转不带<code>www</code>的地址，则只需要申请一个不带<code>www</code>的<code>iduan.me</code>证书即可。</p>
+<p>注：博客网址去除<code>www</code>只是个人习惯，如果你不喜欢也可以忽略这一步。</p>
+<h5 id="2强制跳转-https">2.强制跳转 🔒https</h5>
+<p>如果说去除<code>www</code>是可有可无的习惯，那么为网站开启 https 访问在如今就显得十分有必要。开启 🔒https 后，网站地址左侧会出现一把锁🔒的标志，但是在未修改设置的情况下，网站依然可以通过输入 http 网址访问。我们同样可以修改服务器文件来实现强制全站 🔒https 访问。</p>
+<p>结合第 1 步的操作，最终可以实现如下效果：</p>
+<ul>
+<li>输入 <a href="http://www.iduan.me">http://www.iduan.me</a> 跳转到 <a href="https://iduan.me">https://iduan.me</a></li>
+<li>输入 <a href="http://iduan.me">http://iduan.me</a> 跳转到 <a href="https://iduan.me">https://iduan.me</a></li>
+<li>输入 <a href="https://www.iduan.me">https://www.iduan.me</a> 跳转到 <a href="https://iduan.me">https://iduan.me</a></li>
+<li>输入 <a href="https://iduan.me">https://iduan.me</a> 跳转到 <a href="https://iduan.me">https://iduan.me</a></li>
+</ul>
+<p>也就是说，网站最终都会跳转至不带<code>www</code>的<code>https</code>网址。
+找到网站根目录下的<code>.htaccess</code>文件，添加以下内容：</p>
+<pre tabindex="0"><code>RewriteEngine on   
+#删除网址中的 www，并强制跳转 https
+RewriteCond %{HTTP_HOST} ^www.iduan.me$
+RewriteRule ^(.*)$ https://iduan.me/$1 [R=301,L]
+</code></pre><h5 id="3为-typecho-添加-emoji-支持">3.为 Typecho 添加 emoji 支持</h5>
+<p>Typecho 最后一次更新是 2017 年，而且它使用的编码是<code>utf8</code>，在默认情况下不支持 emoji 的显示。不仅如此，如果你在后台编辑器编辑文章时加入了 emoji，因程序无法正常识别，在点击保存时，emoji 表情以及之后输入所有的内容都会被丢弃。</p>
+<p>我们只需要先进入 phpMyAdmin 后台，将数据库格式修改为<code>utf8mb4_unicode_ci</code>，再编辑 Typecho 目录下<code>config.inc.php</code>文件，将 Typecho 的编码方式由<code>utf8</code>修改为<code>utf8mb4</code>，即可正常编辑、保存和显示 emoji 内容。</p>
+    </article>
+  </div>
+  <footer>
+<p style="color:#999999">
+<p style="text-align:center;">
+<small>
+©️2016-2023 💬 JL DUAN‘s Blog.
+</br>
+CC <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a>
+</small>
+</p>
+</p>
+</footer>
+
+  
+  
+  
+  <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-123456789-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+
+  
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#216942",
+      "text": "#b2d192"
+    },
+    "button": {
+      "background": "#afed71"
+    }
+  }
+})});
+</script>
+
+</body>
+
+</html>

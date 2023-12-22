@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bark-server on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/bark-server/</link>
+    <description>Recent content in bark-server on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/bark-server/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自建 Bark 后端服务</title>
+      <link>https://iduan.me/posts/bark-server-self-hosting/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/bark-server-self-hosting/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.v2ex.com/t/467407&#34;&gt;Bark&lt;/a&gt; 是一款可以给 iPhone 发送自定义推送的服务，你可以利用 Bark 做一些有趣的事情，比如我之前分享的：&lt;a href=&#34;https://sspai.com/post/71054&#34;&gt;配合 SmsForward 转发 Android 设备的短信至 iPhone&lt;/a&gt;。Bark 本身提供后端服务，同时也开源了服务端代码，你可以利用 docker 轻松在服务器端部署私有化 Bark 后端服务。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

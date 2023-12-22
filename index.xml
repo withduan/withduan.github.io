@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/</link>
+    <description>Recent content on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 14 Dec 2023 23:45:52 +0800</lastBuildDate>
+    <atom:link href="https://iduan.me/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客又又又搬家了</title>
+      <link>https://iduan.me/posts/continue-with-hugo/</link>
+      <pubDate>Thu, 14 Dec 2023 23:45:52 +0800</pubDate>
+      <guid>https://iduan.me/posts/continue-with-hugo/</guid>
+      <description>&lt;p&gt;大学时开始尝试建站，从而开始了我对博客的探索。印象最深的 CMS 只有两个，一个是 WordPress，另外一个是 typecho。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>关于</title>
+      <link>https://iduan.me/about/</link>
+      <pubDate>Thu, 14 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/about/</guid>
+      <description>👤 关于 JL DUAN 不知道该如何介绍自己，反正就是普通人一个。 📍0912 🐣1996 🌏 关于博客 iduan.me 是 JL DUAN 的个人博客。 网站使用 hugo 构建，托管于 GitHub Pages，使</description>
+    </item>
+    <item>
+      <title>Chrome，但是 without Google</title>
+      <link>https://iduan.me/posts/chrome-without-google/</link>
+      <pubDate>Fri, 09 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/chrome-without-google/</guid>
+      <description>作为新时代浏览器领域的王者，Google Chrome 自 2008 年 9 月 2 日公布以来，一路过五关斩六将，送走了不少竞争对手。依托其背后的 Chromium 开源项目，第三方纷纷推</description>
+    </item>
+    <item>
+      <title>如何激活 &#43;853 澳门电信 CTM 预付卡</title>
+      <link>https://iduan.me/posts/activate-ctm-sim/</link>
+      <pubDate>Sun, 30 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/activate-ctm-sim/</guid>
+      <description>&lt;p&gt;拥有一个境外号码有很多便利之处，网络上有许多购买境外号码的教程。我选择的是澳门 CTM，这家的服务资费不贵，长期持有也没什么压力。相比起其他国家的号码，选择澳门通信运营商好处是，大家语言相通，出现问题的时候，和运营商客服交流也很方便。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>利用 Apple 个人开发者账户创建可用于 ipa 自签名的证书</title>
+      <link>https://iduan.me/posts/creating-certificate-for-ipa-signing/</link>
+      <pubDate>Sat, 07 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/creating-certificate-for-ipa-signing/</guid>
+      <description>&lt;p&gt;iOS 平台利用开发者证书自签名，可以实现侧载 ipa（签名安装 App Store 之外的软件）的效果，轻松满足多开微信、注入插件、净化 App 等需求。由于之前注册工作微信的关系，我也有了 App 多开的需求，于是开始接触这方面的内容。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>当我也成了「大白」</title>
+      <link>https://iduan.me/posts/work-with-covid-19/</link>
+      <pubDate>Fri, 09 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/work-with-covid-19/</guid>
+      <description>&lt;p&gt;11 月中旬，YL 的疫情形势急转直下。在阳性数量急剧增长的现实面前，几轮全民核酸后，防控工作人手已经完全不够用。待我接到上级指令，要求立即启程支援一线开始，对于这场疫情，我似乎有了一种不同以往的视角，获得了一些新奇的体验。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>屏蔽 macOS 更新？我有新招</title>
+      <link>https://iduan.me/posts/disable-macos-update/</link>
+      <pubDate>Tue, 25 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/disable-macos-update/</guid>
+      <description>&lt;p&gt;随着年纪增长，对系统更新这件事似乎不那么热衷了，现在觉得设备只要能用就不想更新。iOS/iPadOS 可以通过安装 tvOS 描述文件轻松屏蔽系统更新，但是 macOS 显然就没有这样便捷的方法。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>兜兜转转，回归单机</title>
+      <link>https://iduan.me/posts/all-in-one-phone/</link>
+      <pubDate>Fri, 29 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/all-in-one-phone/</guid>
+      <description>&lt;p&gt;如果要给初入职场的人一些建议，我最想提的恐怕就是：申请新的微信号。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>恢复浏览器空白页，还你纯净冲浪体验</title>
+      <link>https://iduan.me/posts/clear-newtab/</link>
+      <pubDate>Thu, 21 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/clear-newtab/</guid>
+      <description>我只想要个纯净的空白页当新标签页…… 怎么就这么难啊？ Matrix 首页推荐 近日，少数派首页出现了一篇名为《把握浏览器的「门面」：少数派作者们都在用什么启</description>
+    </item>
+    <item>
+      <title>subconverter 部署记录</title>
+      <link>https://iduan.me/posts/subconverter-self-hosting/</link>
+      <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/subconverter-self-hosting/</guid>
+      <description>&lt;p&gt;我在 Mac 上一直使用 &lt;a href=&#34;https://github.com/yichengchen/clashX&#34;&gt;Clash X Pro&lt;/a&gt; 作为主力工具。 其 UI 简洁明了，使用起来也比较方便。但是比起 Clash for Windows ，它不方便添加个人规则。如果你直接修改配置文件，在下次更新远程节点时也会失效。更何况 FQ 配置文件内容复杂、篇幅又长，修改其内容时，经常因为一个莫名其妙的空格、亦或是其他细节问题导致配置文件无法被 Clash 读取。&lt;/p&gt;&#xA;&lt;p&gt;长期以来，我都是在新老配置文件之间复制粘贴自己需要的片段，因此迫切希望实现服务商处导出的配置可以和私人配置自动合并，省去这些烦人操作。近期发现了 &lt;a href=&#34;https://github.com/tindy2013/subconverter&#34;&gt;subconverter&lt;/a&gt; 这个超级棒的工具，可以完美解决我的烦恼。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>自建 Bark 后端服务</title>
+      <link>https://iduan.me/posts/bark-server-self-hosting/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/bark-server-self-hosting/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.v2ex.com/t/467407&#34;&gt;Bark&lt;/a&gt; 是一款可以给 iPhone 发送自定义推送的服务，你可以利用 Bark 做一些有趣的事情，比如我之前分享的：&lt;a href=&#34;https://sspai.com/post/71054&#34;&gt;配合 SmsForward 转发 Android 设备的短信至 iPhone&lt;/a&gt;。Bark 本身提供后端服务，同时也开源了服务端代码，你可以利用 docker 轻松在服务器端部署私有化 Bark 后端服务。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>只要活得够久……</title>
+      <link>https://iduan.me/posts/typecho-update-20220401/</link>
+      <pubDate>Fri, 01 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/typecho-update-20220401/</guid>
+      <description>&lt;p&gt;Typecho 在愚人节更新 1.2 版本，而距离其上一次更新已经过去了 1616 天……&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>巧用 Windows 远程桌面，跨设备操作自如切换</title>
+      <link>https://iduan.me/posts/windows-remote-desktop/</link>
+      <pubDate>Wed, 30 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/windows-remote-desktop/</guid>
+      <description>平常在工作中我都使用公司提供的 Windows 台式机，通常我还会带上自己的笔记本电脑。当我需要处理一些私事时，就能避免在办公电脑上留存个人数据，~同时也方</description>
+    </item>
+    <item>
+      <title>Typecho 功能优化小结</title>
+      <link>https://iduan.me/posts/typecho-optimization/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/typecho-optimization/</guid>
+      <description>&lt;p&gt;Typecho 是我在大学时就发现的一个博客程序，相比起流行的 WordPress，它的优势是代码更加轻量化，默认主题风格非常的简洁，适合我这种不喜欢过多折腾的用户。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>起死回生的博客</title>
+      <link>https://iduan.me/posts/rebooting-the-blog/</link>
+      <pubDate>Tue, 08 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/rebooting-the-blog/</guid>
+      <description>&lt;p&gt;去年5月份，我趁着优惠购入腾讯云虚拟主机拿来做博客。域名虽然没有备案，但是解析都正常，访问也正常，平稳运行半年多，所以我也没有放在心上（主要是侥幸心理）。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>巧用开源方案，零成本实现验证码短信转发</title>
+      <link>https://iduan.me/posts/forwarding-messages-from-android-to-iphone/</link>
+      <pubDate>Wed, 26 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/forwarding-messages-from-android-to-iphone/</guid>
+      <description>减少重复切换和操作，双机党们再也不用收到验证码的时候到处找备机啦。 为了能够用两个微信彻底分离工作和生活，又苦于 iPhone 不能双开微信，我开始使用 Android 手</description>
+    </item>
+    <item>
+      <title>iOS「辅助功能」里你可能不知道的那些小技巧</title>
+      <link>https://iduan.me/posts/ios-accessibility-features-tips/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/ios-accessibility-features-tips/</guid>
+      <description>大家是否还记得，在那个 iPhone 操作依赖 Home 键的时代，有些朋友为了延长 Home 按键的寿命，特意打开了辅助设置中的 AssistiveTouch 。随着 iPhone 交互与设计的不断进化，带 Home 键的 iPhone 已</description>
+    </item>
+    <item>
+      <title>在 M1 Mac 设备中解决 Minecraft Error 255</title>
+      <link>https://iduan.me/posts/m1-mac-minecraft-error-255/</link>
+      <pubDate>Thu, 30 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/m1-mac-minecraft-error-255/</guid>
+      <description>如果你是 M1 Mac 且在安装 Forge API 后无法正常进入 Minecraft，并报错 Error 255 或是 GLFW Error 65544，那么这篇文章将能解决你的问题。 Apple 在去年年底发布了 M1 芯</description>
+    </item>
+    <item>
+      <title>你的 MacBook 电池管家 — AlDente Pro 使用体验</title>
+      <link>https://iduan.me/posts/experience-of-aldente-pro/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/experience-of-aldente-pro/</guid>
+      <description>前段时间我开始使用一款 MacBook 专用的电池管理软件 AlDente，AlDente 可以读写 MacBook 内置 SMC 芯片，即使你的 MacBook 一直连接电源线，AlDente 也会根</description>
+    </item>
+    <item>
+      <title>华山个人游，独自登山的不完全记录</title>
+      <link>https://iduan.me/posts/huashan-mountain-tour-2021/</link>
+      <pubDate>Mon, 16 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/huashan-mountain-tour-2021/</guid>
+      <description>华山，是五岳之中的西岳，雅称「太华山」，位于陕西省渭南市华阴市。因其山势险峻，一直有「奇险天下第一山」的说法。民间传说《沉香救母》中的故事就</description>
+    </item>
+    <item>
+      <title>使用 SafeInCloud 管理密码，我还发现了这些好用法</title>
+      <link>https://iduan.me/posts/usage-of-the-safeincloud/</link>
+      <pubDate>Fri, 25 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/usage-of-the-safeincloud/</guid>
+      <description>本文主要介绍跨平台密码管理软件 SafeInCloud 的日常使用技巧。关于 SafeInCloud 的基本功能介绍，建议阅读少数派文章：《搞定密码管理，我选 SafeInCloud》。 快速</description>
+    </item>
+    <item>
+      <title>618的百元好物——iPhone 用户的外出随身快充套装</title>
+      <link>https://iduan.me/posts/aukey-powerbank-momax-cable/</link>
+      <pubDate>Thu, 10 Jun 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/aukey-powerbank-momax-cable/</guid>
+      <description>多年以来 iPhone 凭借迷你的电池容量、「五福一安」，以及被官方称为「超速了」的 20W 「快充」，致使 iPhone 用户成为共享充电宝的忠实客户。我只有一个 20000 mAh 的充电宝</description>
+    </item>
+    <item>
+      <title>努比亚红魔散热背夹</title>
+      <link>https://iduan.me/posts/nubia-redmagic-radiator/</link>
+      <pubDate>Mon, 10 May 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/nubia-redmagic-radiator/</guid>
+      <description>我是一个手游党，主力机是一台 2019 年发布的 iPhone 11。作为上一代 iPhone，性能虽然还不算太落伍，但是 iPhone 这蹩脚的散热设计，在持续游戏场景下的表现实</description>
+    </item>
+    <item>
+      <title>这台 Mac 不 Pro — M1 MacBook Air 简单上手体验</title>
+      <link>https://iduan.me/posts/m1-macbook-air/</link>
+      <pubDate>Thu, 15 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/m1-macbook-air/</guid>
+      <description>一、写在前面 上月初，我不得不换掉我用了将近 7 年的宏碁笔记本。那是我还在读书的时候入手的电脑，转眼间校园的时光早已不再，这个曾经陪伴我的「小伙</description>
+    </item>
+    <item>
+      <title>搞定密码管理，我选 SafeInCloud</title>
+      <link>https://iduan.me/posts/safeincloud/</link>
+      <pubDate>Wed, 10 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/safeincloud/</guid>
+      <description>随着大家对个人信息安全的重视，越来越多的人开始尝试使用专用密码管理软件来存储各个网站的账号信息。少数派也曾经推荐过几款密码管理软件，比如大名</description>
+    </item>
+  </channel>
+</rss>

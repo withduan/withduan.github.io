@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>aldente on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/aldente/</link>
+    <description>Recent content in aldente on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 12 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/aldente/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>你的 MacBook 电池管家 — AlDente Pro 使用体验</title>
+      <link>https://iduan.me/posts/experience-of-aldente-pro/</link>
+      <pubDate>Sun, 12 Sep 2021 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/experience-of-aldente-pro/</guid>
+      <description>前段时间我开始使用一款 MacBook 专用的电池管理软件 AlDente，AlDente 可以读写 MacBook 内置 SMC 芯片，即使你的 MacBook 一直连接电源线，AlDente 也会根</description>
+    </item>
+  </channel>
+</rss>

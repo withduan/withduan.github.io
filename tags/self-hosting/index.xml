@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>self-hosting on 💬 JL DUAN‘s Blog</title>
+    <link>https://iduan.me/tags/self-hosting/</link>
+    <description>Recent content in self-hosting on 💬 JL DUAN‘s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 30 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/self-hosting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>subconverter 部署记录</title>
+      <link>https://iduan.me/posts/subconverter-self-hosting/</link>
+      <pubDate>Thu, 30 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/subconverter-self-hosting/</guid>
+      <description>&lt;p&gt;我在 Mac 上一直使用 &lt;a href=&#34;https://github.com/yichengchen/clashX&#34;&gt;Clash X Pro&lt;/a&gt; 作为主力工具。 其 UI 简洁明了，使用起来也比较方便。但是比起 Clash for Windows ，它不方便添加个人规则。如果你直接修改配置文件，在下次更新远程节点时也会失效。更何况 FQ 配置文件内容复杂、篇幅又长，修改其内容时，经常因为一个莫名其妙的空格、亦或是其他细节问题导致配置文件无法被 Clash 读取。&lt;/p&gt;&#xA;&lt;p&gt;长期以来，我都是在新老配置文件之间复制粘贴自己需要的片段，因此迫切希望实现服务商处导出的配置可以和私人配置自动合并，省去这些烦人操作。近期发现了 &lt;a href=&#34;https://github.com/tindy2013/subconverter&#34;&gt;subconverter&lt;/a&gt; 这个超级棒的工具，可以完美解决我的烦恼。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>自建 Bark 后端服务</title>
+      <link>https://iduan.me/posts/bark-server-self-hosting/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/bark-server-self-hosting/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.v2ex.com/t/467407&#34;&gt;Bark&lt;/a&gt; 是一款可以给 iPhone 发送自定义推送的服务，你可以利用 Bark 做一些有趣的事情，比如我之前分享的：&lt;a href=&#34;https://sspai.com/post/71054&#34;&gt;配合 SmsForward 转发 Android 设备的短信至 iPhone&lt;/a&gt;。Bark 本身提供后端服务，同时也开源了服务端代码，你可以利用 docker 轻松在服务器端部署私有化 Bark 后端服务。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
