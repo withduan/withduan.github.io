@@ -6,8 +6,15 @@
     <description>Recent content in 瞎扯 on 💬 JL DUAN‘s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 14 Dec 2023 23:45:52 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 30 Dec 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>「没什么好总结的」—— 致我的 2023</title>
+      <link>https://iduan.me/posts/summary-of-2023/</link>
+      <pubDate>Sat, 30 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://iduan.me/posts/summary-of-2023/</guid>
+      <description>我通过 RSS 客户端订阅了很多独立博客。近日浏览各个博客文章更新的时候，发现大家陆陆续续都在做年终总结。虽然我的 2023 过得平平无奇，但为了能赶上这股潮</description>
+    </item>
     <item>
       <title>博客又又又搬家了</title>
       <link>https://iduan.me/posts/continue-with-hugo/</link>
