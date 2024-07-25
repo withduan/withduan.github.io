@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
-  <meta name="generator" content="Hugo 0.121.1">
+  <meta name="generator" content="Hugo 0.129.0">
 
   
   <meta name="description" content="Some description">
@@ -211,10 +211,11 @@ blockquote,
 </br>
 <p>前段时间我开始使用一款 MacBook 专用的电池管理软件 AlDente，AlDente 可以读写 MacBook 内置 SMC 芯片，即使你的 MacBook 一直连接电源线，AlDente 也会根据设定在电脑内部自动接通和切断电源，这样就可以在必要的时候接通或者断开电源，从而避免电池彻底耗尽，或者长期处于过充状态。</p>
 <p>**AlDente 最主要的功能就是调整电池充电阈值。**在电池电量在达到指定值后，电脑会停止充电，转向电池供电，全过程无需手动插拔 MacBook 充电器。当我查看 AlDente 网站时，发现开发者还提供了付费的 Pro 版本。相比免费的版本，Pro 版本提供了更多的可定制项（下文分别使用 AlDente Free 和 AlDente Pro 区分两款软件）。</p>
-<p><img src="https://cdn.sspai.com/2021/09/10/0943041a40d6a7a209a12a78dbcba10d.png" alt="">AlDente Free<img src="https://cdn.sspai.com/2021/09/10/843f0a8884ddf9608b6becee77fc9ee7.png" alt="">AlDente Pro，介面与免费版略有不同</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-01.webp" alt="experience-of-aldente-pro-01">AlDente Free
+<img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-02.webp" alt="experience-of-aldente-pro-02">AlDente Pro，界面与免费版略有不同</p>
 <h4 id="特色功能">特色功能</h4>
 <p>AlDente Free 只有「调整充电阈值」和「放电模式」两项功能，而 AlDente Pro 的功能 [注释 1] 更加丰富。另外 AlDente Pro 在 UI 设计方面相对 AlDente Free 也有所改进。</p>
-<p><img src="https://cdn.sspai.com/2021/09/10/c6c93ce9d895960c3970194696793a2f.png" alt="">AlDente Pro 设置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-03.webp" alt="experience-of-aldente-pro-03">AlDente Pro 设置</p>
 <h5 id="航行模式-sailing-mode">航行模式 Sailing Mode</h5>
 <p>当电池电量达到设定阈值时，电脑将转为电源供电，此时电量可能会因为突然运行高负载任务（功率尖峰）而出现细微变化（例如短时间内电量下降了 1% ）。当开启航行模式后， AlDente Pro 会忽略这类细微的耗电量，避免因 1% 的电量变化，频繁对电池进行充电。航行模式允许设定一个差值，电量降低的幅度如果在差值范围内，AlDente Pro 不会为电池充电。</p>
 <p>非常幸运的是，较新的产品会配备最新的电源管理模块，在外接电源的情况下，电脑通常不会因为功率尖峰导致电量下降。那些服役许久、元器件老化的电脑才可能会有这个问题。</p>
@@ -224,7 +225,7 @@ blockquote,
 <p>MacBook 电池长期处于未充满状态时，可能会影响系统自身对电池参数的识别，因此你需要定期将电脑充电至 100%。当开启校准模式后，AlDente Pro 会自动执行一次完全充电至 100% 的过程。此外 AlDente Pro 会在未来的更新中提供定期自动校准的功能。</p>
 <h5 id="实时状态栏图标-live-status-icons">实时状态栏图标 Live Status Icons</h5>
 <p>通过状态栏图标，可以快速了解电脑当前充电情况。</p>
-<table><thead><tr><th>图标</th><th>状态</th><th>供电端</th></tr></thead><tbody><tr><td><img class="" src="https://cdn.sspai.com/2021/09/10/3c71f4294de14869bcc61e41cd2da17e.png"></td><td>已连接电源，正在充电</td><td>电源🔌</td></tr><tr><td><img class="" src="https://cdn.sspai.com/2021/09/10/aca64673322360345c8d0ada903c434a.png"></td><td>已连接电源，未在充电</td><td>电源🔌</td></tr><tr><td><img class="" src="https://cdn.sspai.com/2021/09/10/1732474034ec5e193b4cb06cf9955e96.png"></td><td>已连接电源，正在放电</td><td>电池🔋</td></tr><tr><td><img class="" src="https://cdn.sspai.com/2021/09/10/4b63129dccb99c7cefcda6f00e96121c.png"></td><td>未连接电源，正在放电</td><td>电池🔋</td></tr></tbody></table>
+<table><thead><tr><th>图标</th><th>状态</th><th>供电端</th></tr></thead><tbody><tr><td><img class="" src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-04.webp"></td><td>已连接电源，正在充电</td><td>电源🔌</td></tr><tr><td><img class="" src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-05.webp"></td><td>已连接电源，未在充电</td><td>电源🔌</td></tr><tr><td><img class="" src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-06.webp"></td><td>已连接电源，正在放电</td><td>电池🔋</td></tr><tr><td><img class="" src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-07.webp"></td><td>未连接电源，正在放电</td><td>电池🔋</td></tr></tbody></table>
 <h5 id="intel-模式">Intel 模式</h5>
 <p>一些 Intel MacBook 用户习惯通过 Boot Camp 运行 Windows 系统。AlDente Pro 在开启 Intel 模式后，电池保护就可以在 Windows 系统中发挥作用。但是 AlDente Pro 在此模式下仅支持调整充电阈值，除此之外，过热保护、航行模式、放电模式等其他功能都无法在 Windows 系统中生效。</p>
 <h5 id="其他细节">其他细节</h5>
@@ -236,18 +237,18 @@ blockquote,
 <ul>
 <li>使用 AlDente Pro 时，建议关闭 macOS 系统「优化电池充电」功能，二者同时运行可能会存在冲突；</li>
 </ul>
-<p><img src="https://cdn.sspai.com/2021/09/10/84576a4e21964899ffef26d3bc21e5b1.png" alt="">关闭「优化电池充电」</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-08.webp" alt="experience-of-aldente-pro-08">关闭「优化电池充电」</p>
 <ul>
 <li>AlDente Free 和 AlDente Pro 不能在系统中共存，切换之前要确保卸载当前已安装的版本；</li>
 <li>AlDente Free 和 AlDente Pro 目前仅提供英文界面。在和开发者进行邮件沟通时，开发者表示当前注意力主要放在开发新功能和修复 bug 上，短期内没有支持其他语言的计划。</li>
 </ul>
 <h4 id="总结">总结</h4>
 <p>AlDente Free 的功能虽然简单，但可以有效避免电池过充，对于长期接电源的使用场景来说已经足够。除非你有更个性化的充电需求，或者对电池健康状态特别在意，可以考虑购买 AlDente Pro 获得更佳体验。</p>
-<p><img src="https://cdn.sspai.com/2021/09/10/716771662ffeb346a66f579923df7caf.png" alt="">MacBook 电池健康信息</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-09.webp" alt="experience-of-aldente-pro-09">MacBook 电池健康信息</p>
 <p>锂电池因其材料自身限制，必定会随着时间的推移而出现不可逆的损耗，对此也无需太纠结。无论是 macOS 内置的「优化电池充电」功能，还是使用 AlDente Pro 优化充电过程，只能减缓电池损耗的速度，无法做到零损耗。要想尽可能维护电池性能，使用正规合格的充电器和线缆、保持良好的充电习惯才是最重要的。</p>
 <h4 id="aldente-售价">AlDente 售价</h4>
-<table><tbody><tr><td>版本</td><td colspan="2">价格</td><td>下载链接</td></tr><tr><td>AlDente Free</td><td colspan="2">免费</td><td><a href="https://sspai.com/link?target=https%3A%2F%2Fgithub.com%2Fdavidwernhart%2FAlDente" target="_blank">GitHub</a></td></tr><tr><td>AlDente Pro</td><td>按年订阅 $14</td><td>永久授权 $29</td><td><a href="https://sspai.com/link?target=https%3A%2F%2Fapphousekitchen.com%2Fpricing%2F" target="_blank">官网</a></td></tr></tbody></table>
-<p>AlDente 仅适配 macOS Big Sur，支持 Intel 和 Apple 芯片。具体支持的 MacBook 型号可查询<a href="https://sspai.com/link?target=https%3A%2F%2Fapphousekitchen.com%2Ffaq%2F">官网</a>说明或者该项目 <a href="https://sspai.com/link?target=https%3A%2F%2Fgithub.com%2Fdavidwernhart%2FAlDente">GitHub</a> 主页。</p>
+<table><tbody><tr><td>版本</td><td colspan="2">价格</td><td>下载链接</td></tr><tr><td>AlDente Free</td><td colspan="2">免费</td><td><a href="https://github.com/AppHouseKitchen/AlDente-Charge-Limiter" target="_blank">GitHub</a></td></tr><tr><td>AlDente Pro</td><td>按年订阅 $14</td><td>永久授权 $29</td><td><a href="https://apphousekitchen.com/" target="_blank">官网</a></td></tr></tbody></table>
+<p>AlDente 仅适配 macOS Big Sur，支持 Intel 和 Apple 芯片。具体支持的 MacBook 型号可查询<a href="https://apphousekitchen.com/faq/">官网</a>说明或者该项目 <a href="https://github.com/AppHouseKitchen/AlDente-Charge-Limiter">GitHub</a> 主页。</p>
 <p>注释 [1]：AlDente 仅提供英文界面，下文所述功能名称均为作者直译，仅供参考。</p>
 <blockquote>
 <p>© 本文著作权归作者 <a href="https://sspai.com/u/iduan/updates">@JLDUAN</a> 所有，并授权少数派独家使用，未经少数派许可，不得转载使用。

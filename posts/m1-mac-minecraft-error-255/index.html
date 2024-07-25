@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
-  <meta name="generator" content="Hugo 0.121.1">
+  <meta name="generator" content="Hugo 0.129.0">
 
   
   <meta name="description" content="Some description">
@@ -214,60 +214,61 @@ blockquote,
 </blockquote>
 <p>Apple 在去年年底发布了 M1 芯片，这款芯片在性能、功耗、发热方面的表现，都让无数吃瓜网友大为震惊。正好手中的电脑也到了该换机的时候，我瞅准时机，入手了一台 M1 MacBook Air。</p>
 <p>等我收到电脑，习惯性安装了最爱的 Minecraft。这时却发现，只有原版游戏可以正常运行，当我给游戏安装 Minecraft 知名第三方 Forge API 之后，游戏在启动时会报错「Error 255」，有时又会报错「GLFW Error 65544」，无法进入游戏界面。根据错误信息可知，两种报错均为相同原因导致。</p>
-<p><img src="https://cdn.sspai.com/2021/09/26/1f9257edead8a51e44345e9e87390a3e.png" alt="">Error 255<img src="https://cdn.sspai.com/2021/09/26/09dc6bf45c2d379b484594a501316e04.png" alt="">GLFW Error 65544</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-01.webp" alt="m1-mac-minecraft-error-255-01">Error 255</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-02.webp" alt="m1-mac-minecraft-error-255-02">GLFW Error 65544</p>
 <p>由于我只是一位普普通通的创造模式玩家，失去 Mod 支持，游戏的乐趣就少了很多。为此我不得不暂停我的火柴盒建造计划，苦寻解决方法。</p>
 <p>而根据网络中搜索到的各种解决方案，并没有解决我本机 Minecraft 报错的问题，因此我将近半年没有打开游戏。这几天我又按耐不住，结合网友的教程和我自己的一些尝试，非常幸运的解决了游戏报错的问题。如果网上的其他教程同样未能解决你的问题，不妨参考一下这篇文章。</p>
 <h4 id="我的解决方法">我的解决方法</h4>
 <h5 id="1-卸载系统当前安装的-java-版本">1. 卸载系统当前安装的 Java 版本</h5>
 <p>打开终端，输入命令 <code>java -version</code> ，查看当前安装的 Java 版本。如果是 Oracle Java ，需要卸载并安装 Zulu Java。</p>
-<p><img src="https://cdn.sspai.com/2021/09/26/aab1af42792993883d39f81b6cf16239.png" alt="">输入命令查询 Java 版本</p>
-<p>Oracle Java 不能通过常规方式卸载，需要在官网下载 <a href="https://sspai.com/link?target=https%3A%2F%2Fwww.java.com%2Fen%2Fdownload%2Funinstalltool.jsp">专用卸载工具</a>。不建议直接删除 Java 路径文件夹，否则 macOS 设置中会残留 Java 图标。</p>
-<p><img src="https://cdn.sspai.com/2021/09/26/e29ca74559e5f9adf62f7c6e4f755a95.png" alt="">Java Uninstall Tool</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-03.webp" alt="m1-mac-minecraft-error-255-03">输入命令查询 Java 版本</p>
+<p>Oracle Java 不能通过常规方式卸载，需要在官网下载 <a href="https://www.java.com/en/download/uninstalltool.jsp">专用卸载工具</a>。不建议直接删除 Java 路径文件夹，否则 macOS 设置中会残留 Java 图标。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-04.webp" alt="m1-mac-minecraft-error-255-04">Java Uninstall Tool</p>
 <p>注：如果你当前的工作环境或者生产力工具依赖 Oracle Java 运行，替换为 Zulu Java 可能会出现运行异常，请谨慎操作。</p>
 <h5 id="2-安装-zulu-java">2. 安装 Zulu Java</h5>
 <p>选择 Zulu Java 是因为 Zulu 提供了 arm64 版本，运行 Java 版 Minecraft 时无需经过 Rosetta 转译，从理论上来说，游戏执行效率会更高。</p>
-<p>在下载页面依次选择 「Java 17」-「macOS」-「ARM 64-bit」-「JDK FX」，在右侧选择 <code>.dmg</code> 文件下载并安装，或者直接打开 <a href="https://sspai.com/link?target=https%3A%2F%2Fwww.azul.com%2Fdownloads%2F%3Fversion%3Djava-17-lts%26os%3Dmacos%26architecture%3Darm-64-bit%26package%3Djdk-fx">此链接</a>，选择<code>.dmg</code>文件下载并安装。</p>
-<p><img src="https://cdn.sspai.com/2021/09/26/458e8cf19069060e00e0eb44ee5a3923.png" alt="">点击右侧第一个蓝色按钮</p>
+<p>在下载页面依次选择 「Java 17」-「macOS」-「ARM 64-bit」-「JDK FX」，在右侧选择 <code>.dmg</code> 文件下载并安装，或者直接打开 <a href="https://www.azul.com/downloads/?version=java-17-lts&amp;os=macos&amp;architecture=arm-64-bit&amp;package=jdk-fx">此链接</a>，选择<code>.dmg</code>文件下载并安装。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-05.webp" alt="m1-mac-minecraft-error-255-05">点击右侧第一个蓝色按钮</p>
 <h5 id="3-安装-minecraft-与-forge-api">3. 安装 Minecraft 与 Forge API</h5>
-<p><a href="https://sspai.com/link?target=https%3A%2F%2Fwww.minecraft.net%2Fzh-hans%2Fdownload">下载</a> 并登陆 Minecraft 启动器，安装你需要的 Minecraft 版本，此处以 Minecraft 1.16.5 为例。</p>
-<p><img src="https://cdn.sspai.com/2021/09/26/2ed02519dc1d1156fc4e0ab11e3cca23.png" alt="">Minecraft 1.16.5</p>
-<p>游戏安装完成后，前往 <a href="https://sspai.com/link?target=https%3A%2F%2Ffiles.minecraftforge.net%2Fnet%2Fminecraftforge%2Fforge%2F">Forge 网站</a>，获取并安装最新版本的 Forge API。（注意： 选择 Forge 版本时要注意与已安装的 Minecraft 游戏版本相匹配）</p>
-<p><img src="https://cdn.sspai.com/2021/09/26/fa7f845d544a25b7e5c2c210d591da43.png" alt="">如果你使用正版登陆器，Forge 会自动检测游戏路径</p>
+<p><a href="https://www.minecraft.net/zh-hans/download">下载</a> 并登陆 Minecraft 启动器，安装你需要的 Minecraft 版本，此处以 Minecraft 1.16.5 为例。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-06.webp" alt="m1-mac-minecraft-error-255-06">Minecraft 1.16.5</p>
+<p>游戏安装完成后，前往 <a href="https://files.minecraftforge.net/net/minecraftforge/forge/">Forge 网站</a>，获取并安装最新版本的 Forge API。（注意： 选择 Forge 版本时要注意与已安装的 Minecraft 游戏版本相匹配）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-07.webp" alt="m1-mac-minecraft-error-255-07">如果你使用正版登陆器，Forge 会自动检测游戏路径</p>
 <h5 id="4-获取-lwjgl-库文件">4. 获取 LWJGL 库文件</h5>
 <p>LWJGL 全称为： LightWight Java Game Library，意为轻量级 Java 游戏工具库。包含 OpenGL 、OpenCL、OpenAL、Vulkan API 对 Java 平台的原生绑定。[注释 1]</p>
 <p>由于 Apple 发布的 M1 芯片移除了 LWJGL 库所依赖的个别 API，也未提供任何兼容方式，致使 Forge 无法正常工作，游戏出现「Failed to find service port for display」错误信息。[注释 2]</p>
 <p>幸运的是，早在今年年初，就有人在 GitHub 中公布了解决问题的补丁。开发商 mojang 通过更新游戏自带的 LWJGL 库，在最新版本的 Minecraft 中修复了这个问题。但是 Minecraft 受限于 Mod、服务器支持等因素，许多旧版本依然活跃，许多玩家依旧停留在旧版本。</p>
-<p>前往 <a href="https://sspai.com/link?target=https%3A%2F%2Fgithub.com%2F0xQSL%2Fm1-multimc-hack">GitHub</a> 获取适用于 Apple M1 芯片的 LWJGL 库文件。该项目由 <a href="https://sspai.com/link?target=https%3A%2F%2Fgithub.com%2F0xQSL">@Steffen Dirkwinkel</a> 维护。点击 GitHub 文件列表右上方的「Code」-「Download ZIP」下载该项目包含的所有文件。</p>
-<p><img src="https://cdn.sspai.com/2021/09/26/32f7d781c7bc9ae97ff021067c56c837.png" alt="">下载该项目所有文件</p>
+<p>前往 <a href="https://github.com/sdirkwinkel/m1-multimc-hack">GitHub</a> 获取适用于 Apple M1 芯片的 LWJGL 库文件。该项目由 <a href="https://github.com/0xQSL">@Steffen Dirkwinkel</a> 维护。点击 GitHub 文件列表右上方的「Code」-「Download ZIP」下载该项目包含的所有文件。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-08.webp" alt="m1-mac-minecraft-error-255-08">下载该项目所有文件</p>
 <h5 id="5-手动替换游戏目录文件">5. 手动替换游戏目录文件</h5>
 <p>解压下载的 <code>m1-multimc-hack-fix-forge.zip</code> 文件，将解压后的文件夹内 <code>lwjglfat.jar</code> 文件重命名为 <code>lwjgl-3.2.1.jar</code>。</p>
 <p>打开访达，前往路径<code>/Users/用户名/Library/Application Support/minecraft/libraries/org/lwjgl/lwjgl/3.2.1/</code></p>
 <p>将此路径内原有的 <code>lwjgl-3.2.1.jar</code> 文件删除，或者转移至其他处备份。将刚才重命名后的 <code>.jar</code> 文件移动到此路径。</p>
 <h5 id="6-获取-hmcl-launcher">6. 获取 HMCL Launcher</h5>
-<p><a href="https://sspai.com/link?target=https%3A%2F%2Fhmcl.huangyuhui.net%2Fdownload%2F">HMCL Launcher</a> 是一个非常流行的第三方启动器，支持微软正版登陆。启动器可以快速安装 Forge API，还具有修改游戏运行参数、管理第三方 Mod 等功能。</p>
+<p><a href="https://hmcl.huangyuhui.net/download/">HMCL Launcher</a> 是一个非常流行的第三方启动器，支持微软正版登陆。启动器可以快速安装 Forge API，还具有修改游戏运行参数、管理第三方 Mod 等功能。</p>
 <p>之所以选择 HMCL Launcher，是因为它能自定义本地 LWJGL 库路径，使得游戏在 M1 Mac 设备上正常运行。另外 HMCL Launcher 还可以指定 Java 路径，如果你不方便卸载 Oracle Java，可以在启动器设置中指定使用 Zulu Java 运行 Minecraft。</p>
 <p>打开 HMCL Launcher，依次点击「游戏版本」-「官方启动器目录」导入当前电脑已安装的游戏版本。此处选择 「1.16.5-forge-x.x.x」。</p>
-<p><img src="https://cdn.sspai.com/2021/09/26/3bf44ead894a3f7a9b2df3b54aaeb201.png" alt="">导入游戏</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-09.webp" alt="m1-mac-minecraft-error-255-09">导入游戏</p>
 <h5 id="7-修改启动器设置">7. 修改启动器设置</h5>
 <p>打开游戏管理，勾选「启用游戏特定设置」。</p>
-<p><img src="https://cdn.sspai.com/2021/09/26/8440175400a41f67f9accaf7f20b3b68.png" alt="">启用游戏特定设置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-10.webp" alt="m1-mac-minecraft-error-255-10">启用游戏特定设置</p>
 <p>滑动至页面最底端，在「调试选项」-「本地库路径」中，选择自定义库路径为<code>/m1-multimc-hack-fix-forge/lwjglnatives/</code>（第 4 步中下载解压的文件夹内），开启「不检查游戏完整性」。</p>
-<p><img src="https://cdn.sspai.com/2021/09/26/e42c3a05e999c423873dff5fc352acb2.png" alt="">修改调试选项</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-11.webp" alt="m1-mac-minecraft-error-255-11">修改调试选项</p>
 <h5 id="8-运行游戏">8. 运行游戏</h5>
-<p><img src="https://cdn.sspai.com/2021/09/26/5712e87d7617b0a028e77d339e5b2340.png" alt="">启动器首页</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-12.webp" alt="m1-mac-minecraft-error-255-12">启动器首页</p>
 <p>回到启动器首页，点击右下角的「启动游戏」，此时 Minecraft 已经可以运行，Forge API 和第三方 Mod 也能够正常加载。</p>
-<p><img src="https://cdn.sspai.com/2021/09/26/c5f51f68d0cb9075f4e8fc9e5e10c0ca.png" alt="">成功运行 Minecraft</p>
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-13.webp" alt="m1-mac-minecraft-error-255-13">成功运行 Minecraft</p>
 <h5 id="附所有文件的下载链接">附：所有文件的下载链接</h5>
-<table><tbody><tr><td>名称</td><td>下载链接</td></tr><tr><td>Oracle Java 卸载工具</td><td><a href="https://sspai.com/link?target=https%3A%2F%2Fwww.java.com%2Fen%2Fdownload%2Funinstalltool.jsp" target="_blank">链接</a></td></tr><tr><td>Zulu Java arm64 bit</td><td><a href="https://sspai.com/link?target=https%3A%2F%2Fwww.azul.com%2Fdownloads%2F%3Fversion%3Djava-17-lts%26os%3Dmacos%26architecture%3Darm-64-bit%26package%3Djdk-fx" target="_blank">链接</a></td></tr><tr><td>Minecraft</td><td><a href="https://sspai.com/link?target=https%3A%2F%2Fwww.minecraft.net%2Fzh-hans%2Fdownload" target="_blank">链接</a></td></tr><tr><td>Forge API</td><td><a href="https://sspai.com/link?target=https%3A%2F%2Ffiles.minecraftforge.net%2Fnet%2Fminecraftforge%2Fforge%2F" target="_blank">链接</a></td></tr><tr><td>适用于 Apple M1 芯片的 LWJGL 库文件</td><td><a href="https://sspai.com/link?target=https%3A%2F%2Fgithub.com%2F0xQSL%2Fm1-multimc-hack" target="_blank">链接</a></td></tr><tr><td>HMCL Launcher</td><td><a href="https://sspai.com/link?target=https%3A%2F%2Fhmcl.huangyuhui.net%2Fdownload%2F" target="_blank">链接</a></td></tr></tbody></table>
+<table><tbody><tr><td>名称</td><td>下载链接</td></tr><tr><td>Oracle Java 卸载工具</td><td><a href="https://www.java.com/en/download/uninstalltool.jsp" target="_blank">链接</a></td></tr><tr><td>Zulu Java arm64 bit</td><td><a href="https://www.azul.com/downloads/?version=java-17-lts&os=macos&architecture=arm-64-bit&package=jdk-fx" target="_blank">链接</a></td></tr><tr><td>Minecraft</td><td><a href="https://www.minecraft.net/zh-hans/download" target="_blank">链接</a></td></tr><tr><td>Forge API</td><td><a href="https://files.minecraftforge.net/net/minecraftforge/forge/" target="_blank">链接</a></td></tr><tr><td>适用于 Apple M1 芯片的 LWJGL 库文件</td><td><a href="https://github.com/0xQSL/m1-multimc-hack" target="_blank">链接</a></td></tr><tr><td>HMCL Launcher</td><td><a href="https://hmcl.huangyuhui.net/download/" target="_blank">链接</a></td></tr></tbody></table>
 <h5 id="参考资料">参考资料：</h5>
 <ol>
-<li><a href="https://sspai.com/link?target=https%3A%2F%2Fgithub.com%2F0xQSL%2Fm1-multimc-hack%2Fblob%2Fmaster%2FREADME.md">0xQSL/m1-multimc-hack readme.md</a> 作者：@<a href="https://sspai.com/link?target=https%3A%2F%2Fgithub.com%2F0xQSL">Steffen Dirkwinkel</a></li>
-<li><a href="https://sspai.com/link?target=https%3A%2F%2Fwww.wannaexpresso.com%2F2021%2F02%2F20%2Fm1-macbook-minecraft%2F">在 M1 Macbook 上 不使用 Rosetta 优雅地游玩 Minecraft+Forge</a> 作者：@<a href="https://sspai.com/link?target=https%3A%2F%2Fwww.wannaexpresso.com%2F">DotIN13</a></li>
-<li><a href="https://sspai.com/link?target=https%3A%2F%2Ftieba.baidu.com%2Fp%2F7209727510%3Fsee_lz%3D1">x86_64 框架下 Forge 与 GLFW 冲突的解決方案</a> 作者：@<a href="https://sspai.com/link?target=https%3A%2F%2Ftieba.baidu.com%2Fhome%2Fmain%3Fun%3DSCrystaL52">SCrystaL52</a></li>
-<li><a href="https://sspai.com/link?target=https%3A%2F%2Fwww.mcbbs.net%2Fthread-1228353-1-1.html">在 M1 上原生运行 Minecraft 1.17.1</a> 作者 @<a href="https://sspai.com/link?target=https%3A%2F%2Fwww.mcbbs.net%2Fhome.php%3Fmod%3Dspace%26uid%3D1567563">Missing-love</a></li>
+<li><a href="https://github.com/0xQSL/m1-multimc-hack/blob/master/README.md">0xQSL/m1-multimc-hack readme.md</a> 作者：@<a href="https://github.com/0xQSL">Steffen Dirkwinkel</a></li>
+<li><a href="https://www.wannaexpresso.com/2021/02/20/m1-macbook-minecraft/">在 M1 Macbook 上 不使用 Rosetta 优雅地游玩 Minecraft+Forge</a> 作者：@<a href="https://www.wannaexpresso.com/">DotIN13</a></li>
+<li><a href="https://tieba.baidu.com/p/7209727510?see_lz=1">x86_64 框架下 Forge 与 GLFW 冲突的解決方案</a> 作者：@<a href="https://tieba.baidu.com/home/main?un=SCrystaL52">SCrystaL52</a></li>
+<li><a href="https://www.mcbbs.net/thread-1228353-1-1.html">在 M1 上原生运行 Minecraft 1.17.1</a> 作者 @<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1567563">Missing-love</a></li>
 </ol>
 <h4 id="彩蛋">彩蛋</h4>
-<p><img src="https://cdn.sspai.com/2021/09/26/1c153c7087952312186ffcf014ea53f2.gif" alt="">
+<p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-14.gif" alt="m1-mac-minecraft-error-255-14">
 电影《头号玩家》中的「Minecraft World」</p>
 <p>在 2018 年上映的科幻电影《头号玩家》中，虚拟现实游戏「绿洲」包含了不同游戏主题的子世界，影片开头中一闪而过的游戏场景便是「Minecraft World」。尽管电影主要剧情并未在 Minecraft World 中展开，但是我想所有 Minecraft 玩家看到这个场景时，都应该会非常激动的吧？</p>
 <p>注释 [1]：资料来源：百度百科</p>
