@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="generator" content="Hugo 0.129.0">
+
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://iduan.me/apple-touch-icon.png">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="https://iduan.me/favicon-32x32.png">
+
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="https://iduan.me/favicon-16x16.png">
+
+  
+  <link rel="manifest" href="https://iduan.me/site.webmanifest">
+
+  
+  <link rel="mask-icon" href="https://iduan.me/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+
+  <meta name="theme-color" content="#ffffff">
+
+  
+  <link rel="stylesheet" href="https://iduan.me/css/bootstrap.min.css" />
+
+  
+  <title>利用 Cloudflare R2 &#43; uPic 打造私人图床 | JL DUAN‘s Blog</title>
+  
+
+  <style>
+body {
+  min-width: 300px;
+}
+
+.custom-navbar {
+  margin-bottom: 1em;
+  height: 60px;
+}
+
+.custom-navbar a {
+  display: inline-block; 
+  padding: 18px 0;
+  margin-right: 1em; 
+  font-weight: bold; 
+}
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  text-decoration: none; 
+}
+
+@media print {
+  .custom-navbar {
+    display: none;
+  }
+}
+
+article {
+  padding-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  background-color: #fff;
+}
+
+
+
+body {
+  color: #212529;
+}
+
+
+
+a {
+  color: #007bff;
+}
+
+
+
+a:hover,
+a:focus {
+  color: #0056b3;
+}
+
+
+
+.custom-navbar {
+  background-color: #212529;
+}
+
+
+
+.custom-navbar a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+.container {
+  max-width: 800px;
+}
+
+
+
+pre {
+  display: block;
+  padding: 9.5px;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit; 
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+code {
+  padding: 2px 4px;
+  color: inherit; 
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: .9em;
+}
+
+
+
+blockquote,
+.blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 1em;
+  border-left: 5px solid #6c757d;
+}
+
+</style>
+  <script defer src="https://api.iduan.me/script.js" data-website-id="8b779afd-11de-47d9-8369-48c6d253e5a0"></script>
+</head>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N12REPWFYD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-N12REPWFYD');
+</script>
+
+<body>
+  <nav class="custom-navbar">
+  <div class="container">
+    <strong><span style="color:#FFFFFF;">JL DUAN‘s Blog  </span></strong><span style="color:#FFFFFF;">丨</span>
+    
+    <a href="/">文章</a>
+    
+    <a href="/tags/">tags</a>
+    
+    <a href="/about/">关于</a>
+    
+    <a href="/index.xml">RSS</a>
+    
+  </div>
+</nav>
+  
+  <div class="container">
+    <article>
+      <h4>利用 Cloudflare R2 + uPic 打造私人图床</h4>
+2024/12/09
+
+
+<code><a href="https://iduan.me/tags/blog">blog</a></code>
+
+</br>
+</br>
+<p>我的博客里有很多图片，比如本站访问量第一名的文章《<a href="https://iduan.me/posts/creating-certificate-for-ipa-signing/">利用 Apple 个人开发者账户创建可用于 ipa 自签名的证书</a>》中使用大量截图对操作步骤进行辅助说明，方便我这样的小白用户。</p>
+<p><em>（幸好当时把文章的图片上传到了图床，方便访客浏览。要是和《<a href="https://iduan.me/posts/self-driving-tour-in-2024/">自驾游记录丨 2023，我在路上</a>》这篇文章一样把所有图片直接放 GitHub，加载速度完全随缘…甚至有部分访客根本看不到文章的配图。）</em></p>
+<p>Cloudflare R2 是一个网络存储服务，提供免费 10GB 存储空间，并且这 10GB <strong>只计算存储空间占用，不计算互联网流量</strong>。也就是说，我们不仅可以白嫖这 10GB 存储空间保存图片，也不用额外支付产生的流量费用，这不是天生的图床圣体吗！ Cloudflare 功德+1</p>
+<p>虽然 10GB 空间看着不算大，但是一些流行的图床比如 <a href="https://sm.ms">sm.ms</a> 的免费账户也只提供 5GB 空间而已。如果单张图片按 1MB 计算，这 10GB 空间也足够储存 10000+ 张图片，用来给个人网站做图床绝对足够了。我绑定域名试了一下，访问速度也还不错（至少比 GitHub 快吧）。</p>
+<h1 id="1安装-upic">1.安装 uPic</h1>
+<p>uPic 是 macOS 上的一个图床上传工具，虽然自身不支持直接将 Cloudflare R2 作为图床使用，但通过兼容的 Amazon S3 配置即可添加对 Cloudflare R2 等第三方 OSS 服务的支持。</p>
+<p>uPic 免费版止步于 0.21.1 不再更新，可以在 GitHub release 中下载。Mac App Store 中提供最新版，但是需要付费。最新版虽然没有直接在 GitHub 中提供打包好的 .dmg 文件，不过 uPic 本身开源，macOS 用户可以在 GitHub 中拉取最新的源码到本地，用 Xcode 编译运行就好（编译之前要提前安装 cocoapods，否则编译会报错，具体安装 cocoapods 流程不再赘述）。</p>
+<p>为尊重软件作者，我无法直接提供打包好的最新版 <code>.dmg</code> 文件，请有需求的朋友在 Mac App Store 中安装或者自行下载 GitHub 源码编译使用。</p>
+<p><strong>下载地址：</strong></p>
+<ul>
+<li>GitHub：<a href="https://github.com/gee1k/uPic">https://github.com/gee1k/uPic</a></li>
+<li>Mac App Store：<a href="https://apps.apple.com/us/app/id1510718678">https://apps.apple.com/us/app/id1510718678</a></li>
+</ul>
+<h1 id="2配置-cloudflare-r2-服务">2.配置 Cloudflare R2 服务</h1>
+<h2 id="21-开通-r2-服务">2.1 开通 R2 服务</h2>
+<p>打开 Cloudflare 控制台 <a href="https://dash.cloudflare.com">https://dash.cloudflare.com</a>，选择左侧列表中的「R2 对象存储」。没有账号就先注册，初次使用 R2 需要绑定信用卡，只要存储文件不超过 10GB 就不会扣费。</p>
+<h2 id="22-创建存储桶">2.2 创建存储桶</h2>
+<p>设置名称、位置、存储类，位置尽可能靠近网站的主流客户，以最大化提高图床的加载速度。
+<img src="https://img.iduan.me/blog/cloudflare-r2-upic-01.webp" alt="cloudflare-r2-upic-01">
+1️⃣ 设置名称方便自己识别，只能用小写英文字母、数字、连字符；
+2️⃣ 默认选择「自动」；
+3️⃣ 根据网站的主流访客选择适当位置，我选了「亚太地区」；
+4️⃣ 默认选择「标准」；
+5️⃣ 点击「创建储存桶」。</p>
+<h2 id="23-配置域名">2.3 配置域名</h2>
+<p>Cloudflare R2 默认会为每个存储桶提供一个 <code>r2.dev</code> 子域，但是官方也不建议用于正式使用场景。</p>
+<blockquote>
+<p>启用 <code>r2.dev</code> 访问时，Internet 上的任何人都可以使用公共 <code>r2.dev</code> URL 查看此存储桶中的对象。但在使用时有速率限制，因此，不建议用于生产。此外，访问和缓存等 Cloudflare 功能无法再使用。<a href="https://developers.cloudflare.com/r2/buckets/public-buckets/#managed-public-buckets-through-r2dev">了解更多</a></p>
+</blockquote>
+<p>况且：</p>
+<ul>
+<li>这个 <code>r2.dev</code> 子域名加起来大约有 50 个字符，再加上图片路径，致使完整的图片访问地址太长，使用不便；</li>
+<li><code>r2.dev</code> 域名可能会出现访问速度不稳定的情况 🌚</li>
+</ul>
+<p>因此，为 R2 存储桶绑定自定义域名才是最优解。想必建个人网站的朋友应该都有域名，甚至手里不止一个域名 😝</p>
+<p><img src="https://img.iduan.me/blog/cloudflare-r2-upic-02.webp" alt="cloudflare-r2-upic-02"></p>
+<p>1️⃣ 点击存储桶「tuchuang」的设置；
+2️⃣ 输入你想要设置的域名（需要提前托管至 Cloudflare）；
+3️⃣ 点击「继续」，按提示操作。绑定成功后会自动配置 SSL 证书。</p>
+<p>R2 存储桶仅支持绑定当前 Cloudflare 帐户上托管至 Cloudflare DNS 进行管理的域名。如果没有特别的需求，当你的域名 NS 记录不在 Cloudflare DNS 时，可以尝试在域名注册商处将 nameserver （也称为 NS 记录）设置为 Cloudflare nameserver。Cloudflare 会复制当前已存在的 DNS 记录，基本不会影响诸如域名邮箱等等的其他服务。</p>
+<p>只有一个域名的朋友推荐设置一个二级域名解析到存储桶，比如 <code>cdn.domain.com</code>、<code>pic.domain.com</code>、<code>static.domain.com</code>，这样看起来规整、有序。</p>
+<p>如果你不想给图床设置二级域名，或者不方便修改域名 nameserver 记录（NS 记录），也可以随便申请一个便宜的域名用来绑定存储桶。因为图床域名一般不需要在前台展示，除非访客查看网页源代码才会看到图片地址，这样操作通常也没有什么影响。</p>
+<p>而我的域名正好托管在 Cloudflare，输入想要的二级域名后，自动添加了 DNS 解析记录，不需要自己手动配置。Cloudflare 会自动为绑定好的域名签发 SSL 证书，所以也不用担心在博客中插入跨域的图床资源后文章页会报错。</p>
+<h2 id="24-创建-r2-api-令牌">2.4 创建 R2 API 令牌</h2>
+<p>在 Cloudflare 控制台中选择左侧列表中的「R2 对象存储」，点击右侧「管理 API 令牌」，再点击新页面右侧的「创建 API 令牌」。
+<img src="https://img.iduan.me/blog/cloudflare-r2-upic-04.webp" alt="cloudflare-r2-upic-04"></p>
+<p><img src="https://img.iduan.me/blog/cloudflare-r2-upic-03.webp" alt="cloudflare-r2-upic-03"></p>
+<p><img src="https://img.iduan.me/blog/cloudflare-r2-upic-05.webp" alt="cloudflare-r2-upic-05"></p>
+<p>1️⃣ 设置令牌名称方便识别；
+2️⃣ 此处选中「对象读和写」；
+3️⃣ 选择「仅应用于特定存储桶」；
+4️⃣ 在下拉列表里选择之前创建好的存储桶「tuchuang」；
+5️⃣ 点击「创建 API 令牌」。</p>
+<h1 id="3-在-upic-中配置自建图床">3 在 uPic 中配置自建图床</h1>
+<p>在 Cloudflare 中创建好 R2 API 令牌后，页面中会提供图床所需的各项参数，暂时不要关闭网页，将参数复制到 uPic 对应位置。
+<img src="https://img.iduan.me/blog/cloudflare-r2-upic-06.webp" alt="cloudflare-r2-upic-06"></p>
+<p>1️⃣ 打开 uPic 设置（屏幕右上角找 uPic 状态栏图标），点击「图床」；
+2️⃣ 点击设置窗口左下角的 ➕ 加号；
+3️⃣ 选择 Amazon S3；
+4️⃣ 勾选「自定义」；
+5️⃣ 将令牌创建页面生成的「为 S3 客户端使用管辖权地特定的终结点」完整地址复制到这里；
+6️⃣ 空间名称填存储桶的名称，和步骤 2.2 的名称要相同；
+7️⃣ 下拉列表选择「bucket-owner-full-control」；
+8️⃣ 将令牌创建页面生成的「访问密钥 ID」复制到这里；
+9️⃣ 将令牌创建页面生成的「机密访问密钥」复制到这里；
+🔟 填写步骤 2.3 中绑定的域名，域名前要加 <code>https://</code> ；
+1️⃣1️⃣ 根据自己喜好，按照下方的示例进行填写，也可以不改；
+1️⃣2️⃣ 填好后点击「验证」，前面操作没什么问题会提示成功；
+1️⃣3️⃣ 验证成功点击「保存」；
+1️⃣4️⃣ 完成 uPic 图床配置后可以点击网页右下角的「完成」。</p>
+<p>此时图床就可以正常使用了，通过 uPic 上传图片后会自动复制图片地址，可以在 uPic 菜单中选择图床地址输出格式（url/html/markdown/ubb）。</p>
+<h1 id="4设置-cors-策略可选">4.设置 CORS 策略（可选）</h1>
+<p>什么是 CORS？结合当前场景，按通俗的话来说，就是只允许特定网站加载图床的资源，别人即使在别处引用了这个图片原始链接，也无法显示出图片，此举可以节约服务运行的流量成本。</p>
+<p>比如，我可以设置只允许博客 <code>https://domain.com</code> 中的页面才能加载图床 <code>cdn.domain.com</code> 中的图片文件，其他人如果想在别处引用这些图片，除非下载图片并上传到自己到服务器，直接在其他网站中引用我的图床链接是无效的。</p>
+<p>如果 Cloudflare R2 按照容量+流量计费（事实上这种计费方式在云计算服务中也很常见），这样的限制无疑能节约图床的运行成本。但是 R2 只对存储容量计费（10GB 以内免费），不收取流量费用，再加上个人网站通常访问量不大，所以这是一个可选步骤。</p>
+<p>如果你对这方面的信息很感兴趣，请浏览 Cloudflare 提供的 <a href="https://developers.cloudflare.com/r2/buckets/cors/">CORS 文档</a>进行配置。我试着按照示例代码给出图床 CORS 配置的写法，没有经过测试，不要参考。🙅</p>
+<p><img src="https://img.iduan.me/blog/cloudflare-r2-upic-08.webp" alt="cloudflare-r2-upic-08"></p>
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="withduan/withduan.github.io"
+        data-repo-id="R_kgDOK8qrXQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOK8qrXc4Cb8Hw"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+    </article>
+  </div>
+  <footer>
+
+<p style="color:#999999">
+<p style="text-align:center;">
+<small>
+©️2016-2024 JL DUAN‘s Blog.
+</br>
+CC <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a>
+</small>
+</p>
+</p>
+</footer>
+
+  
+  
+  
+  <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-123456789', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
+
+  
+
+  
+</body>
+
+</html>
