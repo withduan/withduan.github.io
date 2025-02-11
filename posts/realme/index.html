@@ -1,0 +1,665 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="generator" content="Hugo 0.129.0">
+
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://iduan.me/apple-touch-icon.png">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="https://iduan.me/favicon-32x32.png">
+
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="https://iduan.me/favicon-16x16.png">
+
+  
+  <link rel="manifest" href="https://iduan.me/site.webmanifest">
+
+  
+  <link rel="mask-icon" href="https://iduan.me/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+
+  <meta name="theme-color" content="#ffffff">
+  
+  <script defer src="https://api.iduan.me/api.js" data-website-id="d366feff-1fcf-43b5-9f3b-8c42fd001987"></script>
+
+  
+  <link rel="stylesheet" href="https://iduan.me/css/bootstrap.min.css" />
+
+  
+  <title>realme Q3s &amp; realmeUI 2.0 系统 App 精简列表 | JL DUAN‘s Blog</title>
+  
+  
+  <style>
+body {
+  min-width: 300px;
+}
+
+.custom-navbar {
+  margin-bottom: 1em;
+  height: 60px;
+}
+
+.custom-navbar a {
+  display: inline-block; 
+  padding: 18px 0;
+  margin-right: 1em; 
+  font-weight: bold; 
+}
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  text-decoration: none; 
+}
+
+@media print {
+  .custom-navbar {
+    display: none;
+  }
+}
+
+article {
+  padding-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+body {
+  background-color: #fff;
+}
+
+
+
+body {
+  color: #212529;
+}
+
+
+
+a {
+  color: #007bff;
+}
+
+
+
+a:hover,
+a:focus {
+  color: #0056b3;
+}
+
+
+
+.custom-navbar {
+  background-color: #212529;
+}
+
+
+
+.custom-navbar a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+.container {
+  max-width: 800px;
+}
+
+
+
+pre {
+  display: block;
+  padding: 9.5px;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit; 
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+code {
+  padding: 2px 4px;
+  color: inherit; 
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: .9em;
+}
+
+
+
+blockquote,
+.blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 1em;
+  border-left: 5px solid #6c757d;
+}
+
+</style>
+</head>
+
+
+<body>
+  <nav class="custom-navbar">
+  <div class="container">
+    <strong><span style="color:#FFFFFF;">JL DUAN‘s Blog  </span></strong><span style="color:#FFFFFF;">丨</span>
+    
+    <a href="/">文章</a>
+    
+    <a href="/tags/">tags</a>
+    
+    <a href="/about/">关于</a>
+    
+    <a href="/index.xml">RSS</a>
+    
+  </div>
+</nav>
+  
+  <div class="container">
+    <article>
+      <h4>realme Q3s &amp; realmeUI 2.0 系统 App 精简列表</h4>
+2025/02/11
+
+
+<code><a href="https://iduan.me/tags/%E6%95%99%E7%A8%8B">教程</a></code>
+
+
+<code><a href="https://iduan.me/tags/android">Android</a></code>
+
+
+<code><a href="https://iduan.me/tags/realme">realme</a></code>
+
+
+<code><a href="https://iduan.me/tags/realmeui">realmeUI</a></code>
+
+
+<code><a href="https://iduan.me/tags/%E7%9C%9F%E6%88%91">真我</a></code>
+
+</br>
+</br>
+<p>本文中系统 App 列表来自 realme Q3s（RMX3471）。将手机恢复出厂设置后，第一次开机后使用第三方工具导出已安装 App 列表，内容应该非常齐全（仅针对我使用的固件版本：<code>RMX3461_11_A.13</code>）。</p>
+<p>预装第三方 App（如微博、京东、饿了么等）不再列出，其余 App 按 package name 排序，方便检索，顺便增加了对应的 adb 操作和还原指令。</p>
+<p>根据我自己的使用需求，把手机里系统云服务、查找手机等等核心功能都删掉了。主力机极端精简后可能会影响日常使用，请根据自身情况进行取舍，内容仅供参考。</p>
+<p><strong>备注：</strong> 如果出现 adb 指令无法删除某个 App 的情况，可以尝试先清除 App 数据后再操作，如果还是无法卸载说明该 App 不支持卸载，可以尝试冻结。</p>
+<h1 id="一macos-无线-adb-调试">一、macOS 无线 adb 调试</h1>
+<p>Q3s 这台手机不知道有什么毛病，连接到 MacBook 时，手机反复识别又断开， 症状就像接触不良一样，换了 C2C、A2C 数据线问题依旧（但是连接 Windows 设备又一切正常），所以用不了 USB 调试，只能尝试通过 WiFi 无线调试。</p>
+<h2 id="1通过-homebrew-安装-adb">1.通过 Homebrew 安装 adb</h2>
+<p>我的电脑安装过 Homebrew，直接在终端执行<code>brew install --cask android-platform-tools</code></p>
+<p>系统没有 Homebrew 的话先执行该指令安装 Homebrew：
+<code>/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</code></p>
+<p>安装结束之后，在终端执行指令：<code>adb version</code>，会出现 adb 版本信息。</p>
+<h2 id="2使用-adb-连接-android-设备">2.使用 adb 连接 Android 设备</h2>
+<p>首先确保 Android 设备和 Mac 连接到了同一个局域网。</p>
+<p>打开 Q3s 的 设置 - 其他设置 - 开发者选项，找到「无线调试」，打开该选项右侧的开关。</p>
+<p>「无线调试」同时也是一个可点击的项目（究竟是哪个大聪明发明的交互），点击该选项，再点击「使用配对码配对设备」。</p>
+<p>此时会弹出一个提示框，显示当前的配对码（6 位数字）、IP 地址、端口。</p>
+<p>在 Mac 终端执行 <code>adb pair &lt;IP:端口&gt;</code>，假设刚才 Android 设备显示配对的 IP 地址是 <code>192.168.1.100</code>，端口 <code>123456</code>，这里需要执行的指令是：
+<code>adb pair 192.168.1.100:12345</code>，再根据提示输入 6 位配对码便可配对成功。</p>
+<p>现在只是配对成功了，并没有连接上，还得执行<code>adb connect &lt;IP:端口&gt;</code>再进行连接。此时使用的端口号不是前面配对用的端口号，刚才的端口号只能用在配对流程中，每次配对新设备时都会刷新端口号和配对码。这里需要使用调试端口号，在「无线调试」设置内可以找到。无线调试功能开关变动时，此处的端口号也会刷新。</p>
+<p>假设此处的调试端口号为 <code>23333</code>，在终端执行`adb connect 192.168.1.100:23333</p>
+<p>不出意外的话此时已经连接成功了，手机通知栏会跳出无线调试的通知。</p>
+<h2 id="3-使用-adb-指令清理无用系统-app">3. 使用 adb 指令清理无用系统 App</h2>
+<p>连接后可以在 macOS 终端使用以下指令卸载、冻结、恢复指定 App</p>
+<p>卸载应用：<code>adb shell pm uninstall --user 0 &lt;package name&gt;</code></p>
+<p>卸载恢复：<code>adb shell pm install-existing &lt;package name&gt;</code></p>
+<p>冻结应用：<code>adb shell pm suspend &lt;package name&gt;</code></p>
+<p>冻结恢复：<code>adb shell pm unsuspend &lt;package_name&gt;</code></p>
+<h1 id="二realme-q3s--realmeui-20-系统-app-精简列表">二、realme Q3s &amp; realmeUI 2.0 系统 App 精简列表</h1>
+<p>提示：使用 Ctrl+F 或者 Command+F 可以搜索，🚫️ 表示不可删，🟢 表示可删。</p>
+<h2 id="1不可删--不建议删--未查明用途">1.不可删 / 不建议删 / 未查明用途</h2>
+<ul>
+<li>🚫️ android 丨 Android 系统</li>
+<li>🚫️ android.frameworkres.overlay.display.product 丨应用无名称</li>
+<li>🚫️ android.frameworkres.overlay.Network 丨应用无名称</li>
+<li>🚫️ android.overlay.common 丨应用无名称</li>
+<li>🚫️ android.overlay.target 丨应用无名称</li>
+<li>🚫️ android.qvaoverlay.common 丨应用无名称</li>
+<li>🚫️ com.android.backupconfirm 丨应用无名称</li>
+<li>🚫️ com.android.bluetooth 丨蓝牙</li>
+<li>🚫️ com.android.bluetoothmidiservice 丨 Bluetooth MIDI Service</li>
+<li>🚫️ com.android.calllogbackup 丨 Call Log Backup/Restore</li>
+<li>🚫️ com.android.carrierconfig 丨应用无名称</li>
+<li>🚫️ com.android.carrierconfig.overlay 丨应用无名称</li>
+<li>🚫️ com.android.carrierconfig.overlay.common 丨应用无名称</li>
+<li>🚫️ com.android.carrierdefaultapp 丨运营商默认应用</li>
+<li>🚫️ com.android.cellbroadcastreceiver 丨应用无名称</li>
+<li>🚫️ com.android.cellbroadcastreceiver.overlay.common 丨应用无名称</li>
+<li>🚫️ com.android.certinstaller 丨凭证安装</li>
+<li>🚫️ com.android.companiondevicemanager 丨配套设备管理器</li>
+<li>🚫️ com.android.contacts 丨电话本</li>
+<li>🚫️ com.android.cts.ctsshim 丨应用无名称</li>
+<li>🚫️ com.android.cts.priv.ctsshim 丨应用无名称</li>
+<li>🚫️ com.android.dynsystem 丨 Dynamic System Updates</li>
+<li>🚫️ com.android.externalstorage 丨外部存储设备</li>
+<li>🚫️ com.android.hotspot2.osulogin 丨 OsuLogin</li>
+<li>🚫️ com.android.htmlviewer 丨 HTML 查看程序</li>
+<li>🚫️ com.android.incallui 丨电话</li>
+<li>🚫️ com.android.inputdevices 丨输入设备</li>
+<li>🚫️ com.android.internal.display.cutout.emulation.hole 丨打孔屏</li>
+<li>🚫️ com.android.internal.display.cutout.emulation.waterfall 丨瀑布刘海屏</li>
+<li>🚫️ com.android.internal.systemui.navbar.gestural 丨 Gestural Navigation Bar</li>
+<li>🚫️ com.android.internal.systemui.navbar.gestural_extra_wide_back 丨 Gestural Navigation Bar</li>
+<li>🚫️ com.android.internal.systemui.navbar.gestural_narrow_back 丨 Gestural Navigation Bar</li>
+<li>🚫️ com.android.internal.systemui.navbar.gestural_wide_back 丨 Gestural Navigation Bar</li>
+<li>🚫️ com.android.internal.systemui.navbar.threebutton 丨 3 Button Navigation Bar</li>
+<li>🚫️ com.android.keychain 丨密钥链</li>
+<li>🚫️ com.android.localtransport 丨应用无名称</li>
+<li>🚫️ com.android.location.fused 丨一体化位置信息</li>
+<li>🚫️ com.android.managedprovisioning 丨工作设置</li>
+<li>🚫️ com.android.mms 丨信息</li>
+<li>🚫️ com.android.mms.service 丨信息服务</li>
+<li>🚫️ com.android.mtp 丨 MTP 主机</li>
+<li>🚫️ com.android.ons 丨应用无名称</li>
+<li>🚫️ com.android.packageinstaller 丨应用包安装程序</li>
+<li>🚫️ com.android.pacprocessor 丨 PacProcessor</li>
+<li>🚫️ com.android.permissioncontroller 丨权限控制器</li>
+<li>🚫️ com.android.phone 丨电话服务</li>
+<li>🚫️ com.android.phone.overlay.common 丨应用无名称</li>
+<li>🚫️ com.android.providers.blockednumber 丨存储已屏蔽的号码</li>
+<li>🚫️ com.android.providers.calendar 丨日历存储</li>
+<li>🚫️ com.android.providers.contacts 丨联系人存储</li>
+<li>🚫️ com.android.providers.downloads 丨下载管理服务</li>
+<li>🚫️ com.android.providers.media 丨应用无名称</li>
+<li>🚫️ com.android.providers.settings 丨设置存储</li>
+<li>🚫️ com.android.providers.telephony 丨电话/短信存储</li>
+<li>🚫️ com.android.providers.userdictionary 丨用户字典</li>
+<li>🚫️ com.android.proxyhandler 丨 ProxyHandler</li>
+<li>🚫️ com.android.se 丨 SecureElementApplication</li>
+<li>🚫️ com.android.server.telecom 丨通话管理</li>
+<li>🚫️ com.android.server.telecom.overlay.common 丨应用无名称</li>
+<li>🚫️ com.android.settings 丨设置</li>
+<li>🚫️ com.android.settings.intelligence 丨 Settings Suggestions</li>
+<li>🚫️ com.android.sharedstoragebackup 丨应用无名称</li>
+<li>🚫️ com.android.shell 丨 Shell</li>
+<li>🚫️ com.android.simappdialog 丨 Sim App Dialog</li>
+<li>🚫️ com.android.smspush 丨应用无名称</li>
+<li>🚫️ com.android.soundpicker 丨声音</li>
+<li>🚫️ com.android.statementservice 丨 Intent Filter Verification Service</li>
+<li>🚫️ com.android.stk 丨 SIM 卡应用程序</li>
+<li>🚫️ com.android.storagemanager 丨存储空间管理器</li>
+<li>🚫️ com.android.systemui 丨系统界面</li>
+<li>🚫️ com.android.systemui.overlay.common 丨应用无名称</li>
+<li>🚫️ com.android.systemui.overlay.fingerprint.anim.ccyh 丨应用无名称</li>
+<li>🚫️ com.android.systemui.overlay.fingerprint.anim.jhsy 丨应用无名称</li>
+<li>🚫️ com.android.systemui.overlay.fingerprint.anim.jslz 丨应用无名称</li>
+<li>🚫️ com.android.systemui.overlay.fingerprint.anim.lgsy 丨应用无名称</li>
+<li>🚫️ com.android.systemui.overlay.fingerprint.anim.nlgs 丨应用无名称</li>
+<li>🚫️ com.android.systemui.overlay.fingerprint.anim.tyjw 丨应用无名称</li>
+<li>🚫️ com.android.systemui.overlay.fingerprint.anim.xklc 丨应用无名称</li>
+<li>🚫️ com.android.theme.color.amethyst 丨 Amethyst</li>
+<li>🚫️ com.android.theme.color.aquamarine 丨 Aquamarine</li>
+<li>🚫️ com.android.theme.color.black 丨 Black</li>
+<li>🚫️ com.android.theme.color.carbon 丨 Carbon</li>
+<li>🚫️ com.android.theme.color.cinnamon 丨 Cinnamon</li>
+<li>🚫️ com.android.theme.color.green 丨 Green</li>
+<li>🚫️ com.android.theme.color.ocean 丨 Ocean</li>
+<li>🚫️ com.android.theme.color.orchid 丨 Orchid</li>
+<li>🚫️ com.android.theme.color.palette 丨 Palette</li>
+<li>🚫️ com.android.theme.color.purple 丨 Purple</li>
+<li>🚫️ com.android.theme.color.sand 丨 Sand</li>
+<li>🚫️ com.android.theme.color.space 丨 Space</li>
+<li>🚫️ com.android.theme.color.tangerine 丨 Tangerine</li>
+<li>🚫️ com.android.theme.font.notoserifsource 丨 Noto Serif / Source Sans Pro</li>
+<li>🚫️ com.android.theme.icon.pebble 丨 Pebble</li>
+<li>🚫️ com.android.theme.icon.roundedrect 丨 Rounded Rectangle</li>
+<li>🚫️ com.android.theme.icon.squircle 丨 Squircle</li>
+<li>🚫️ com.android.theme.icon.taperedrect 丨 Tapered Rect</li>
+<li>🚫️ com.android.theme.icon.teardrop 丨 Teardrop</li>
+<li>🚫️ com.android.theme.icon.vessel 丨 Vessel</li>
+<li>🚫️ com.android.theme.icon_pack.circular.android 丨 Circular</li>
+<li>🚫️ com.android.theme.icon_pack.circular.launcher 丨 Circular</li>
+<li>🚫️ com.android.theme.icon_pack.circular.settings 丨 Circular</li>
+<li>🚫️ com.android.theme.icon_pack.circular.systemui 丨 Circular</li>
+<li>🚫️ com.android.theme.icon_pack.circular.themepicker 丨 Circular</li>
+<li>🚫️ com.android.theme.icon_pack.filled.android 丨 Filled</li>
+<li>🚫️ com.android.theme.icon_pack.filled.launcher 丨 Filled</li>
+<li>🚫️ com.android.theme.icon_pack.filled.settings 丨 Filled</li>
+<li>🚫️ com.android.theme.icon_pack.filled.systemui 丨 Filled</li>
+<li>🚫️ com.android.theme.icon_pack.filled.themepicker 丨 Filled</li>
+<li>🚫️ com.android.theme.icon_pack.kai.android 丨 Kai</li>
+<li>🚫️ com.android.theme.icon_pack.kai.launcher 丨 Kai</li>
+<li>🚫️ com.android.theme.icon_pack.kai.settings 丨 Kai</li>
+<li>🚫️ com.android.theme.icon_pack.kai.systemui 丨 Kai</li>
+<li>🚫️ com.android.theme.icon_pack.kai.themepicker 丨 Kai</li>
+<li>🚫️ com.android.theme.icon_pack.rounded.android 丨 Rounded</li>
+<li>🚫️ com.android.theme.icon_pack.rounded.launcher 丨 Rounded</li>
+<li>🚫️ com.android.theme.icon_pack.rounded.settings 丨 Rounded</li>
+<li>🚫️ com.android.theme.icon_pack.rounded.systemui 丨 Rounded</li>
+<li>🚫️ com.android.theme.icon_pack.rounded.themepicker 丨 Rounded</li>
+<li>🚫️ com.android.theme.icon_pack.sam.android 丨 Sam</li>
+<li>🚫️ com.android.theme.icon_pack.sam.launcher 丨 Sam</li>
+<li>🚫️ com.android.theme.icon_pack.sam.settings 丨 Sam</li>
+<li>🚫️ com.android.theme.icon_pack.sam.systemui 丨 Sam</li>
+<li>🚫️ com.android.theme.icon_pack.sam.themepicker 丨 Sam</li>
+<li>🚫️ com.android.theme.icon_pack.victor.android 丨 Victor</li>
+<li>🚫️ com.android.theme.icon_pack.victor.launcher 丨 Victor</li>
+<li>🚫️ com.android.theme.icon_pack.victor.settings 丨 Victor</li>
+<li>🚫️ com.android.theme.icon_pack.victor.systemui 丨 Victor</li>
+<li>🚫️ com.android.theme.icon_pack.victor.themepicker 丨 Victor</li>
+<li>🚫️ com.android.traceur 丨系统跟踪</li>
+<li>🚫️ com.android.vpndialogs 丨 VpnDialogs</li>
+<li>🚫️ com.android.wallpaper.livepicker 丨动态壁纸选择器</li>
+<li>🚫️ com.android.wallpaperbackup 丨应用无名称</li>
+<li>🚫️ com.android.wallpapercropper 丨应用无名称</li>
+<li>🚫️ com.android.wifi.resources 丨系统 WLAN 资源</li>
+<li>🚫️ com.android.wifi.resources.overlay.common 丨应用无名称</li>
+<li>🚫️ com.android.wifi.resources.overlay.lahaina 丨应用无名称</li>
+<li>🚫️ com.android.wifi.resources.overlay.oplus 丨应用无名称</li>
+<li>🚫️ com.android.wifi.resources.overlay.target 丨应用无名称</li>
+<li>🚫️ com.coloros.alarmclock 丨时钟</li>
+<li>🚫️ com.coloros.athena 丨 Athena</li>
+<li>🚫️ com.coloros.calendar 丨日历</li>
+<li>🚫️ com.coloros.exsystemservice 丨 OplusExSystemService</li>
+<li>🚫️ com.coloros.mapcom.frame 丨 MapComFrame</li>
+<li>🚫️ com.coloros.notificationmanager 丨通知管理</li>
+<li>🚫️ com.coloros.oppoguardelf 丨电池</li>
+<li>🚫️ com.coloros.providers.downloads.ui 丨下载管理</li>
+<li>🚫️ com.coloros.screenrecorder 丨屏幕录制</li>
+<li>🚫️ com.coloros.screenshot 丨截屏</li>
+<li>🚫️ com.coloros.securitypermission 丨权限管理</li>
+<li>🚫️ com.coloros.simsettings 丨流量管理</li>
+<li>🚫️ com.coloros.wallpapers 丨壁纸</li>
+<li>🚫️ com.coloros.wirelesssettings 丨无线设置</li>
+<li>🚫️ com.fido.asm 丨 MOTO FIDO UAF1.0 ASM</li>
+<li>🚫️ com.fido.uafclient 丨 FIDO UAF1.0 Client</li>
+<li>🚫️ com.google.android.documentsui 丨文件</li>
+<li>🚫️ com.google.android.ext.services 丨 Android Services Library</li>
+<li>🚫️ com.google.android.ext.shared 丨 Android Shared Library</li>
+<li>🚫️ com.google.android.modulemetadata 丨 Main components</li>
+<li>🚫️ com.google.android.networkstack 丨网络管理器</li>
+<li>🚫️ com.google.android.networkstack.overlay 丨应用无名称</li>
+<li>🚫️ com.google.android.networkstack.permissionconfig 丨 com.android.server.NetworkPermissionConfig</li>
+<li>🚫️ com.google.android.networkstack.tethering 丨 Tethering</li>
+<li>🚫️ com.google.android.overlay.gmsconfig.common 丨应用无名称</li>
+<li>🚫️ com.google.android.overlay.modules.documentsui 丨应用无名称</li>
+<li>🚫️ com.google.android.overlay.modules.ext.services 丨应用无名称</li>
+<li>🚫️ com.google.android.overlay.modules.modulemetadata.forframework 丨应用无名称</li>
+<li>🚫️ com.google.android.overlay.modules.permissioncontroller 丨应用无名称</li>
+<li>🚫️ com.google.android.overlay.modules.permissioncontroller.forframework 丨应用无名称</li>
+<li>🚫️ com.google.android.providers.media.module 丨媒体存储设备</li>
+<li>🚫️ com.google.android.tag 丨 Tags</li>
+<li>🚫️ com.google.android.webview 丨 Android System WebView</li>
+<li>🚫️ com.heytap.appplatform 丨 AppPlatform</li>
+<li>🚫️ com.mobiletools.systemhelper 丨 SystemHelper</li>
+<li>🚫️ com.oplus.eid 丨 Eid-Service</li>
+<li>🚫️ com.oplus.location 丨位置服务</li>
+<li>🚫️ com.oplus.nrMode 丨 OplusNrModeControl</li>
+<li>🚫️ com.oplus.powermonitor 丨 Power monitor</li>
+<li>🚫️ com.oplus.subsys 丨 com.oplus.subsys.SubsystemApplication</li>
+<li>🚫️ com.oppo.camera 丨相机</li>
+<li>🚫️ com.oppo.ctautoregist 丨 CTAutoRegist</li>
+<li>🚫️ com.oppo.engineermode 丨工程模式</li>
+<li>🚫️ com.oppo.engineermode.network 丨 EngineerNetwork</li>
+<li>🚫️ com.oppo.launcher 丨系统桌面</li>
+<li>🚫️ com.oppo.multimedia.dirac 丨 OppoDiracService</li>
+<li>🚫️ com.oppo.tzupdate 丨时区校正</li>
+<li>🚫️ com.qti.confuridialer 丨 Conference URI Dialer</li>
+<li>🚫️ com.qti.dpmserviceapp 丨应用无名称</li>
+<li>🚫️ com.qti.ltebc 丨 LTE Broadcast Manager</li>
+<li>🚫️ com.qti.qualcomm.datastatusnotification 丨应用无名称</li>
+<li>🚫️ com.qti.qualcomm.deviceinfo 丨设备信息</li>
+<li>🚫️ com.qti.service.colorservice 丨应用无名称</li>
+<li>🚫️ com.qti.snapdragon.qdcm_ff 丨 QDCM-FF</li>
+<li>🚫️ com.qti.xdivert 丨 X-Divert 设置</li>
+<li>🚫️ com.qualcomm.atfwd 丨应用无名称</li>
+<li>🚫️ com.qualcomm.embms 丨应用无名称</li>
+<li>🚫️ com.qualcomm.location 丨 LocationServices</li>
+<li>🚫️ com.qualcomm.qcrilmsgtunnel 丨应用无名称</li>
+<li>🚫️ com.qualcomm.qti.callfeaturessetting 丨 CallFeatureSetting</li>
+<li>🚫️ com.qualcomm.qti.cne 丨 CneApp</li>
+<li>🚫️ com.qualcomm.qti.devicestatisticsservice 丨应用无名称</li>
+<li>🚫️ com.qualcomm.qti.dynamicddsservice 丨应用无名称</li>
+<li>🚫️ com.qualcomm.qti.gpudrivers.lahaina.api30 丨 Adreno Graphics Drivers</li>
+<li>🚫️ com.qualcomm.qti.ims 丨应用无名称</li>
+<li>🚫️ com.qualcomm.qti.lpa 丨应用无名称</li>
+<li>🚫️ com.qualcomm.qti.modemtestmode 丨 MBN 测试</li>
+<li>🚫️ com.qualcomm.qti.poweroffalarm 丨关机闹钟</li>
+<li>🚫️ com.qualcomm.qti.qcolor 丨 QColor</li>
+<li>🚫️ com.qualcomm.qti.remoteSimlockAuth 丨应用无名称</li>
+<li>🚫️ com.qualcomm.qti.seccamservice 丨 SecCamService</li>
+<li>🚫️ com.qualcomm.qti.server.wigig.tethering.rro 丨应用无名称</li>
+<li>🚫️ com.qualcomm.qti.simcontacts 丨 SIM 卡联系人</li>
+<li>🚫️ com.qualcomm.qti.simsettings 丨应用无名称</li>
+<li>🚫️ com.qualcomm.qti.telephonyservice 丨应用无名称</li>
+<li>🚫️ com.qualcomm.qti.uceShimService 丨 uceShimService</li>
+<li>🚫️ com.qualcomm.qti.uim 丨应用无名称</li>
+<li>🚫️ com.qualcomm.qti.uimGbaApp 丨应用无名称</li>
+<li>🚫️ com.qualcomm.qti.workloadclassifier 丨应用无名称</li>
+<li>🚫️ com.qualcomm.qti.xrvd.service 丨 XRVD</li>
+<li>🚫️ com.qualcomm.timeservice 丨应用无名称</li>
+<li>🚫️ com.qualcomm.uimremoteclient 丨应用无名称</li>
+<li>🚫️ com.qualcomm.uimremoteserver 丨应用无名称</li>
+<li>🚫️ com.qualcomm.wfd.service 丨 Wfd Service</li>
+<li>🚫️ com.rongcard.eidapi 丨 aidlserverdemo</li>
+<li>🚫️ com.tencent.soter.soterserver 丨 aidlserverdemo</li>
+<li>🚫️ com.wapi.wapicertmanage 丨 WAPI 证书</li>
+<li>🚫️ oplus 丨 ColorOS 系统</li>
+<li>🚫️ org.codeaurora.ims 丨 org.codeaurora.ims.ImsApp</li>
+<li>🚫️ package name 丨 app name</li>
+<li>🚫️ se.dirac.acs 丨 Dirac 控制台</li>
+<li>🚫️ vendor.qti.hardware.cacert.server 丨 CACertApp</li>
+<li>🚫️ vendor.qti.iwlan 丨应用无名称</li>
+</ul>
+<h2 id="2可删--根据个人需要保留">2.可删 / 根据个人需要保留</h2>
+<ul>
+<li>🟢 com.amap.android.location 丨网络位置</li>
+<li>🟢 com.android.bips 丨默认打印服务</li>
+<li>🟢 com.android.dlna.service 丨手机投屏服务</li>
+<li>🟢 com.android.email 丨邮件</li>
+<li>🟢 com.android.nfc 丨 NFC 服务</li>
+<li>🟢 com.android.printspooler 丨打印处理服务</li>
+<li>🟢 com.android.vending 丨 Google Play 商店</li>
+<li>🟢 com.color.uiengine 丨百变引擎</li>
+<li>🟢 com.coloros.accessibilityassistant 丨语音字幕</li>
+<li>🟢 com.coloros.activation 丨电子保卡</li>
+<li>🟢 com.coloros.apprecover 丨系统可卸载应用找回</li>
+<li>🟢 com.coloros.assistantscreen 丨 Breeno 速览</li>
+<li>🟢 com.coloros.backuprestore 丨手机搬家</li>
+<li>🟢 com.coloros.blacklistapp 丨骚扰拦截</li>
+<li>🟢 com.coloros.bootreg 丨开机注册</li>
+<li>🟢 com.coloros.calculator 丨计算器</li>
+<li>🟢 com.coloros.childrenspace 丨儿童空间</li>
+<li>🟢 com.coloros.codebook 丨密码本</li>
+<li>🟢 com.coloros.colordirectservice 丨 Colordirectservice</li>
+<li>🟢 com.coloros.compass2 丨指南针</li>
+<li>🟢 com.coloros.digitalwellbeing 丨应用使用时间</li>
+<li>🟢 com.coloros.directui 丨 Breeno 识屏</li>
+<li>🟢 com.coloros.encryption 丨私密保险箱</li>
+<li>🟢 com.coloros.exserviceui 丨手势体感服务</li>
+<li>🟢 com.coloros.eyeprotect 丨护眼模式</li>
+<li>🟢 com.coloros.favorite 丨自由收藏</li>
+<li>🟢 com.coloros.filemanager 丨文件管理</li>
+<li>🟢 com.coloros.findmyphone 丨查找手机服务</li>
+<li>🟢 com.coloros.floatassistant 丨悬浮球</li>
+<li>🟢 com.coloros.focusmode 丨专注模式</li>
+<li>🟢 com.coloros.gallery3d 丨相册</li>
+<li>🟢 com.coloros.gamespace 丨应用增强服务</li>
+<li>🟢 com.coloros.gamespaceui 丨游戏空间</li>
+<li>🟢 com.coloros.gesture 丨手势体感</li>
+<li>🟢 com.coloros.healthcheck 丨常规检测</li>
+<li>🟢 com.coloros.healthservice 丨健康数据平台</li>
+<li>🟢 com.coloros.karaoke 丨耳机返听</li>
+<li>🟢 com.coloros.logkit 丨反馈工具箱</li>
+<li>🟢 com.coloros.note 丨便签</li>
+<li>🟢 com.coloros.ocrscanner 丨 Breeno 扫一扫</li>
+<li>🟢 com.coloros.ocrservice 丨 OcrService</li>
+<li>🟢 com.coloros.ocs.opencapabilityservice 丨 OpenCapabilityService</li>
+<li>🟢 com.coloros.onekeylockscreen 丨一键锁屏</li>
+<li>🟢 com.coloros.operationManual 丨使用说明</li>
+<li>🟢 com.coloros.oppomultiapp 丨应用分身</li>
+<li>🟢 com.coloros.oppopods 丨 realme 无线设备</li>
+<li>🟢 com.coloros.oshare 丨 realme 互传</li>
+<li>🟢 com.coloros.phonenoareainquire 丨号码归属地</li>
+<li>🟢 com.coloros.remoteguardservice 丨远程守护服务</li>
+<li>🟢 com.coloros.sau 丨系统升级服务</li>
+<li>🟢 com.coloros.sauhelper 丨 SAUHelper</li>
+<li>🟢 com.coloros.scenemode 丨情景模式</li>
+<li>🟢 com.coloros.sceneservice 丨数据服务平台</li>
+<li>🟢 com.coloros.securepay 丨支付保护</li>
+<li>🟢 com.coloros.securityguard 丨安全事件</li>
+<li>🟢 com.coloros.securitykeyboard 丨安全键盘</li>
+<li>🟢 com.coloros.sharescreen 丨共享与协助</li>
+<li>🟢 com.coloros.shortcuts 丨 Breeno 指令</li>
+<li>🟢 com.coloros.smartdrive 丨 Breeno 驾驶</li>
+<li>🟢 com.coloros.smartlock 丨智能解锁</li>
+<li>🟢 com.coloros.smartsidebar 丨智能侧边栏</li>
+<li>🟢 com.coloros.soundrecorder 丨录音</li>
+<li>🟢 com.coloros.systemclone 丨系统分身</li>
+<li>🟢 com.coloros.translate 丨语音翻译</li>
+<li>🟢 com.coloros.translate.engine 丨翻译服务</li>
+<li>🟢 com.coloros.uxdesign 丨个性化定制</li>
+<li>🟢 com.coloros.videoeditor 丨 Soloop  即录</li>
+<li>🟢 com.coloros.weather.service 丨天气服务</li>
+<li>🟢 com.coloros.weather2 丨天气</li>
+<li>🟢 com.coloros.wifibackuprestore 丨 WifiBackupRestore</li>
+<li>🟢 com.coloros.wifisecuredetect 丨 WLAN 安全检测</li>
+<li>🟢 com.daemon.shelper 丨 Shelper</li>
+<li>🟢 com.finshell.wallet 丨钱包</li>
+<li>🟢 com.google.android.accessibility.soundamplifier 丨声音增强器</li>
+<li>🟢 com.google.android.captiveportallogin 丨 CaptivePortalLogin</li>
+<li>🟢 com.google.android.cellbroadcastreceiver 丨无线紧急警报</li>
+<li>🟢 com.google.android.cellbroadcastreceiver.overlay 丨 CellBroadcastReceiverModuleOverlay</li>
+<li>🟢 com.google.android.cellbroadcastservice 丨 Cell Broadcast Service</li>
+<li>🟢 com.google.android.cellbroadcastservice.overlay 丨 CellBroadcastServiceModuleOverlay</li>
+<li>🟢 com.google.android.configupdater 丨 ConfigUpdater</li>
+<li>🟢 com.google.android.gms 丨 Google Play 服务</li>
+<li>🟢 com.google.android.gsf 丨 Google 服务框架</li>
+<li>🟢 com.google.android.marvin.talkback 丨 Android 无障碍套件</li>
+<li>🟢 com.google.android.onetimeinitializer 丨 Google One Time Init</li>
+<li>🟢 com.google.android.partnersetup 丨 Google Partner Setup</li>
+<li>🟢 com.google.android.printservice.recommendation 丨 Print Service Recommendation Service</li>
+<li>🟢 com.google.android.syncadapters.contacts 丨 Google 通讯录同步</li>
+<li>🟢 com.google.ar.core 丨 ARCore</li>
+<li>🟢 com.google.mainline.telemetry 丨 Support components</li>
+<li>🟢 com.heytap.accessory 丨配件服务框架</li>
+<li>🟢 com.heytap.book 丨书城</li>
+<li>🟢 com.heytap.browser 丨浏览器</li>
+<li>🟢 com.heytap.cast 丨手机投屏</li>
+<li>🟢 com.heytap.cloud 丨云服务</li>
+<li>🟢 com.heytap.colorfulengine 丨多彩引擎</li>
+<li>🟢 com.heytap.datamigration 丨 DMApp</li>
+<li>🟢 com.heytap.htms 丨移动服务</li>
+<li>🟢 com.heytap.linker 丨 DistUI</li>
+<li>🟢 com.heytap.market 丨软件商店</li>
+<li>🟢 com.heytap.mcs 丨系统消息</li>
+<li>🟢 com.heytap.music 丨音乐</li>
+<li>🟢 com.heytap.openid 丨 OpenID</li>
+<li>🟢 com.heytap.opluscarlink 丨 CarLink</li>
+<li>🟢 com.heytap.pictorial 丨乐划锁屏</li>
+<li>🟢 com.heytap.quicksearchbox 丨全局搜索</li>
+<li>🟢 com.heytap.smarthome 丨智能家居</li>
+<li>🟢 com.heytap.speechassist 丨小布助手</li>
+<li>🟢 com.heytap.synergy 丨跨屏互联</li>
+<li>🟢 com.heytap.themestore 丨主题商店</li>
+<li>🟢 com.heytap.usercenter 丨我的 realme</li>
+<li>🟢 com.heytap.yoli 丨视频</li>
+<li>🟢 com.iflytek.speechsuite 丨语音设置</li>
+<li>🟢 com.nearme.atlas 丨安全支付</li>
+<li>🟢 com.nearme.gamecenter 丨游戏中心</li>
+<li>🟢 com.nearme.instant.platform 丨快应用</li>
+<li>🟢 com.nearme.play 丨小游戏</li>
+<li>🟢 com.nearme.romupdate 丨更新服务</li>
+<li>🟢 com.nearme.statistics.rom 丨用户体验计划</li>
+<li>🟢 com.oplus.aod 丨息屏</li>
+<li>🟢 com.oplus.appdetail 丨安全应用安装</li>
+<li>🟢 com.oplus.atlas 丨 atlasService</li>
+<li>🟢 com.oplus.crashbox 丨 CrashBox</li>
+<li>🟢 com.oplus.customize.coreapp 丨 CustCoreApp</li>
+<li>🟢 com.oplus.deepthinker 丨 DeepThinker</li>
+<li>🟢 com.oplus.engineercamera 丨工程相机</li>
+<li>🟢 com.oplus.obrain 丨 OBrain</li>
+<li>🟢 com.oplus.onetrace 丨 OneTrace</li>
+<li>🟢 com.oplus.ovoicemanager 丨 InstantRouter</li>
+<li>🟢 com.oplus.postmanservice 丨诊断工具服务</li>
+<li>🟢 com.opos.ads 丨 Commercial Service</li>
+<li>🟢 com.oppo.bttestmode 丨 BTtestmode</li>
+<li>🟢 com.oppo.instant.local.service 丨 DeliverServer</li>
+<li>🟢 com.oppo.lfeh 丨 OplusLFEHer</li>
+<li>🟢 com.oppo.nhs 丨网络健康服务</li>
+<li>🟢 com.oppo.ota 丨软件更新</li>
+<li>🟢 com.oppo.ovoicemanager 丨 OVoiceManagerService</li>
+<li>🟢 com.oppo.qualityprotect 丨 sdk</li>
+<li>🟢 com.oppo.sos 丨 SOS 紧急联络</li>
+<li>🟢 com.oppo.store 丨欢太商城</li>
+<li>🟢 com.oppo.wifitest 丨 wifitest</li>
+<li>🟢 com.realme.findphone.client2 丨查找手机</li>
+<li>🟢 com.realme.linkcn 丨 realme Link</li>
+<li>🟢 com.realme.movieshot 丨字幕拼接</li>
+<li>🟢 com.realme.wellbeing 丨入眠胶囊</li>
+<li>🟢 com.realmecomm.app 丨 realme 社区</li>
+<li>🟢 com.sohu.inputmethod.sogouoem 丨搜狗输入法定制版</li>
+<li>🟢 com.ted.number 丨智能识别陌生号码</li>
+<li>🟢 com.unionpay.tsmservice 丨银联可信服务安全组件</li>
+<li>🟢 com.coloros.phonemanager 丨手机管家</li>
+<li>🟢 com.redteamobile.roaming 丨国际上网</li>
+</ul>
+
+
+<script src="https://giscus.app/client.js"
+        data-repo="withduan/withduan.github.io"
+        data-repo-id="R_kgDOK8qrXQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOK8qrXc4Cb8Hw"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
+    </article>
+  </div>
+  <footer>
+
+<p style="color:#999999">
+<p style="text-align:center;">
+<small>
+©️ 2016-2025 JL DUAN‘s Blog.
+<a style="color: #000000;" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a>
+</small>
+<img style="display: block; margin-left: auto; margin-right: auto;" src="https://img.iduan.me/notbyai.png" alt="not by AI" width="70" />
+</p>
+</p>
+</footer>
+
+  
+  
+  
+
+  
+
+  
+</body>
+
+</html>
