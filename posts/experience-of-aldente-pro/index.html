@@ -69,8 +69,158 @@ article {
   padding-bottom: 1em;
 }
 
-img {
+ 
+article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+  max-width: 80%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ 
+img.original-style {
   max-width: 100%;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.original-style:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+img.icon,
+img.logo,
+img.avatar,
+img.inline-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.icon:hover,
+img.logo:hover,
+img.avatar:hover,
+img.inline-icon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+nav img,
+footer img,
+.navbar img {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+nav img:hover,
+footer img:hover,
+.navbar img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+ 
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+ 
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #007bff;
+  line-height: 1.3;
+}
+
+ 
+article > h1:first-child {
+  font-size: 1.2rem;
+}
+
+ 
+article > h4:first-child {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #28a745;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 
 
@@ -157,13 +307,175 @@ code {
 
 blockquote,
 .blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 15px 20px;
+  margin: 1.5rem 0;
   font-size: 1em;
-  border-left: 5px solid #6c757d;
+  border-left: 4px solid #ff8c00;
+  background-color: #fffbf0;
+  border-radius: 4px;
+}
+
+blockquote p:last-child,
+.blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > *:last-child,
+.blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+
+ 
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-item a {
+  text-decoration: none;
+}
+
+.tag-item code {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: none !important;
+}
+
+.tag-item:hover code {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.tag-item small {
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+ 
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+}
+
+ 
+ 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+ 
+html, body, * {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+ 
+body {
+  overflow-y: overlay;  
+  overflow-x: auto;
+}
+
+ 
+pre {
+  overflow-x: overlay;
+}
+
+ 
+.table-responsive {
+  overflow-x: overlay;
+}
+
+ 
+div, article, section, main, aside, nav, header, footer {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
 </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+  
+  images.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      window.open(this.src, '_blank');
+    });
+  });
+});
+</script>
 </head>
 
 
@@ -185,7 +497,8 @@ blockquote,
   
   <div class="container">
     <article>
-      <h4>你的 MacBook 电池管家 — AlDente Pro 使用体验</h4>
+      
+<h4>你的 MacBook 电池管家 — AlDente Pro 使用体验</h4>
 2021/09/12
 
 
@@ -199,31 +512,33 @@ blockquote,
 
 </br>
 </br>
+
+
 <p>前段时间我开始使用一款 MacBook 专用的电池管理软件 AlDente，AlDente 可以读写 MacBook 内置 SMC 芯片，即使你的 MacBook 一直连接电源线，AlDente 也会根据设定在电脑内部自动接通和切断电源，这样就可以在必要的时候接通或者断开电源，从而避免电池彻底耗尽，或者长期处于过充状态。</p>
 <p>**AlDente 最主要的功能就是调整电池充电阈值。**在电池电量在达到指定值后，电脑会停止充电，转向电池供电，全过程无需手动插拔 MacBook 充电器。当我查看 AlDente 网站时，发现开发者还提供了付费的 Pro 版本。相比免费的版本，Pro 版本提供了更多的可定制项（下文分别使用 AlDente Free 和 AlDente Pro 区分两款软件）。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-01.webp" alt="experience-of-aldente-pro-01">AlDente Free
 <img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-02.webp" alt="experience-of-aldente-pro-02">AlDente Pro，界面与免费版略有不同</p>
-<h4 id="特色功能">特色功能</h4>
+<h1 id="特色功能">特色功能</h1>
 <p>AlDente Free 只有「调整充电阈值」和「放电模式」两项功能，而 AlDente Pro 的功能 [注释 1] 更加丰富。另外 AlDente Pro 在 UI 设计方面相对 AlDente Free 也有所改进。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-03.webp" alt="experience-of-aldente-pro-03">AlDente Pro 设置</p>
-<h5 id="航行模式-sailing-mode">航行模式 Sailing Mode</h5>
+<h2 id="航行模式-sailing-mode">航行模式 Sailing Mode</h2>
 <p>当电池电量达到设定阈值时，电脑将转为电源供电，此时电量可能会因为突然运行高负载任务（功率尖峰）而出现细微变化（例如短时间内电量下降了 1% ）。当开启航行模式后， AlDente Pro 会忽略这类细微的耗电量，避免因 1% 的电量变化，频繁对电池进行充电。航行模式允许设定一个差值，电量降低的幅度如果在差值范围内，AlDente Pro 不会为电池充电。</p>
 <p>非常幸运的是，较新的产品会配备最新的电源管理模块，在外接电源的情况下，电脑通常不会因为功率尖峰导致电量下降。那些服役许久、元器件老化的电脑才可能会有这个问题。</p>
-<h5 id="过热保护-heat-protection">过热保护 Heat Protection</h5>
+<h2 id="过热保护-heat-protection">过热保护 Heat Protection</h2>
 <p>众所周知，无论是电脑还是手机，过高的机身温度会给电池带来严重损害。当电池工作温度超过了设定值，AlDente Pro 将会停止为你的 MacBook 充电。</p>
-<h5 id="校准模式-calibration-mode">校准模式 Calibration Mode</h5>
+<h2 id="校准模式-calibration-mode">校准模式 Calibration Mode</h2>
 <p>MacBook 电池长期处于未充满状态时，可能会影响系统自身对电池参数的识别，因此你需要定期将电脑充电至 100%。当开启校准模式后，AlDente Pro 会自动执行一次完全充电至 100% 的过程。此外 AlDente Pro 会在未来的更新中提供定期自动校准的功能。</p>
-<h5 id="实时状态栏图标-live-status-icons">实时状态栏图标 Live Status Icons</h5>
+<h2 id="实时状态栏图标-live-status-icons">实时状态栏图标 Live Status Icons</h2>
 <p>通过状态栏图标，可以快速了解电脑当前充电情况。</p>
 <table><thead><tr><th>图标</th><th>状态</th><th>供电端</th></tr></thead><tbody><tr><td><img class="" src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-04.webp"></td><td>已连接电源，正在充电</td><td>电源🔌</td></tr><tr><td><img class="" src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-05.webp"></td><td>已连接电源，未在充电</td><td>电源🔌</td></tr><tr><td><img class="" src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-06.webp"></td><td>已连接电源，正在放电</td><td>电池🔋</td></tr><tr><td><img class="" src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-07.webp"></td><td>未连接电源，正在放电</td><td>电池🔋</td></tr></tbody></table>
-<h5 id="intel-模式">Intel 模式</h5>
+<h2 id="intel-模式">Intel 模式</h2>
 <p>一些 Intel MacBook 用户习惯通过 Boot Camp 运行 Windows 系统。AlDente Pro 在开启 Intel 模式后，电池保护就可以在 Windows 系统中发挥作用。但是 AlDente Pro 在此模式下仅支持调整充电阈值，除此之外，过热保护、航行模式、放电模式等其他功能都无法在 Windows 系统中生效。</p>
-<h5 id="其他细节">其他细节</h5>
+<h2 id="其他细节">其他细节</h2>
 <ul>
 <li>当你需要携带电脑外出时，提前点击 AlDente Pro 状态栏菜单中的「Top Up」即可进行完全充电，尽可能保证 MacBook 在外的续航时间；</li>
 <li>通过右键点击 AlDente Pro 状态栏图标，可以快速切换充电 / 放电状态。</li>
 </ul>
-<h4 id="注意事项">注意事项</h4>
+<h1 id="注意事项">注意事项</h1>
 <ul>
 <li>使用 AlDente Pro 时，建议关闭 macOS 系统「优化电池充电」功能，二者同时运行可能会存在冲突；</li>
 </ul>
@@ -232,11 +547,11 @@ blockquote,
 <li>AlDente Free 和 AlDente Pro 不能在系统中共存，切换之前要确保卸载当前已安装的版本；</li>
 <li>AlDente Free 和 AlDente Pro 目前仅提供英文界面。在和开发者进行邮件沟通时，开发者表示当前注意力主要放在开发新功能和修复 bug 上，短期内没有支持其他语言的计划。</li>
 </ul>
-<h4 id="总结">总结</h4>
+<h1 id="总结">总结</h1>
 <p>AlDente Free 的功能虽然简单，但可以有效避免电池过充，对于长期接电源的使用场景来说已经足够。除非你有更个性化的充电需求，或者对电池健康状态特别在意，可以考虑购买 AlDente Pro 获得更佳体验。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/experience-of-aldente-pro-09.webp" alt="experience-of-aldente-pro-09">MacBook 电池健康信息</p>
 <p>锂电池因其材料自身限制，必定会随着时间的推移而出现不可逆的损耗，对此也无需太纠结。无论是 macOS 内置的「优化电池充电」功能，还是使用 AlDente Pro 优化充电过程，只能减缓电池损耗的速度，无法做到零损耗。要想尽可能维护电池性能，使用正规合格的充电器和线缆、保持良好的充电习惯才是最重要的。</p>
-<h4 id="aldente-售价">AlDente 售价</h4>
+<h1 id="aldente-售价">AlDente 售价</h1>
 <table><tbody><tr><td>版本</td><td colspan="2">价格</td><td>下载链接</td></tr><tr><td>AlDente Free</td><td colspan="2">免费</td><td><a href="https://github.com/AppHouseKitchen/AlDente-Charge-Limiter" target="_blank">GitHub</a></td></tr><tr><td>AlDente Pro</td><td>按年订阅 $14</td><td>永久授权 $29</td><td><a href="https://apphousekitchen.com/" target="_blank">官网</a></td></tr></tbody></table>
 <p>AlDente 仅适配 macOS Big Sur，支持 Intel 和 Apple 芯片。具体支持的 MacBook 型号可查询<a href="https://apphousekitchen.com/faq/">官网</a>说明或者该项目 <a href="https://github.com/AppHouseKitchen/AlDente-Charge-Limiter">GitHub</a> 主页。</p>
 <p>注释 [1]：AlDente 仅提供英文界面，下文所述功能名称均为作者直译，仅供参考。</p>
@@ -244,6 +559,7 @@ blockquote,
 <p>© 本文著作权归作者 <a href="https://sspai.com/u/iduan/updates">@JLDUAN</a> 所有，并授权少数派独家使用，未经少数派许可，不得转载使用。
 原文地址 <a href="https://sspai.com/post/68241">https://sspai.com/post/68241</a></p>
 </blockquote>
+
 
 
 <script src="https://giscus.app/client.js"
@@ -261,6 +577,7 @@ blockquote,
         crossorigin="anonymous"
         async>
 </script>
+
     </article>
   </div>
   <footer>
@@ -277,11 +594,6 @@ blockquote,
 </footer>
 
   
-  
-  
-
-  
-
   
 </body>
 

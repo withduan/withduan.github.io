@@ -69,8 +69,158 @@ article {
   padding-bottom: 1em;
 }
 
-img {
+ 
+article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+  max-width: 80%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ 
+img.original-style {
   max-width: 100%;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.original-style:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+img.icon,
+img.logo,
+img.avatar,
+img.inline-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.icon:hover,
+img.logo:hover,
+img.avatar:hover,
+img.inline-icon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+nav img,
+footer img,
+.navbar img {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+nav img:hover,
+footer img:hover,
+.navbar img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+ 
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+ 
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #007bff;
+  line-height: 1.3;
+}
+
+ 
+article > h1:first-child {
+  font-size: 1.2rem;
+}
+
+ 
+article > h4:first-child {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #28a745;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 
 
@@ -157,13 +307,175 @@ code {
 
 blockquote,
 .blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 15px 20px;
+  margin: 1.5rem 0;
   font-size: 1em;
-  border-left: 5px solid #6c757d;
+  border-left: 4px solid #ff8c00;
+  background-color: #fffbf0;
+  border-radius: 4px;
+}
+
+blockquote p:last-child,
+.blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > *:last-child,
+.blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+
+ 
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-item a {
+  text-decoration: none;
+}
+
+.tag-item code {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: none !important;
+}
+
+.tag-item:hover code {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.tag-item small {
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+ 
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+}
+
+ 
+ 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+ 
+html, body, * {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+ 
+body {
+  overflow-y: overlay;  
+  overflow-x: auto;
+}
+
+ 
+pre {
+  overflow-x: overlay;
+}
+
+ 
+.table-responsive {
+  overflow-x: overlay;
+}
+
+ 
+div, article, section, main, aside, nav, header, footer {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
 </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+  
+  images.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      window.open(this.src, '_blank');
+    });
+  });
+});
+</script>
 </head>
 
 
@@ -185,7 +497,8 @@ blockquote,
   
   <div class="container">
     <article>
-      <h4>巧用 Windows 远程桌面，跨设备操作自如切换</h4>
+      
+<h4>巧用 Windows 远程桌面，跨设备操作自如切换</h4>
 2022/03/30
 
 
@@ -199,20 +512,22 @@ blockquote,
 
 </br>
 </br>
+
+
 <p>平常在工作中我都使用公司提供的 Windows 台式机，通常我还会带上自己的笔记本电脑。当我需要处理一些私事时，就能避免在办公电脑上留存个人数据，~同时也方便摸鱼。~这样的习惯导致我时常要在两台设备之间切换，办公桌本来就比较小，电脑来回挪动，使用起来非常不便。</p>
 <p>办公用的显示器是 1600*900 分辨率 + VGA 接口，我在淘宝搜索 “USB C 转 VGA”，转换器最低 20 元左右就可以到手。VGA 诞生于 1987 年，USB C 诞生于 2014 年，这前后跨越 27 年的联动真的让人非常感动，但是我实在不想继续壮大我的转换器阵营了。</p>
 <p>那究竟还有没有办法能让我在一个屏幕上切换操作两个设备呢？后来我发现，只要利用 Windows 系统自带的远程桌面功能，就可以轻松解决这个烦恼。</p>
-<h4 id="step1-在受控端启用远程桌面功能">Step.1 在受控端启用远程桌面功能</h4>
+<h1 id="step1-在受控端启用远程桌面功能">Step.1 在受控端启用远程桌面功能</h1>
 <p>远程桌面功能在 Windows 系统里是默认关闭的。以 Windows 10 系统为例，在设置 - 系统 - 远程桌面中，手动启用远程桌面即可。</p>
 <p>注：Windows 家庭版系统不支持远程桌面功能。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/windows-remote-desktop-01.webp" alt="windows-remote-desktop-01"></p>
-<h4 id="step2-在控制端安装-microsoft-remote-desktop-客户端">Step.2 在控制端安装 Microsoft Remote Desktop 客户端</h4>
+<h1 id="step2-在控制端安装-microsoft-remote-desktop-客户端">Step.2 在控制端安装 Microsoft Remote Desktop 客户端</h1>
 <p>控制端演示以 Mac 电脑为例。控制 Windows 系统需要安装远程桌面 macOS 客户端，我们需要在 Mac App Store 中安装 Microsoft Remote Desktop。</p>
 <p>不知因何原因，该软件正式版未在国区 App Store 上架，微软仅在官网公布了 beta 版本的下载链接。你可以通过我在 MacUpdater 中获取到的链接下载 Microsoft Remote Desktop 正式版本。</p>
 <p>beta 版同样可以正常安装使用，正式版与 beta 版除了软件图标颜色不同之外，二者<del>都不支持简体中文</del>在使用体验上并无差异。</p>
 <p>下载链接：<a href="https://apps.apple.com/app/microsoft-remote-desktop/id1295203466?mt=12">Mac App Store</a>｜<a href="https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Remote_Desktop_10.7.6_installer.pkg">Ver. 10.7.6 直链</a>｜<a href="https://go.microsoft.com/fwlink/?linkid=868963">最新正式版</a>｜<a href="https://install.appcenter.ms/orgs/rdmacios-k2vy/apps/microsoft-remote-desktop-for-mac/distribution_groups/all-users-of-microsoft-remote-desktop-for-mac">App Center</a>（beta）</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/windows-remote-desktop-02.webp" alt="windows-remote-desktop-02">红蓝 CP ？</p>
-<h4 id="step3-配置远程桌面">Step.3 配置远程桌面</h4>
+<h1 id="step3-配置远程桌面">Step.3 配置远程桌面</h1>
 <p>运行 Microsoft Remote Desktop，点击 “Add PC” 添加 Windows 设备。</p>
 <p>PC name 填写 Windows 电脑的局域网 IP 地址；点击 User account 右侧的下拉选项，选择 “Add User Account”，分别输入 Windows 电脑的用户名和密码，点击 “Add” 保存；</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/windows-remote-desktop-03.webp" alt="windows-remote-desktop-03"></p>
@@ -222,7 +537,7 @@ blockquote,
 <p>继续切换到 Devices &amp; Audio 选项卡，这里可以设置是否将受控 Windows 电脑的部分设备重定向至控制端，剪贴板是默认开启的，其余打印机、智能卡等设备可以根据自己的需求选择是否启用重定向。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/windows-remote-desktop-05.webp" alt="windows-remote-desktop-05"></p>
 <p>修改完毕后，点击 “Add” 保存配置。</p>
-<h4 id="step4-连接远程桌面">Step.4 连接远程桌面</h4>
+<h1 id="step4-连接远程桌面">Step.4 连接远程桌面</h1>
 <p>回到软件主界面，这时我们已经可以看到刚才配置好的远程桌面，双击该配置即可进行连接。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/windows-remote-desktop-06.webp" alt="windows-remote-desktop-06"></p>
 <p>开启远程桌面后，受控端（RDP Host）会生成一个自签名证书用于加密。由于该证书并非 macOS 系统信任的根证书颁发机构所颁发，系统会提醒 “Your connection may not be secure”。此时选择 “Continue” 即可继续连接。</p>
@@ -231,13 +546,14 @@ blockquote,
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/windows-remote-desktop-08.webp" alt="windows-remote-desktop-08"></p>
 <p>不出意外的话，此时 Microsoft Remote Desktop 客户端已经显示出 Windows 系统桌面了，受控端设备会自动进入锁屏状态。由于控制端与受控端是在同一局域网环境下，远程桌面操作起来几乎没有延迟，窗口动画偶尔会出现轻微掉帧的情况，总体来说影响不大。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/windows-remote-desktop-09.webp" alt="windows-remote-desktop-09"></p>
-<h4 id="参考资料">参考资料：</h4>
+<h1 id="参考资料">参考资料：</h1>
 <p><a href="https://learn.microsoft.com/zh-cn/windows-server/remote/remote-desktop-services/clients/remote-desktop-client-faq#how-do-i-set-up-a-pc-for-remote-desktop-">远程桌面客户端常见问题解答｜Microsoft Docs</a></p>
 <p><a href="https://learn.microsoft.com/zh-cn/windows-server/remote/remote-desktop-services/clients/remote-desktop-mac">macOS 客户端入门｜Microsoft Docs</a></p>
 <blockquote>
 <p>© 本文著作权归作者 <a href="https://sspai.com/u/iduan/updates">@JLDUAN</a> 所有，并授权少数派独家使用，未经少数派许可，不得转载使用。
 原文地址 <a href="https://sspai.com/post/72345">sspai.com</a></p>
 </blockquote>
+
 
 
 <script src="https://giscus.app/client.js"
@@ -255,6 +571,7 @@ blockquote,
         crossorigin="anonymous"
         async>
 </script>
+
     </article>
   </div>
   <footer>
@@ -271,11 +588,6 @@ blockquote,
 </footer>
 
   
-  
-  
-
-  
-
   
 </body>
 

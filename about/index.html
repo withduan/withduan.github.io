@@ -69,8 +69,158 @@ article {
   padding-bottom: 1em;
 }
 
-img {
+ 
+article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+  max-width: 80%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ 
+img.original-style {
   max-width: 100%;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.original-style:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+img.icon,
+img.logo,
+img.avatar,
+img.inline-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.icon:hover,
+img.logo:hover,
+img.avatar:hover,
+img.inline-icon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+nav img,
+footer img,
+.navbar img {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+nav img:hover,
+footer img:hover,
+.navbar img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+ 
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+ 
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #007bff;
+  line-height: 1.3;
+}
+
+ 
+article > h1:first-child {
+  font-size: 1.2rem;
+}
+
+ 
+article > h4:first-child {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #28a745;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 
 
@@ -157,13 +307,175 @@ code {
 
 blockquote,
 .blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 15px 20px;
+  margin: 1.5rem 0;
   font-size: 1em;
-  border-left: 5px solid #6c757d;
+  border-left: 4px solid #ff8c00;
+  background-color: #fffbf0;
+  border-radius: 4px;
+}
+
+blockquote p:last-child,
+.blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > *:last-child,
+.blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+
+ 
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-item a {
+  text-decoration: none;
+}
+
+.tag-item code {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: none !important;
+}
+
+.tag-item:hover code {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.tag-item small {
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+ 
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+}
+
+ 
+ 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+ 
+html, body, * {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+ 
+body {
+  overflow-y: overlay;  
+  overflow-x: auto;
+}
+
+ 
+pre {
+  overflow-x: overlay;
+}
+
+ 
+.table-responsive {
+  overflow-x: overlay;
+}
+
+ 
+div, article, section, main, aside, nav, header, footer {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
 </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+  
+  images.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      window.open(this.src, '_blank');
+    });
+  });
+});
+</script>
 </head>
 
 
@@ -185,16 +497,12 @@ blockquote,
   
   <div class="container">
     <article>
-      <h4>关于</h4>
-2023/12/14
+      
 
-</br>
-</br>
-<h5 id="-关于-jl-duan">👤 <strong>关于 JL DUAN</strong></h5>
+<h1 id="-关于-jl-duan">👤 关于 JL DUAN</h1>
 <p>不知道该如何介绍自己，反正就是普通人一个。</p>
 <p>📍0912 🐣1996</p>
-<hr>
-<h5 id="-关于博客">🌏 <strong>关于博客</strong></h5>
+<h1 id="-关于博客">🌏 关于博客</h1>
 <p><code>iduan.me</code> 是 JL DUAN 的个人博客。</p>
 <p>网站使用 hugo 构建，托管于 GitHub Pages，使用的 hugo 主题是 <a href="https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/">Minimal Bootstrap Hugo Theme</a>。</p>
 <p>搭建以及改造过程详见：<a href="https://iduan.me">还没写，占个位置😆</a></p>
@@ -210,13 +518,13 @@ blockquote,
 <li>……</li>
 </ul>
 </blockquote>
-<hr>
-<h5 id="-联系我">💬 <strong>联系我</strong></h5>
-<p>邮箱：me#iduan.me</p>
-<p>少数派：<a href="https://sspai.com/u/iduan/posts"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fsspai%2Fiduan&amp;query=count&amp;color=d71a1b&amp;label=%E5%B0%91%E6%95%B0%E6%B4%BE&amp;labelColor=282c34&amp;logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAF0klEQVR4nO1dvW7jOBD2I7gkh426pHS127pIeiN5AdsvsH4CIw8gwL1dpHaV0mWqu1aNLCrAAkbWwAKBYTiCcTBwgMEr%2FHN7e5aoH5JDS%2FqAAVIEtvV9nBlySI4ajRo1atSoIYPnOM05Y605Y60AoBMAdDhhXU5Y9%2FA3aXNC2nPGWti%2F9erhOU4zAOiElI04pa8hBS+ksOEURAZbhBReQspGnLCu5zhN7OeyFp7jNDkh7TmBp5CCl5HojKKwUQDQwX5mK8AJaYeUjXKMbiV28A7SxubBKE6jXfNIzygEeJywLjY3WvFvXLeH+MoIYduITyNEKfKE5zjNw0wGn9RcBvDMCXGwecyF46hHSa6q7eq8IaB0UBbyzyJQOsDmVYqrDzkSCym8YHMciwP58IJNkgERPOtW1XPGWpzCApscgyJsrKk5Hef2pYr3qQ17FT1nrFVZ8o+G5gme4zR5hcJOnIUUNsbXClVJuBlE8IwKUOapZgERzExRA0oH2A9rq2lfrFV6xpNWBF1li2Pcr8mXmLakXMf9TCKozQeckDb2Q+m0t5tbsbi7F8teX6xcV3xOp+Lnt0Ghz1QWig7zffqKTZJqoj+GQ7EeT8TO98U+isQlFBEhpLBRIgAnrItNnG6i47CdzYr9FhXbmzZvJaoiWpcAhb0gAOhgk2yC6DjsfL%2F47y%2FiBaZjPxbRcViPJ4WfKbcXHGv8lSD6EvZRJN4fHtU8c56y9ZzAk0rS3x8excp1rSP6Ena+L5a9vrpBB%2FCciXzVpebtbIbNaSz2USR2vi8+p1PxMRyKxd29co%2FPHIZUJt9lr4%2FN8f9wGuGLu3vxdnOrnPDLYShDMuYAz6q++HM6NUruPorE3z9+JP6PiuSawwvSlyeuIfz8GjpWriveHx7PI3pxd2+jAOnCECfEUfnFqgTY+f5%2FiE76ThsF4BREqiqp6sXXejxRIkAW0mwVINWGjcr4f4mMU+jYzmZi5brnZKiStO9fvlopQKo8oGuz%2FURy3KxDJWmyz1q5LooAnNJXuQcgHTWpggCpEjHOyKiGAJyCSDxXqrP+Y5MAH8MhmgCJdSHMrUeVAsgSei1ApQVIKElgbj+qFOD94dFaARLXArUAtQDVFgBzD7gqAiTmgLIIINuDQPWApANbZZkFyQTAXIjJBFBairZVgM%2FpFE2AxHXAcS+49AIUPvFWTAAnVoBGoxzFuLebWysFSFmMwzmIq7qGn3T0RcmJt3wCyO+SYd0DUC3AzvdjP2sfRSgCpDofhLUYUy2AbCtUx%2Fkfmc0JPEkFwErEqgX4+W2Q+Hkoa4G0V5c4QiJWLYAsEZsOQ5lOx2HkAR0b6bIjMUWvIWUUIP3BLIyShA4BZGHIpBdkvjNm+kqqDgFkYciUF4QUNpl7DJkOQ7rO8sjOpprwglzXVk1v0OsSII0X6C7O5b6yyg3OhmQCFLkwsXJdqQjfv3zV9WyLXOQ3GmYXZUkC7KOoEEFvN7fSI+u6KqSpFl82eEFSqFARImQV0qIix43+wg3+THlBnADb2UzZLRbZukD16rjw6DftBb%2FOWPZRJNbjifIrRH%2F98WesAIqnpMVH%2F1kAg1uVy15fLHt9rXe3lr2+WI8nYjubie1sJtbjiborqUdT3jeo7hGX3rS0L8Pcrrwm09rUtex9g5SY7hdA1E374i2kbKSV%2FBPqfHDBAJ6NNvW2uY+QaUPpqF53UTyTj9dJHfNKkw0WUtigv96kqjOjQ39QS155VbU29laM%2FN9xzAmlT8yHl71Z%2FGqrck9R6at174+5BNXtzmywkLLRVZB%2FQlmSs1XJNis8x2mq7r5i1uir1fE+LY7esMAnNLUtrnbUJ+FYyLNWiJDCJqB0cFWxPg8sFGJRCeJ%2FRwDQwcoRIYVNSOFlzlircsRfwkkMnSvqE+mcsG5NegI4IU5A6eDgHfnurB3J9kIKL3MCT9a8+%2FGawQlpBwCdAKDDCesGlA7OBtDhhLTrkFKjRo0aqfEPTet8XSy2Km4AAAAASUVORK5CYII%3D&amp;suffix=+%E5%85%B3%E6%B3%A8&amp;cacheSeconds=3600" alt="少数派"></a> 👈🏻求关注</p>
-<hr>
-<h5 id="-版权声明">©️ <strong>版权声明</strong></h5>
+<h1 id="-联系我">💬 联系我</h1>
+<p>你可以在本站文章或页面的评论区留言(需使用 GitHub 账号登录），我看到后会及时回复。若不想公开留言内容，请使用邮箱联络。</p>
+<p>邮箱：me<img src="https://img.iduan.me/blog/at-32.png" style="width: 15px" class="original-style">iduan.me</p>
+<p>少数派：<a href="https://sspai.com/u/iduan/posts"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fsspai%2Fiduan&query=count&color=d71a1b&label=%E5%B0%91%E6%95%B0%E6%B4%BE&labelColor=282c34&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAF0klEQVR4nO1dvW7jOBD2I7gkh426pHS127pIeiN5AdsvsH4CIw8gwL1dpHaV0mWqu1aNLCrAAkbWwAKBYTiCcTBwgMEr%2FHN7e5aoH5JDS%2FqAAVIEtvV9nBlySI4ajRo1atSoIYPnOM05Y605Y60AoBMAdDhhXU5Y9%2FA3aXNC2nPGWti%2F9erhOU4zAOiElI04pa8hBS+ksOEURAZbhBReQspGnLCu5zhN7OeyFp7jNDkh7TmBp5CCl5HojKKwUQDQwX5mK8AJaYeUjXKMbiV28A7SxubBKE6jXfNIzygEeJywLjY3WvFvXLeH+MoIYduITyNEKfKE5zjNw0wGn9RcBvDMCXGwecyF46hHSa6q7eq8IaB0UBbyzyJQOsDmVYqrDzkSCym8YHMciwP58IJNkgERPOtW1XPGWpzCApscgyJsrKk5Hef2pYr3qQ17FT1nrFVZ8o+G5gme4zR5hcJOnIUUNsbXClVJuBlE8IwKUOapZgERzExRA0oH2A9rq2lfrFV6xpNWBF1li2Pcr8mXmLakXMf9TCKozQeckDb2Q+m0t5tbsbi7F8teX6xcV3xOp+Lnt0Ghz1QWig7zffqKTZJqoj+GQ7EeT8TO98U+isQlFBEhpLBRIgAnrItNnG6i47CdzYr9FhXbmzZvJaoiWpcAhb0gAOhgk2yC6DjsfL%2F47y%2FiBaZjPxbRcViPJ4WfKbcXHGv8lSD6EvZRJN4fHtU8c56y9ZzAk0rS3x8excp1rSP6Ena+L5a9vrpBB%2FCciXzVpebtbIbNaSz2USR2vi8+p1PxMRyKxd29co%2FPHIZUJt9lr4%2FN8f9wGuGLu3vxdnOrnPDLYShDMuYAz6q++HM6NUruPorE3z9+JP6PiuSawwvSlyeuIfz8GjpWriveHx7PI3pxd2+jAOnCECfEUfnFqgTY+f5%2FiE76ThsF4BREqiqp6sXXejxRIkAW0mwVINWGjcr4f4mMU+jYzmZi5brnZKiStO9fvlopQKo8oGuz%2FURy3KxDJWmyz1q5LooAnNJXuQcgHTWpggCpEjHOyKiGAJyCSDxXqrP+Y5MAH8MhmgCJdSHMrUeVAsgSei1ApQVIKElgbj+qFOD94dFaARLXArUAtQDVFgBzD7gqAiTmgLIIINuDQPWApANbZZkFyQTAXIjJBFBairZVgM%2FpFE2AxHXAcS+49AIUPvFWTAAnVoBGoxzFuLebWysFSFmMwzmIq7qGn3T0RcmJt3wCyO+SYd0DUC3AzvdjP2sfRSgCpDofhLUYUy2AbCtUx%2Fkfmc0JPEkFwErEqgX4+W2Q+Hkoa4G0V5c4QiJWLYAsEZsOQ5lOx2HkAR0b6bIjMUWvIWUUIP3BLIyShA4BZGHIpBdkvjNm+kqqDgFkYciUF4QUNpl7DJkOQ7rO8sjOpprwglzXVk1v0OsSII0X6C7O5b6yyg3OhmQCFLkwsXJdqQjfv3zV9WyLXOQ3GmYXZUkC7KOoEEFvN7fSI+u6KqSpFl82eEFSqFARImQV0qIix43+wg3+THlBnADb2UzZLRbZukD16rjw6DftBb%2FOWPZRJNbjifIrRH%2F98WesAIqnpMVH%2F1kAg1uVy15fLHt9rXe3lr2+WI8nYjubie1sJtbjiborqUdT3jeo7hGX3rS0L8Pcrrwm09rUtex9g5SY7hdA1E374i2kbKSV%2FBPqfHDBAJ6NNvW2uY+QaUPpqF53UTyTj9dJHfNKkw0WUtigv96kqjOjQ39QS155VbU29laM%2FN9xzAmlT8yHl71Z%2FGqrck9R6at174+5BNXtzmywkLLRVZB%2FQlmSs1XJNis8x2mq7r5i1uir1fE+LY7esMAnNLUtrnbUJ+FYyLNWiJDCJqB0cFWxPg8sFGJRCeJ%2FRwDQwcoRIYVNSOFlzlircsRfwkkMnSvqE+mcsG5NegI4IU5A6eDgHfnurB3J9kIKL3MCT9a8+%2FGawQlpBwCdAKDDCesGlA7OBtDhhLTrkFKjRo0aqfEPTet8XSy2Km4AAAAASUVORK5CYII%3D&suffix=+%E5%85%B3%E6%B3%A8&cacheSeconds=3600" alt="少数派@JLDUAN" class="original-style"></a>  👈🏻求关注</p>
+<h1 id="-版权声明">©️ <strong>版权声明</strong></h1>
 <p>本站所发布的文章内容，除个别文章包含的单独声明以外，其它均由 <a xmlns:cc="http://creativecommons.org/ns#" href="https://iduan.me" property="cc:attributionName" rel="cc:attributionURL">JL DUAN</a> 采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 进行许可。</p>
+
 
 
 <script src="https://giscus.app/client.js"
@@ -234,6 +542,7 @@ blockquote,
         crossorigin="anonymous"
         async>
 </script>
+
     </article>
   </div>
   <footer>
@@ -250,11 +559,6 @@ blockquote,
 </footer>
 
   
-  
-  
-
-  
-
   
 </body>
 

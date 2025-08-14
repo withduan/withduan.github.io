@@ -69,8 +69,158 @@ article {
   padding-bottom: 1em;
 }
 
-img {
+ 
+article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+  max-width: 80%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ 
+img.original-style {
   max-width: 100%;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.original-style:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+img.icon,
+img.logo,
+img.avatar,
+img.inline-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.icon:hover,
+img.logo:hover,
+img.avatar:hover,
+img.inline-icon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+nav img,
+footer img,
+.navbar img {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+nav img:hover,
+footer img:hover,
+.navbar img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+ 
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+ 
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #007bff;
+  line-height: 1.3;
+}
+
+ 
+article > h1:first-child {
+  font-size: 1.2rem;
+}
+
+ 
+article > h4:first-child {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #28a745;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 
 
@@ -157,13 +307,175 @@ code {
 
 blockquote,
 .blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 15px 20px;
+  margin: 1.5rem 0;
   font-size: 1em;
-  border-left: 5px solid #6c757d;
+  border-left: 4px solid #ff8c00;
+  background-color: #fffbf0;
+  border-radius: 4px;
+}
+
+blockquote p:last-child,
+.blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > *:last-child,
+.blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+
+ 
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-item a {
+  text-decoration: none;
+}
+
+.tag-item code {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: none !important;
+}
+
+.tag-item:hover code {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.tag-item small {
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+ 
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+}
+
+ 
+ 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+ 
+html, body, * {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+ 
+body {
+  overflow-y: overlay;  
+  overflow-x: auto;
+}
+
+ 
+pre {
+  overflow-x: overlay;
+}
+
+ 
+.table-responsive {
+  overflow-x: overlay;
+}
+
+ 
+div, article, section, main, aside, nav, header, footer {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
 </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+  
+  images.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      window.open(this.src, '_blank');
+    });
+  });
+});
+</script>
 </head>
 
 
@@ -185,7 +497,8 @@ blockquote,
   
   <div class="container">
     <article>
-      <h4>在 M1 Mac 设备中解决 Minecraft Error 255</h4>
+      
+<h4>在 M1 Mac 设备中解决 Minecraft Error 255</h4>
 2021/09/30
 
 
@@ -199,6 +512,8 @@ blockquote,
 
 </br>
 </br>
+
+
 <blockquote>
 <p>如果你是 M1 Mac 且在安装 Forge API 后无法正常进入 Minecraft，并报错 Error 255 或是 GLFW Error 65544，那么这篇文章将能解决你的问题。</p>
 </blockquote>
@@ -208,56 +523,56 @@ blockquote,
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-02.webp" alt="m1-mac-minecraft-error-255-02">GLFW Error 65544</p>
 <p>由于我只是一位普普通通的创造模式玩家，失去 Mod 支持，游戏的乐趣就少了很多。为此我不得不暂停我的火柴盒建造计划，苦寻解决方法。</p>
 <p>而根据网络中搜索到的各种解决方案，并没有解决我本机 Minecraft 报错的问题，因此我将近半年没有打开游戏。这几天我又按耐不住，结合网友的教程和我自己的一些尝试，非常幸运的解决了游戏报错的问题。如果网上的其他教程同样未能解决你的问题，不妨参考一下这篇文章。</p>
-<h4 id="我的解决方法">我的解决方法</h4>
-<h5 id="1-卸载系统当前安装的-java-版本">1. 卸载系统当前安装的 Java 版本</h5>
+<h1 id="我的解决方法">我的解决方法</h1>
+<h2 id="1-卸载系统当前安装的-java-版本">1. 卸载系统当前安装的 Java 版本</h2>
 <p>打开终端，输入命令 <code>java -version</code> ，查看当前安装的 Java 版本。如果是 Oracle Java ，需要卸载并安装 Zulu Java。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-03.webp" alt="m1-mac-minecraft-error-255-03">输入命令查询 Java 版本</p>
 <p>Oracle Java 不能通过常规方式卸载，需要在官网下载 <a href="https://www.java.com/en/download/uninstalltool.jsp">专用卸载工具</a>。不建议直接删除 Java 路径文件夹，否则 macOS 设置中会残留 Java 图标。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-04.webp" alt="m1-mac-minecraft-error-255-04">Java Uninstall Tool</p>
 <p>注：如果你当前的工作环境或者生产力工具依赖 Oracle Java 运行，替换为 Zulu Java 可能会出现运行异常，请谨慎操作。</p>
-<h5 id="2-安装-zulu-java">2. 安装 Zulu Java</h5>
+<h2 id="2-安装-zulu-java">2. 安装 Zulu Java</h2>
 <p>选择 Zulu Java 是因为 Zulu 提供了 arm64 版本，运行 Java 版 Minecraft 时无需经过 Rosetta 转译，从理论上来说，游戏执行效率会更高。</p>
 <p>在下载页面依次选择 「Java 17」-「macOS」-「ARM 64-bit」-「JDK FX」，在右侧选择 <code>.dmg</code> 文件下载并安装，或者直接打开 <a href="https://www.azul.com/downloads/?version=java-17-lts&amp;os=macos&amp;architecture=arm-64-bit&amp;package=jdk-fx">此链接</a>，选择<code>.dmg</code>文件下载并安装。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-05.webp" alt="m1-mac-minecraft-error-255-05">点击右侧第一个蓝色按钮</p>
-<h5 id="3-安装-minecraft-与-forge-api">3. 安装 Minecraft 与 Forge API</h5>
+<h2 id="3-安装-minecraft-与-forge-api">3. 安装 Minecraft 与 Forge API</h2>
 <p><a href="https://www.minecraft.net/zh-hans/download">下载</a> 并登陆 Minecraft 启动器，安装你需要的 Minecraft 版本，此处以 Minecraft 1.16.5 为例。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-06.webp" alt="m1-mac-minecraft-error-255-06">Minecraft 1.16.5</p>
 <p>游戏安装完成后，前往 <a href="https://files.minecraftforge.net/net/minecraftforge/forge/">Forge 网站</a>，获取并安装最新版本的 Forge API。（注意： 选择 Forge 版本时要注意与已安装的 Minecraft 游戏版本相匹配）</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-07.webp" alt="m1-mac-minecraft-error-255-07">如果你使用正版登陆器，Forge 会自动检测游戏路径</p>
-<h5 id="4-获取-lwjgl-库文件">4. 获取 LWJGL 库文件</h5>
+<h2 id="4-获取-lwjgl-库文件">4. 获取 LWJGL 库文件</h2>
 <p>LWJGL 全称为： LightWight Java Game Library，意为轻量级 Java 游戏工具库。包含 OpenGL 、OpenCL、OpenAL、Vulkan API 对 Java 平台的原生绑定。[注释 1]</p>
 <p>由于 Apple 发布的 M1 芯片移除了 LWJGL 库所依赖的个别 API，也未提供任何兼容方式，致使 Forge 无法正常工作，游戏出现「Failed to find service port for display」错误信息。[注释 2]</p>
 <p>幸运的是，早在今年年初，就有人在 GitHub 中公布了解决问题的补丁。开发商 mojang 通过更新游戏自带的 LWJGL 库，在最新版本的 Minecraft 中修复了这个问题。但是 Minecraft 受限于 Mod、服务器支持等因素，许多旧版本依然活跃，许多玩家依旧停留在旧版本。</p>
 <p>前往 <a href="https://github.com/sdirkwinkel/m1-multimc-hack">GitHub</a> 获取适用于 Apple M1 芯片的 LWJGL 库文件。该项目由 <a href="https://github.com/0xQSL">@Steffen Dirkwinkel</a> 维护。点击 GitHub 文件列表右上方的「Code」-「Download ZIP」下载该项目包含的所有文件。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-08.webp" alt="m1-mac-minecraft-error-255-08">下载该项目所有文件</p>
-<h5 id="5-手动替换游戏目录文件">5. 手动替换游戏目录文件</h5>
+<h2 id="5-手动替换游戏目录文件">5. 手动替换游戏目录文件</h2>
 <p>解压下载的 <code>m1-multimc-hack-fix-forge.zip</code> 文件，将解压后的文件夹内 <code>lwjglfat.jar</code> 文件重命名为 <code>lwjgl-3.2.1.jar</code>。</p>
 <p>打开访达，前往路径<code>/Users/用户名/Library/Application Support/minecraft/libraries/org/lwjgl/lwjgl/3.2.1/</code></p>
 <p>将此路径内原有的 <code>lwjgl-3.2.1.jar</code> 文件删除，或者转移至其他处备份。将刚才重命名后的 <code>.jar</code> 文件移动到此路径。</p>
-<h5 id="6-获取-hmcl-launcher">6. 获取 HMCL Launcher</h5>
+<h2 id="6-获取-hmcl-launcher">6. 获取 HMCL Launcher</h2>
 <p><a href="https://hmcl.huangyuhui.net/download/">HMCL Launcher</a> 是一个非常流行的第三方启动器，支持微软正版登陆。启动器可以快速安装 Forge API，还具有修改游戏运行参数、管理第三方 Mod 等功能。</p>
 <p>之所以选择 HMCL Launcher，是因为它能自定义本地 LWJGL 库路径，使得游戏在 M1 Mac 设备上正常运行。另外 HMCL Launcher 还可以指定 Java 路径，如果你不方便卸载 Oracle Java，可以在启动器设置中指定使用 Zulu Java 运行 Minecraft。</p>
 <p>打开 HMCL Launcher，依次点击「游戏版本」-「官方启动器目录」导入当前电脑已安装的游戏版本。此处选择 「1.16.5-forge-x.x.x」。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-09.webp" alt="m1-mac-minecraft-error-255-09">导入游戏</p>
-<h5 id="7-修改启动器设置">7. 修改启动器设置</h5>
+<h2 id="7-修改启动器设置">7. 修改启动器设置</h2>
 <p>打开游戏管理，勾选「启用游戏特定设置」。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-10.webp" alt="m1-mac-minecraft-error-255-10">启用游戏特定设置</p>
 <p>滑动至页面最底端，在「调试选项」-「本地库路径」中，选择自定义库路径为<code>/m1-multimc-hack-fix-forge/lwjglnatives/</code>（第 4 步中下载解压的文件夹内），开启「不检查游戏完整性」。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-11.webp" alt="m1-mac-minecraft-error-255-11">修改调试选项</p>
-<h5 id="8-运行游戏">8. 运行游戏</h5>
+<h2 id="8-运行游戏">8. 运行游戏</h2>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-12.webp" alt="m1-mac-minecraft-error-255-12">启动器首页</p>
 <p>回到启动器首页，点击右下角的「启动游戏」，此时 Minecraft 已经可以运行，Forge API 和第三方 Mod 也能够正常加载。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-13.webp" alt="m1-mac-minecraft-error-255-13">成功运行 Minecraft</p>
-<h5 id="附所有文件的下载链接">附：所有文件的下载链接</h5>
+<h2 id="附所有文件的下载链接">附：所有文件的下载链接</h2>
 <table><tbody><tr><td>名称</td><td>下载链接</td></tr><tr><td>Oracle Java 卸载工具</td><td><a href="https://www.java.com/en/download/uninstalltool.jsp" target="_blank">链接</a></td></tr><tr><td>Zulu Java arm64 bit</td><td><a href="https://www.azul.com/downloads/?version=java-17-lts&os=macos&architecture=arm-64-bit&package=jdk-fx" target="_blank">链接</a></td></tr><tr><td>Minecraft</td><td><a href="https://www.minecraft.net/zh-hans/download" target="_blank">链接</a></td></tr><tr><td>Forge API</td><td><a href="https://files.minecraftforge.net/net/minecraftforge/forge/" target="_blank">链接</a></td></tr><tr><td>适用于 Apple M1 芯片的 LWJGL 库文件</td><td><a href="https://github.com/0xQSL/m1-multimc-hack" target="_blank">链接</a></td></tr><tr><td>HMCL Launcher</td><td><a href="https://hmcl.huangyuhui.net/download/" target="_blank">链接</a></td></tr></tbody></table>
-<h5 id="参考资料">参考资料：</h5>
+<h2 id="参考资料">参考资料：</h2>
 <ol>
 <li><a href="https://github.com/0xQSL/m1-multimc-hack/blob/master/README.md">0xQSL/m1-multimc-hack readme.md</a> 作者：@<a href="https://github.com/0xQSL">Steffen Dirkwinkel</a></li>
 <li><a href="https://www.wannaexpresso.com/2021/02/20/m1-macbook-minecraft/">在 M1 Macbook 上 不使用 Rosetta 优雅地游玩 Minecraft+Forge</a> 作者：@<a href="https://www.wannaexpresso.com/">DotIN13</a></li>
 <li><a href="https://tieba.baidu.com/p/7209727510?see_lz=1">x86_64 框架下 Forge 与 GLFW 冲突的解決方案</a> 作者：@<a href="https://tieba.baidu.com/home/main?un=SCrystaL52">SCrystaL52</a></li>
 <li><a href="https://www.mcbbs.net/thread-1228353-1-1.html">在 M1 上原生运行 Minecraft 1.17.1</a> 作者 @<a href="https://www.mcbbs.net/home.php?mod=space&amp;uid=1567563">Missing-love</a></li>
 </ol>
-<h4 id="彩蛋">彩蛋</h4>
+<h1 id="彩蛋">彩蛋</h1>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/m1-mac-minecraft-error-255-14.gif" alt="m1-mac-minecraft-error-255-14">
 电影《头号玩家》中的「Minecraft World」</p>
 <p>在 2018 年上映的科幻电影《头号玩家》中，虚拟现实游戏「绿洲」包含了不同游戏主题的子世界，影片开头中一闪而过的游戏场景便是「Minecraft World」。尽管电影主要剧情并未在 Minecraft World 中展开，但是我想所有 Minecraft 玩家看到这个场景时，都应该会非常激动的吧？</p>
@@ -267,6 +582,7 @@ blockquote,
 <p>© 本文著作权归作者 <a href="https://sspai.com/u/iduan/updates">@JLDUAN</a> 所有，并授权少数派独家使用，未经少数派许可，不得转载使用。
 原文地址 <a href="https://sspai.com/post/68830">https://sspai.com/post/68830</a></p>
 </blockquote>
+
 
 
 <script src="https://giscus.app/client.js"
@@ -284,6 +600,7 @@ blockquote,
         crossorigin="anonymous"
         async>
 </script>
+
     </article>
   </div>
   <footer>
@@ -300,11 +617,6 @@ blockquote,
 </footer>
 
   
-  
-  
-
-  
-
   
 </body>
 

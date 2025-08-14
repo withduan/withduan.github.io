@@ -69,8 +69,158 @@ article {
   padding-bottom: 1em;
 }
 
-img {
+ 
+article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+  max-width: 80%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ 
+img.original-style {
   max-width: 100%;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.original-style:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+img.icon,
+img.logo,
+img.avatar,
+img.inline-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.icon:hover,
+img.logo:hover,
+img.avatar:hover,
+img.inline-icon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+nav img,
+footer img,
+.navbar img {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+nav img:hover,
+footer img:hover,
+.navbar img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+ 
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+ 
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #007bff;
+  line-height: 1.3;
+}
+
+ 
+article > h1:first-child {
+  font-size: 1.2rem;
+}
+
+ 
+article > h4:first-child {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #28a745;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 
 
@@ -157,13 +307,175 @@ code {
 
 blockquote,
 .blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 15px 20px;
+  margin: 1.5rem 0;
   font-size: 1em;
-  border-left: 5px solid #6c757d;
+  border-left: 4px solid #ff8c00;
+  background-color: #fffbf0;
+  border-radius: 4px;
+}
+
+blockquote p:last-child,
+.blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > *:last-child,
+.blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+
+ 
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-item a {
+  text-decoration: none;
+}
+
+.tag-item code {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: none !important;
+}
+
+.tag-item:hover code {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.tag-item small {
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+ 
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+}
+
+ 
+ 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+ 
+html, body, * {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+ 
+body {
+  overflow-y: overlay;  
+  overflow-x: auto;
+}
+
+ 
+pre {
+  overflow-x: overlay;
+}
+
+ 
+.table-responsive {
+  overflow-x: overlay;
+}
+
+ 
+div, article, section, main, aside, nav, header, footer {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
 </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+  
+  images.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      window.open(this.src, '_blank');
+    });
+  });
+});
+</script>
 </head>
 
 
@@ -185,7 +497,8 @@ blockquote,
   
   <div class="container">
     <article>
-      <h4>读书笔记 2024.03</h4>
+      
+<h4>读书笔记 2024.03</h4>
 2024/03/31
 
 
@@ -196,14 +509,16 @@ blockquote,
 
 </br>
 </br>
+
+
 <p><strong>本月已读完的书有：</strong></p>
-<h4 id="1-我的母亲做保洁张小满著豆瓣链接httpsbookdoubancomsubject36623046">1. 《我的母亲做保洁》张小满（著）<a href="https://book.douban.com/subject/36623046/">豆瓣链接🔗</a></h4>
+<h1 id="1-我的母亲做保洁张小满著豆瓣链接httpsbookdoubancomsubject36623046">1. 《我的母亲做保洁》张小满（著）<a href="https://book.douban.com/subject/36623046/">豆瓣链接🔗</a></h1>
 <p>本书介绍了那些大城市中从不被人注意的保洁员工作群体。作者的父母从陕南来到大城市和女儿共同生活，母亲没有闲在家里，而是出门找了一份保洁的工作。作者通过母亲的视角，描述了很多保洁员工作的细枝末节。</p>
 <p>保洁阿姨是如何判断年轻人工作强度的：</p>
 <blockquote>
 <p>母亲在办公室的工位底下清扫出最多的垃圾就是头发。她也发现，年轻人越忙，工位下清扫出的头发就越多，有的女孩工位下常常一次能扫出一小撮。</p>
 </blockquote>
-<h4 id="2中国古代文化常识王力主编豆瓣链接httpsbookdoubancomsubject26021455">2.《中国古代文化常识》王力（主编）<a href="https://book.douban.com/subject/26021455/">豆瓣链接🔗</a></h4>
+<h1 id="2中国古代文化常识王力主编豆瓣链接httpsbookdoubancomsubject26021455">2.《中国古代文化常识》王力（主编）<a href="https://book.douban.com/subject/26021455/">豆瓣链接🔗</a></h1>
 <p>这是一本需要细读的科普书，不过我看书的过程基本是走马观花，也不是想通过这本书学到什么用得上的东西，所以能看懂的地方就看，看不懂的就略过。用“好读书，不求甚解”形容我自己倒也很贴切吧…</p>
 <blockquote>
 <p>商代的贵族被总称为“百姓”（“百姓”，金文写作“百生”。后来周人称商的贵族为“殷多士”）。商王是贵族最高的代表，自称为“余一人”（“余一人”见于甲骨文，古书上写作“予一人”）。《论语·尧曰》引《尚书·泰誓》篇的话说：“百姓有过，在予一人。”可见周初还这样称呼。后来百姓成为民的同义词。民在古代又称为黎民，秦国则称为黔（qián）首。</p>
@@ -213,19 +528,20 @@ blockquote,
 <p>今日盛行于中国的所谓“茶道”“茶文化”，所谓“‘勤和简静’的茶道思想”，以及诸多扭捏姿态，全是近三十年来好事者向壁捏造故弄玄虚的胡扯。所谓“茶文化的研究”，自然更是瞎掰居多。还有更荒诞的所谓沤（òu）了若干年的一个普洱茶饼子价逾百万的宣传，则简直形同欺诈。这正是所谓器之不存，道亦不复。</p>
 </blockquote>
 <p>看完真是令人忍俊不禁。</p>
-<h4 id="3房思琪的初恋乐园林奕含著豆瓣链接-httpsbookdoubancomsubject27614904">3.《房思琪的初恋乐园》林奕含（著）<a href="https://book.douban.com/subject/27614904/">豆瓣链接 🔗</a></h4>
+<h1 id="3房思琪的初恋乐园林奕含著豆瓣链接-httpsbookdoubancomsubject27614904">3.《房思琪的初恋乐园》林奕含（著）<a href="https://book.douban.com/subject/27614904/">豆瓣链接 🔗</a></h1>
 <p>本书描述了一位年少时不幸被补习班老师强奸的少女，在悲剧发生之后的一系列心路历程，最终少女因长期的精神压力最终导致精神失常，而故事的结局，这一切的始作俑者——那位补习班李老师依旧逍遥法外。作者林奕含年仅 27 岁因抑郁症自杀去世。</p>
 <p>主人公房思琪父母漠视性教育，面对女儿前后的暗示甚至求救，都没有及时察觉出异常，根本没有意识到女儿已经深处水深火热之中，才酿成了最后的悲剧；周围的吃瓜看客都是房思琪的领居，虽然从小看着房思琪长大，但实际上面对房思琪精神失常的事情漠不关心，只把她当做茶余饭后的话题点，还把精神失常的原因归咎于课外书看太多…</p>
 <p>本书在豆瓣评分高达 9.2，单从文学的角度来看水平一般，我在阅读时感到很多情节叙述看起来乱糟糟的。它的可贵之处更多是因为揭示了社会对「性」的无限羞耻，希望能唤起现实中各位读者的警惕之心吧。</p>
-<h4 id="4-打造第二大脑蒂亚戈福特著豆瓣链接httpsbookdoubancomsubject36636224">4. 《打造第二大脑》蒂亚戈•福特（著）<a href="https://book.douban.com/subject/36636224/">豆瓣链接</a></h4>
+<h1 id="4-打造第二大脑蒂亚戈福特著豆瓣链接httpsbookdoubancomsubject36636224">4. 《打造第二大脑》蒂亚戈•福特（著）<a href="https://book.douban.com/subject/36636224/">豆瓣链接</a></h1>
 <p>网络上收藏的信息，通常都零零散散分布在各个平台、各个 App 中。某一条曾经阅读过的信息，偶尔到了需要的时候，却发现死活想不起来在哪里看过。为此我也开始尝试将一些可能有用的信息保存到笔记软件 Obsidian 里</p>
 <p>本书介绍了一种笔记整理方法「PARA」，四个字母分别对应「项目 Program」、「Area 领域」、「Resource 资源」、「Archive 存档」，我觉得这个思路对整理笔记很有帮助。</p>
 <p>简单尝试过后，其实我觉得还应该多加一个「 I 」，即「Inbox 收件箱」，临时存放一些未经细化的笔记内容或者文件。</p>
 <p>今年我尝试通过 Obsidian、用「PARAI 」的思路整理我的电子笔记。</p>
-<h4 id="5秋园梁本芬著豆瓣链接httpsbookdoubancomsubject34998019">5.《秋园》梁本芬（著）<a href="https://book.douban.com/subject/34998019/">豆瓣链接</a></h4>
-<h4 id="6豆子芝麻茶梁本芬著豆瓣链接httpsbookdoubancomsubject36560856">6.《豆子芝麻茶》梁本芬（著）<a href="https://book.douban.com/subject/36560856/">豆瓣链接</a></h4>
+<h1 id="5秋园梁本芬著豆瓣链接httpsbookdoubancomsubject34998019">5.《秋园》梁本芬（著）<a href="https://book.douban.com/subject/34998019/">豆瓣链接</a></h1>
+<h1 id="6豆子芝麻茶梁本芬著豆瓣链接httpsbookdoubancomsubject36560856">6.《豆子芝麻茶》梁本芬（著）<a href="https://book.douban.com/subject/36560856/">豆瓣链接</a></h1>
 <p>这两本书着重刻画了作者身边的一些女性人物。写的也大多是些家长里短的事情，我印象最深的是作者文笔之下自己母亲和外婆共同经历的那些艰难岁月，以及《豆子芝麻茶》后边对母亲晚年时的回忆。好像读出一种淡淡的哀伤，又读出一些希望。</p>
 <p>我觉得作者与母亲、与外婆都是很相像的，她们抱着不服输，不认命的态度去面对生活的曲折，勇于抗争，虽然不一定有什么了不得的收获，但回顾往昔的时候，至少也不会后悔吧。</p>
+
 
 
 <script src="https://giscus.app/client.js"
@@ -243,6 +559,7 @@ blockquote,
         crossorigin="anonymous"
         async>
 </script>
+
     </article>
   </div>
   <footer>
@@ -259,11 +576,6 @@ blockquote,
 </footer>
 
   
-  
-  
-
-  
-
   
 </body>
 

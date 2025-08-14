@@ -69,8 +69,158 @@ article {
   padding-bottom: 1em;
 }
 
-img {
+ 
+article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+  max-width: 80%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ 
+img.original-style {
   max-width: 100%;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.original-style:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+img.icon,
+img.logo,
+img.avatar,
+img.inline-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.icon:hover,
+img.logo:hover,
+img.avatar:hover,
+img.inline-icon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+nav img,
+footer img,
+.navbar img {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+nav img:hover,
+footer img:hover,
+.navbar img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+ 
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+ 
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #007bff;
+  line-height: 1.3;
+}
+
+ 
+article > h1:first-child {
+  font-size: 1.2rem;
+}
+
+ 
+article > h4:first-child {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #28a745;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 
 
@@ -157,13 +307,175 @@ code {
 
 blockquote,
 .blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 15px 20px;
+  margin: 1.5rem 0;
   font-size: 1em;
-  border-left: 5px solid #6c757d;
+  border-left: 4px solid #ff8c00;
+  background-color: #fffbf0;
+  border-radius: 4px;
+}
+
+blockquote p:last-child,
+.blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > *:last-child,
+.blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+
+ 
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-item a {
+  text-decoration: none;
+}
+
+.tag-item code {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: none !important;
+}
+
+.tag-item:hover code {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.tag-item small {
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+ 
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+}
+
+ 
+ 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+ 
+html, body, * {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+ 
+body {
+  overflow-y: overlay;  
+  overflow-x: auto;
+}
+
+ 
+pre {
+  overflow-x: overlay;
+}
+
+ 
+.table-responsive {
+  overflow-x: overlay;
+}
+
+ 
+div, article, section, main, aside, nav, header, footer {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
 </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+  
+  images.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      window.open(this.src, '_blank');
+    });
+  });
+});
+</script>
 </head>
 
 
@@ -190,7 +502,23 @@ blockquote,
 
 
   <p>
-    <a href="https://iduan.me/posts/realme/">realme Q3s &amp; realmeUI 2.0 系统 App 精简列表</a>
+    <a href="https://iduan.me/posts/reading-notes-2025-07/" target="_blank">读书笔记 2025.07</a>
+    
+    
+    <br>
+    <small class="text-secondary">2025/07/31</small>
+    
+
+<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+
+
+<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+
+    
+  </p>
+
+  <p>
+    <a href="https://iduan.me/posts/realme/" target="_blank">realme Q3s &amp; realmeUI 2.0 系统 App 精简列表</a>
     
     
     <br>
@@ -215,7 +543,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/reading-notes-2025-01/">读书笔记 2025.01</a>
+    <a href="https://iduan.me/posts/reading-notes-2025-01/" target="_blank">读书笔记 2025.01</a>
     
     
     <br>
@@ -231,7 +559,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-12/">读书笔记 2024.12</a>
+    <a href="https://iduan.me/posts/reading-notes-2024-12/" target="_blank">读书笔记 2024.12</a>
     
     
     <br>
@@ -247,7 +575,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/cloudflare-r2-upic/">利用 Cloudflare R2 + uPic 打造私人图床</a>
+    <a href="https://iduan.me/posts/cloudflare-r2-upic/" target="_blank">利用 Cloudflare R2 + uPic 打造私人图床</a>
     
     
     <br>
@@ -260,7 +588,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-11/">读书笔记 2024.11</a>
+    <a href="https://iduan.me/posts/reading-notes-2024-11/" target="_blank">读书笔记 2024.11</a>
     
     
     <br>
@@ -276,7 +604,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/9-questions/">假装被采访丨关于博客的几个问题</a>
+    <a href="https://iduan.me/posts/9-questions/" target="_blank">假装被采访丨关于博客的几个问题</a>
     
     
     <br>
@@ -289,7 +617,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-10/">读书笔记 2024.10</a>
+    <a href="https://iduan.me/posts/reading-notes-2024-10/" target="_blank">读书笔记 2024.10</a>
     
     
     <br>
@@ -305,7 +633,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-05/">读书笔记 2024.05</a>
+    <a href="https://iduan.me/posts/reading-notes-2024-05/" target="_blank">读书笔记 2024.05</a>
     
     
     <br>
@@ -321,7 +649,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-04/">读书笔记 2024.04</a>
+    <a href="https://iduan.me/posts/reading-notes-2024-04/" target="_blank">读书笔记 2024.04</a>
     
     
     <br>
@@ -337,7 +665,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-03/">读书笔记 2024.03</a>
+    <a href="https://iduan.me/posts/reading-notes-2024-03/" target="_blank">读书笔记 2024.03</a>
     
     
     <br>
@@ -353,7 +681,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/self-driving-tour-in-2024/">自驾游记录丨2023，我在路上</a>
+    <a href="https://iduan.me/posts/self-driving-tour-in-2024/" target="_blank">自驾游记录丨2023，我在路上</a>
     
     
     <br>
@@ -366,7 +694,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-02/">读书笔记 2024.02</a>
+    <a href="https://iduan.me/posts/reading-notes-2024-02/" target="_blank">读书笔记 2024.02</a>
     
     
     <br>
@@ -382,7 +710,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-01/">读书笔记 2024.01</a>
+    <a href="https://iduan.me/posts/reading-notes-2024-01/" target="_blank">读书笔记 2024.01</a>
     
     
     <br>
@@ -398,7 +726,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/summary-of-2023/">「没什么好总结的」—— 致我的 2023</a>
+    <a href="https://iduan.me/posts/summary-of-2023/" target="_blank">「没什么好总结的」—— 致我的 2023</a>
     
     
     <br>
@@ -411,7 +739,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/continue-with-hugo/">博客又又又搬家了</a>
+    <a href="https://iduan.me/posts/continue-with-hugo/" target="_blank">博客又又又搬家了</a>
     
     
     <br>
@@ -424,7 +752,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/chrome-without-google/">Chrome，但是 without Google</a>
+    <a href="https://iduan.me/posts/chrome-without-google/" target="_blank">Chrome，但是 without Google</a>
     
     
     <br>
@@ -440,7 +768,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/activate-ctm-sim/">如何激活 +853 澳门电信 CTM 预付卡</a>
+    <a href="https://iduan.me/posts/activate-ctm-sim/" target="_blank">如何激活 +853 澳门电信 CTM 预付卡</a>
     
     
     <br>
@@ -456,7 +784,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/creating-certificate-for-ipa-signing/">利用 Apple 个人开发者账户创建可用于 ipa 自签名的证书</a>
+    <a href="https://iduan.me/posts/creating-certificate-for-ipa-signing/" target="_blank">利用 Apple 个人开发者账户创建可用于 ipa 自签名的证书</a>
     
     
     <br>
@@ -472,7 +800,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/work-with-covid-19/">当我也成了「大白」</a>
+    <a href="https://iduan.me/posts/work-with-covid-19/" target="_blank">当我也成了「大白」</a>
     
     
     <br>
@@ -491,7 +819,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/disable-macos-update/">屏蔽 macOS 更新？我有新招</a>
+    <a href="https://iduan.me/posts/disable-macos-update/" target="_blank">屏蔽 macOS 更新？我有新招</a>
     
     
     <br>
@@ -504,7 +832,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/all-in-one-phone/">兜兜转转，回归单机</a>
+    <a href="https://iduan.me/posts/all-in-one-phone/" target="_blank">兜兜转转，回归单机</a>
     
     
     <br>
@@ -523,7 +851,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/clear-newtab/">恢复浏览器空白页，还你纯净冲浪体验</a>
+    <a href="https://iduan.me/posts/clear-newtab/" target="_blank">恢复浏览器空白页，还你纯净冲浪体验</a>
     
     
     <br>
@@ -542,7 +870,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/subconverter-self-hosting/">subconverter 部署记录</a>
+    <a href="https://iduan.me/posts/subconverter-self-hosting/" target="_blank">subconverter 部署记录</a>
     
     
     <br>
@@ -558,7 +886,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/bark-server-self-hosting/">自建 Bark 后端服务</a>
+    <a href="https://iduan.me/posts/bark-server-self-hosting/" target="_blank">自建 Bark 后端服务</a>
     
     
     <br>
@@ -577,7 +905,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/typecho-update-20220401/">只要活得够久……</a>
+    <a href="https://iduan.me/posts/typecho-update-20220401/" target="_blank">只要活得够久……</a>
     
     
     <br>
@@ -593,7 +921,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/windows-remote-desktop/">巧用 Windows 远程桌面，跨设备操作自如切换</a>
+    <a href="https://iduan.me/posts/windows-remote-desktop/" target="_blank">巧用 Windows 远程桌面，跨设备操作自如切换</a>
     
     
     <br>
@@ -612,7 +940,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/typecho-optimization/">Typecho 功能优化小结</a>
+    <a href="https://iduan.me/posts/typecho-optimization/" target="_blank">Typecho 功能优化小结</a>
     
     
     <br>
@@ -628,7 +956,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/rebooting-the-blog/">起死回生的博客</a>
+    <a href="https://iduan.me/posts/rebooting-the-blog/" target="_blank">起死回生的博客</a>
     
     
     <br>
@@ -641,7 +969,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/forwarding-messages-from-android-to-iphone/">巧用开源方案，零成本实现验证码短信转发</a>
+    <a href="https://iduan.me/posts/forwarding-messages-from-android-to-iphone/" target="_blank">巧用开源方案，零成本实现验证码短信转发</a>
     
     
     <br>
@@ -666,7 +994,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/ios-accessibility-features-tips/">iOS「辅助功能」里你可能不知道的那些小技巧</a>
+    <a href="https://iduan.me/posts/ios-accessibility-features-tips/" target="_blank">iOS「辅助功能」里你可能不知道的那些小技巧</a>
     
     
     <br>
@@ -685,7 +1013,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/m1-mac-minecraft-error-255/">在 M1 Mac 设备中解决 Minecraft Error 255</a>
+    <a href="https://iduan.me/posts/m1-mac-minecraft-error-255/" target="_blank">在 M1 Mac 设备中解决 Minecraft Error 255</a>
     
     
     <br>
@@ -704,7 +1032,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/experience-of-aldente-pro/">你的 MacBook 电池管家 — AlDente Pro 使用体验</a>
+    <a href="https://iduan.me/posts/experience-of-aldente-pro/" target="_blank">你的 MacBook 电池管家 — AlDente Pro 使用体验</a>
     
     
     <br>
@@ -723,7 +1051,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/huashan-mountain-tour-2021/">华山个人游，独自登山的不完全记录</a>
+    <a href="https://iduan.me/posts/huashan-mountain-tour-2021/" target="_blank">华山个人游，独自登山的不完全记录</a>
     
     
     <br>
@@ -739,7 +1067,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/usage-of-the-safeincloud/">使用 SafeInCloud 管理密码，我还发现了这些好用法</a>
+    <a href="https://iduan.me/posts/usage-of-the-safeincloud/" target="_blank">使用 SafeInCloud 管理密码，我还发现了这些好用法</a>
     
     
     <br>
@@ -761,7 +1089,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/aukey-powerbank-momax-cable/">618的百元好物——iPhone 用户的外出随身快充套装</a>
+    <a href="https://iduan.me/posts/aukey-powerbank-momax-cable/" target="_blank">618的百元好物——iPhone 用户的外出随身快充套装</a>
     
     
     <br>
@@ -783,7 +1111,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/nubia-redmagic-radiator/">努比亚红魔散热背夹</a>
+    <a href="https://iduan.me/posts/nubia-redmagic-radiator/" target="_blank">努比亚红魔散热背夹</a>
     
     
     <br>
@@ -802,7 +1130,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/m1-macbook-air/">这台 Mac 不 Pro — M1 MacBook Air 简单上手体验</a>
+    <a href="https://iduan.me/posts/m1-macbook-air/" target="_blank">这台 Mac 不 Pro — M1 MacBook Air 简单上手体验</a>
     
     
     <br>
@@ -824,7 +1152,7 @@ blockquote,
   </p>
 
   <p>
-    <a href="https://iduan.me/posts/safeincloud/">搞定密码管理，我选 SafeInCloud</a>
+    <a href="https://iduan.me/posts/safeincloud/" target="_blank">搞定密码管理，我选 SafeInCloud</a>
     
     
     <br>
@@ -861,11 +1189,6 @@ blockquote,
 </footer>
 
   
-  
-  
-
-  
-
   
 </body>
 

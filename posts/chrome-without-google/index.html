@@ -69,8 +69,158 @@ article {
   padding-bottom: 1em;
 }
 
-img {
+ 
+article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+  max-width: 80%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ 
+img.original-style {
   max-width: 100%;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.original-style:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+img.icon,
+img.logo,
+img.avatar,
+img.inline-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.icon:hover,
+img.logo:hover,
+img.avatar:hover,
+img.inline-icon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+nav img,
+footer img,
+.navbar img {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+nav img:hover,
+footer img:hover,
+.navbar img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+ 
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+ 
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #007bff;
+  line-height: 1.3;
+}
+
+ 
+article > h1:first-child {
+  font-size: 1.2rem;
+}
+
+ 
+article > h4:first-child {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #28a745;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 
 
@@ -157,13 +307,175 @@ code {
 
 blockquote,
 .blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 15px 20px;
+  margin: 1.5rem 0;
   font-size: 1em;
-  border-left: 5px solid #6c757d;
+  border-left: 4px solid #ff8c00;
+  background-color: #fffbf0;
+  border-radius: 4px;
+}
+
+blockquote p:last-child,
+.blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > *:last-child,
+.blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+
+ 
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-item a {
+  text-decoration: none;
+}
+
+.tag-item code {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: none !important;
+}
+
+.tag-item:hover code {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.tag-item small {
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+ 
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+}
+
+ 
+ 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+ 
+html, body, * {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+ 
+body {
+  overflow-y: overlay;  
+  overflow-x: auto;
+}
+
+ 
+pre {
+  overflow-x: overlay;
+}
+
+ 
+.table-responsive {
+  overflow-x: overlay;
+}
+
+ 
+div, article, section, main, aside, nav, header, footer {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
 </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+  
+  images.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      window.open(this.src, '_blank');
+    });
+  });
+});
+</script>
 </head>
 
 
@@ -185,7 +497,8 @@ blockquote,
   
   <div class="container">
     <article>
-      <h4>Chrome，但是 without Google</h4>
+      
+<h4>Chrome，但是 without Google</h4>
 2023/06/09
 
 
@@ -196,22 +509,24 @@ blockquote,
 
 </br>
 </br>
+
+
 <p>作为新时代浏览器领域的王者，<a href="https://www.google.com/chrome/">Google Chrome</a> 自 2008 年 9 月 2 日公布以来，一路过五关斩六将，送走了不少竞争对手。依托其背后的 <a href="https://www.chromium.org/">Chromium</a> 开源项目，第三方纷纷推出基于 Chromium 内核定制的浏览器产品，其中也涌现出了 <a href="https://brave.com/">Brave</a>、<a href="https://vivaldi.com/">Vivaldi</a> 等佳作。根据 2023 年 5 月的统计数据，Chrome 浏览器在全球拥有超过 62%[注释 1] 的市场份额。 单从市场占有率来看，这些基于 Chromium 的定制产品还未对 Chrome 本身地位形成威胁。</p>
 <p>Chrome 虽好，槽点也不少。因 Google 核心业务——搜索和广告，其本身就是建立在海量的用户数据之上，再加上 Chrome 与 Google 服务的深度整合，致使 Chrome 常年遭受来自于用户关于隐私问题的质疑。而事实上这些数据也并未做到完全「可控」，因为许多数据选项 Google 都没有为其设立开关。</p>
 <p>作为浏览器领域的「劳模」，Chrome 的更新频率也令人咋舌。稳定渠道每两到三周会进行一次小幅更新，每月会进行一次重大更新。虽然更新往往会带来一些新功能或者安全性修复，但频繁的更新导致稳定性也受到影响，即使是「稳定版」，现在遇到稀奇古怪的 bug 也不是什么新鲜事，而 Chrome 自动更新是不能直接关闭的。继「正版 Windows 的受害者 [注释 2]」后，互联网又出现了「正版 Chrome 的受害者」。</p>
 <p>而本文介绍的 <a href="https://ungoogled-software.github.io/">ungoogled-chromium</a>，就能轻松解决这些烦恼。</p>
-<h4 id="ungoogled-chromium-介绍">ungoogled-chromium 介绍</h4>
+<h1 id="ungoogled-chromium-介绍">ungoogled-chromium 介绍</h1>
 <p>ungoogled-chromium 是基于 Chromium 的衍生版本，代码同样开源。相比起 Chromium，其剥离了所有来自 Google 的网络服务组件，进一步屏蔽 Google 内置于浏览器中的各种数据收集行为（比如： Google Safe Browsing API 会收集你浏览的所有网站地址用于恶意网址识别）。</p>
 <ul>
 <li>由于彻底移除了 Google 服务相关组件，ungoogled-chromium 无法在线安装 Chrome 扩展插件，后文将提供解决方法。</li>
 <li>ungoogled-chromium 移除了自动更新功能，你可以根据自己的使用习惯，择期对软件进行更新。</li>
 </ul>
-<h4 id="下载链接">下载链接</h4>
+<h1 id="下载链接">下载链接</h1>
 <p>ungoogled-chromium 官方支持 Windows / macOS / Android / Linux 平台，可以在 <a href="https://github.com/ungoogled-software/ungoogled-chromium">GitHub</a> 中访问软件源代码。</p>
 <table><thead><tr><th>平台</th><th>链接</th><th>备注</th></tr></thead><tbody><tr><td>Windows</td><td><a href="https://github.com/ungoogled-software/ungoogled-chromium-windows/releases" target="_blank">下载链接</a></td><td>x86 / x64</td></tr><tr><td>macOS</td><td><a href="https://github.com/ungoogled-software/ungoogled-chromium-macos/releases" target="_blank">下载链接</a></td><td>Intel 芯片 / Apple 芯片</td></tr><tr><td>Android</td><td><a href="https://github.com/ungoogled-software/ungoogled-chromium-android/releases" target="_blank">下载链接</a></td><td>x86 / arm / arm64</td></tr><tr><td>Linux</td><td><a href="hhttps://github.com/orgs/ungoogled-software/repositories" target="_blank">下载链接</a></td><td>请查看 <a href="https://github.com/orgs/ungoogled-software/repositories" target="_blank">repositories</a> 页面，自行选择适用的版本</td></tr></tbody></table>
 <p>注：Android 版本停留在<code>v99.0.4844.51-1</code>，截止本文发布时已经超过一年未更新，建议选择其他替代品。</p>
-<h4 id="使用技巧">使用技巧</h4>
-<h5 id="1-修复在线安装-chrome-扩展插件功能">1. 修复在线安装 Chrome 扩展插件功能</h5>
+<h1 id="使用技巧">使用技巧</h1>
+<h2 id="1-修复在线安装-chrome-扩展插件功能">1. 修复在线安装 Chrome 扩展插件功能</h2>
 <p><strong>step.1</strong> 在浏览器地址栏中输入<code>chrome://flags/#extension-mime-request-handling</code>，修改默认选项为「Always prompt for install」；</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/chrome-without-google-01.webp" alt="chrome-without-google-01">step.1</p>
 <p><strong>step.2</strong> 在 GitHub 获取 chromium-web-store 插件（<a href="https://github.com/NeverDecaf/chromium-web-store/releases">下载链接</a>），浏览器应该会弹出该插件的安装提示。如果未弹出安装选项，将下载好的<code>.crx</code>文件拖到<code>chrome://extensions/</code>页面安装；</p>
@@ -221,14 +536,14 @@ blockquote,
 <li>chromium-web-store 可以自动检测插件版本，但无法自动更新插件，需要手动点击需要更新的插件进行安装；</li>
 <li>未经在线扩展商店服务审核的插件可能存在安全问题，请谨慎使用第三方提供的<code>.crx</code>文件。</li>
 </ul>
-<h5 id="2-保留网站-cookies">2. 保留网站 Cookies</h5>
+<h2 id="2-保留网站-cookies">2. 保留网站 Cookies</h2>
 <p> ungoogled-chromium 在默认情况下，关闭浏览器时会清除所有网站的 Cookie。此举虽然能保护隐私，但是每次打开浏览器的时候都要重新登陆各种网站和服务，在实际使用中颇为不便。建议在<code>chrome://settings/cookies</code> 设置中将「常规设置」的选项修改为「在无痕模式下阻止第三方 Cookie」。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/chrome-without-google-03.webp" alt="chrome-without-google-03">隐私设置</p>
-<h5 id="3-其他推荐的-chromeflags-设置">3. 其他推荐的 chrome://flags 设置</h5>
+<h2 id="3-其他推荐的-chromeflags-设置">3. 其他推荐的 chrome://flags 设置</h2>
 <p>ungoogled-chromium 在 Chrome 浏览器<code>chrome://flags</code>的基础上新增了部分定制选项（这类选项被标记为「ungoogled-chromium flag」），同时恢复了一小部分在 Chrome 中被移除的<code>chrome://flags</code>选项，你可以根据需要决定是否调整这些设置项。</p>
 <p>我推荐的 chrome://flags 设置如下，完整的 ungoogled-chromium-flags 说明请参考：<a href="https://github.com/ungoogled-software/ungoogled-chromium/blob/master/docs/flags.md">官方文档</a>。</p>
 <table><thead><tr><th>选项</th><th>说明</th></tr></thead><tbody><tr><td>#extension-mime-request-handling</td><td>允许直接安装<code>.crx</code>文件，建议修改为「Always prompt for install」</td></tr><tr><td>#show-avatar-button</td><td>如果没有浏览器多用户切换的使用需求，可以修改为「Never」隐藏用户按钮。</td></tr><tr><td>#keep-old-history</td><td>修改为「Enabled」可以永久保留历史记录</td></tr><tr><td>#remove-tabsearch-button</td><td>修改为「Enabled」可以隐藏搜索标签页按钮</td></tr><tr><td>#disable-qr-generator</td><td>修改为「Enabled」可以隐藏地址栏中的二维码图标</td></tr><tr><td>#disable-sharing-hub</td><td>修改为「Enabled」可以隐藏地址栏中的分享图标</td></tr><tr><td>#hide-sidepanel-button</td><td>修改为「Enabled」可以隐藏浏览器侧边栏 / 阅读列表</td></tr></tbody></table>
-<h5 id="4-启用浏览器-drm-数字版权保护功能">4. 启用浏览器 DRM 数字版权保护功能</h5>
+<h2 id="4-启用浏览器-drm-数字版权保护功能">4. 启用浏览器 DRM 数字版权保护功能</h2>
 <p>当你使用 ungoogled-chromium 访问流媒体网站，可能会发现一些版权内容无法播放，特别是观看一些从国外进口的影视版权资源时，非常容易遇到这个问题。比如使用 ungoogled-chromium 直接打开爱奇艺《<a href="https://www.iqiyi.com/v_19rr7q1fy0.html">复仇者联盟 4：终极之战</a>》，播放器会报错：<code>DASH-A00000-702</code></p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/chrome-without-google-04.webp" alt="chrome-without-google-04"></p>
 <p>其背后原因也很简单：播放该资源需要浏览器支持 DRM 数字版权保护技术 [注释 3]，而 Chrome 数字版权保护所需的 Widevine 组件并没有随 Chromium 项目一同开源 [注释 3]。Widevine 是 Google 于 2010 年收购的一种数字版权保护技术，作为组件内置于 Chrome 中。其本身用于加密 / 解密版权内容，未包含在 Chromium 开源项目内也情有可原。</p>
@@ -244,7 +559,7 @@ blockquote,
 <p><strong>step.4</strong> 测试效果。再次打开刚才报错的电影，此时已经可以正常播放。</p>
 <p>注：因为 DRM 已经生效，所以在截图中，电影画面会自动变成黑色，实际上电影此时可以正常播放。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/chrome-without-google-08.webp" alt="chrome-without-google-08">报错提示消失</p>
-<h4 id="参考资料">参考资料</h4>
+<h1 id="参考资料">参考资料</h1>
 <ol>
 <li><a href="https://ungoogled-software.github.io/ungoogled-chromium-wiki/">ungoogled-chromium Wiki</a>；</li>
 <li><a href="https://undefapp.com/ungoogle-chromium-quan-ping-tai-chun-jing-ban-liu-lan-qi/">ungoogle-chromium - 全平台纯净版浏览器 - 未定义应用 | Undefined APP</a>；</li>
@@ -256,8 +571,9 @@ blockquote,
 <p>注释 [4]：实际上，Chromium 开源项目并非开源了 Chrome 中的所有组件，部分 Chrome 组件出于各种因素没有开源。</p>
 <blockquote>
 <p>© 本文著作权归作者 <a href="https://sspai.com/u/iduan/updates">@JLDUAN</a> 所有，并授权少数派独家使用，未经少数派许可，不得转载使用。
-原文地址 <a href="https://sspai.com/post/80189">sspai.com</a></p>
+原文地址 <a href="https://sspai.com/post/80189">https://sspai.com/post/80189</a></p>
 </blockquote>
+
 
 
 <script src="https://giscus.app/client.js"
@@ -275,6 +591,7 @@ blockquote,
         crossorigin="anonymous"
         async>
 </script>
+
     </article>
   </div>
   <footer>
@@ -291,11 +608,6 @@ blockquote,
 </footer>
 
   
-  
-  
-
-  
-
   
 </body>
 

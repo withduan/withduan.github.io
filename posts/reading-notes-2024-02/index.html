@@ -69,8 +69,158 @@ article {
   padding-bottom: 1em;
 }
 
-img {
+ 
+article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+  max-width: 80%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ 
+img.original-style {
   max-width: 100%;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.original-style:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+img.icon,
+img.logo,
+img.avatar,
+img.inline-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.icon:hover,
+img.logo:hover,
+img.avatar:hover,
+img.inline-icon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+nav img,
+footer img,
+.navbar img {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+nav img:hover,
+footer img:hover,
+.navbar img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+ 
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+ 
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #007bff;
+  line-height: 1.3;
+}
+
+ 
+article > h1:first-child {
+  font-size: 1.2rem;
+}
+
+ 
+article > h4:first-child {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #28a745;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 
 
@@ -157,13 +307,175 @@ code {
 
 blockquote,
 .blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 15px 20px;
+  margin: 1.5rem 0;
   font-size: 1em;
-  border-left: 5px solid #6c757d;
+  border-left: 4px solid #ff8c00;
+  background-color: #fffbf0;
+  border-radius: 4px;
+}
+
+blockquote p:last-child,
+.blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > *:last-child,
+.blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+
+ 
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-item a {
+  text-decoration: none;
+}
+
+.tag-item code {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: none !important;
+}
+
+.tag-item:hover code {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.tag-item small {
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+ 
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+}
+
+ 
+ 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+ 
+html, body, * {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+ 
+body {
+  overflow-y: overlay;  
+  overflow-x: auto;
+}
+
+ 
+pre {
+  overflow-x: overlay;
+}
+
+ 
+.table-responsive {
+  overflow-x: overlay;
+}
+
+ 
+div, article, section, main, aside, nav, header, footer {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
 </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+  
+  images.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      window.open(this.src, '_blank');
+    });
+  });
+});
+</script>
 </head>
 
 
@@ -185,7 +497,8 @@ blockquote,
   
   <div class="container">
     <article>
-      <h4>读书笔记 2024.02</h4>
+      
+<h4>读书笔记 2024.02</h4>
 2024/02/29
 
 
@@ -196,31 +509,34 @@ blockquote,
 
 </br>
 </br>
+
+
 <p>这个月看完的书没有上个月多，可能是因为其中两本书内容比较专业，不适合用来打发时间。我如果按照平常的阅读习惯，看得太快就看不懂了，所以不得不放慢阅读的速度。</p>
 <p><strong>本月已读完的书有：</strong></p>
-<h4 id="1中华帝国晚期的性法律与社会苏成捷matthew-hsommer著-谢美裕-尤陈俊译">1.《中华帝国晚期的性、法律与社会》苏成捷(Matthew H.Sommer)（著）/ 谢美裕 尤陈俊（译）</h4>
+<h1 id="1中华帝国晚期的性法律与社会苏成捷matthew-hsommer著-谢美裕-尤陈俊译">1.《中华帝国晚期的性、法律与社会》苏成捷(Matthew H.Sommer)（著）/ 谢美裕 尤陈俊（译）</h1>
 <p>作者根据唐代至清代遗留下来的官府办案材料，梳理了这段时期内的封建政权或者社会整体对「性」的认知与看法。题材有一些敏感，但属实是一本严肃作品。</p>
 <p>书中有大量的篇幅用来剖析一些具体的性犯罪案例，还提到了与「性」有关的一些社会现象，比如「打光棍」、「性」与社会地位/阶级的联系、寡妇再嫁、同性恋、风俗业等，还讨论了中国古代的女性「贞洁」思想。</p>
 <p>中国人普遍会习惯性回避这样的话题，在公共领域少有这类型的研究，作者是一个外国人，通过挖掘史料得出来不少有意思的结论，对一些相关的研究者来说存在一定的参考价值。对我来说可能只是看了一本猎奇的书……</p>
-<h4 id="2-太白金星有点烦马伯庸著">2. 《太白金星有点烦》马伯庸（著）</h4>
+<h1 id="2-太白金星有点烦马伯庸著">2. 《太白金星有点烦》马伯庸（著）</h1>
 <p>以前听过一个段子，说《西游记》里没后台的妖怪都被孙悟空当场打死了，而那些有后台的妖怪，一到生死存亡的关键时刻，背后的大人物立马显身，把妖怪接走了。</p>
 <p>没想到本作对《西游记》的二创更加大胆，在作者笔下，《西游记》居然成了都市职场剧。「西天取经」看似单纯的一个项目，实际上参与的多方人马个个掏空了心思，都想从中捞点好处，就连师徒四人也是各方打点安排、权衡利益之下才形成的工作队伍。在各方利益的纠葛之下，「取经」成了「镀金」，「历险」成了「表演」，这样新奇的「二创」实在有趣。</p>
 <p>书中充满了对现代职场、体制内一些现象的影射，不禁让人笑出声，但谁又有能力改变现状呢……</p>
 <blockquote>
 <p>怪不得满天神佛个个清净无为、不昧诸缘。只有不主动做事，才不会沾染因果啊！</p>
 </blockquote>
-<h4 id="3小米创业思考雷军口述-徐洁云整理">3.《小米创业思考》雷军（口述）/ 徐洁云（整理）</h4>
+<h1 id="3小米创业思考雷军口述-徐洁云整理">3.《小米创业思考》雷军（口述）/ 徐洁云（整理）</h1>
 <p>书中写了一些小米的秘闻，比如红米手机是国家委托小米进行研发，因此采用了大量国产元器件，一来降低成本，其次还能引导国产供应链发展。初代研发不及预期，团队最终决定推倒重来。因此最终发售的「红米 1 代」手机实质上是第 2 代（代号为 H2）。</p>
 <p>最终的结果大家也看到了，红米系列非常成功，不但帮助小米扩大了市场占有率，红米平价、优质的产品路线也拔高了小米品牌的公众形象，又赚钱又赚名声。</p>
 <blockquote>
 <p>好产品不一定能带来口碑，便宜的产品不一定能带来口碑，又好又便宜的产品也不一定能带来口碑，只有超过预期的产品才能带来口碑。</p>
 </blockquote>
-<h4 id="4置身事内中国政府与经济发展兰小欢著">4.《置身事内：中国政府与经济发展》兰小欢（著）</h4>
+<h1 id="4置身事内中国政府与经济发展兰小欢著">4.《置身事内：中国政府与经济发展》兰小欢（著）</h1>
 <p>我没有太多专业背景，看这本书全程都是走马观花，一知半解。政府也像一家大公司，比起其他小公司，它有大公司的规模优势，但是内部也不乏各种问题，影响运转和效率，甚至可能会危害到整家公司的存亡。</p>
 <p>这也不难理解为何我们在各个领域听了太多「改革」的口号，最终却没有感受到太剧烈的变化。俗话说「船大难掉头」，在外人眼中看似不起眼的变动，实质上是「牵一发而动全身」，可能会影响各行各业、各种群体乃至个人的利益，只能逐步推进。所幸的是，经过历史的检验，我们有理由相信一切在变好。</p>
 <blockquote>
 <p>我国的经济改革脱胎于计划经济，政府手中掌握大量对产业发展至关重要的资源，如土地、银行、大学和科研机构等，所以必然会以各种方式深度参与工业化进程。政府和市场间没有黑白分明的界限，几乎所有的重要现象，都是这两种组织和资源互动的结果。要想认识复杂的世界，需要小心避免政府和市场的二分法，下过于简化的判断。</p>
 </blockquote>
+
 
 
 <script src="https://giscus.app/client.js"
@@ -238,6 +554,7 @@ blockquote,
         crossorigin="anonymous"
         async>
 </script>
+
     </article>
   </div>
   <footer>
@@ -254,11 +571,6 @@ blockquote,
 </footer>
 
   
-  
-  
-
-  
-
   
 </body>
 

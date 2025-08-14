@@ -69,8 +69,158 @@ article {
   padding-bottom: 1em;
 }
 
-img {
+ 
+article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+  max-width: 80%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ 
+img.original-style {
   max-width: 100%;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.original-style:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+img.icon,
+img.logo,
+img.avatar,
+img.inline-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.icon:hover,
+img.logo:hover,
+img.avatar:hover,
+img.inline-icon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+nav img,
+footer img,
+.navbar img {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+nav img:hover,
+footer img:hover,
+.navbar img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+ 
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+ 
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #007bff;
+  line-height: 1.3;
+}
+
+ 
+article > h1:first-child {
+  font-size: 1.2rem;
+}
+
+ 
+article > h4:first-child {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #28a745;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 
 
@@ -157,13 +307,175 @@ code {
 
 blockquote,
 .blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 15px 20px;
+  margin: 1.5rem 0;
   font-size: 1em;
-  border-left: 5px solid #6c757d;
+  border-left: 4px solid #ff8c00;
+  background-color: #fffbf0;
+  border-radius: 4px;
+}
+
+blockquote p:last-child,
+.blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > *:last-child,
+.blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+
+ 
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-item a {
+  text-decoration: none;
+}
+
+.tag-item code {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: none !important;
+}
+
+.tag-item:hover code {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.tag-item small {
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+ 
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+}
+
+ 
+ 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+ 
+html, body, * {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+ 
+body {
+  overflow-y: overlay;  
+  overflow-x: auto;
+}
+
+ 
+pre {
+  overflow-x: overlay;
+}
+
+ 
+.table-responsive {
+  overflow-x: overlay;
+}
+
+ 
+div, article, section, main, aside, nav, header, footer {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
 </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+  
+  images.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      window.open(this.src, '_blank');
+    });
+  });
+});
+</script>
 </head>
 
 
@@ -185,7 +497,8 @@ blockquote,
   
   <div class="container">
     <article>
-      <h4>华山个人游，独自登山的不完全记录</h4>
+      
+<h4>华山个人游，独自登山的不完全记录</h4>
 2021/08/16
 
 
@@ -196,17 +509,19 @@ blockquote,
 
 </br>
 </br>
+
+
 <p>华山，是五岳之中的西岳，雅称「太华山」，位于陕西省渭南市华阴市。因其山势险峻，一直有「奇险天下第一山」的说法。民间传说《沉香救母》中的故事就是发生于此。华山分别有东、西、南、北、中五峰，其中最高峰是南峰。[注释 1] 我作为一个陕西人，从小到大都对这座山有着十足的向往。直到今年 7 月中旬，我在西安旅游时，因为时间充足，便开始制定去华山爬山的计划。</p>
-<h4 id="确立目标">确立目标</h4>
+<h1 id="确立目标">确立目标</h1>
 <p>华山景区官网有一条「自虐登山路线」[注释 2]，这是一条全程徒步的路线，分为两天的行程。我打算放弃索道，按照这张路线图徒步上下山，充分体会一下「天险」的感觉。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-01.gif" alt="huashan-mountain-tour-2021-01">华山自虐登山路线</p>
 <p>另外华山共有五峰，我想逐一登顶打卡。个人对看日出不感兴趣，也不打算过夜看日出。我还希望华山之旅能够当天结束，晚上返回西安。</p>
 <p>计划核心内容可以总结为：</p>
 <p>✅徒步登山 ✅五峰打卡✅不看日出 ✅当天往返 </p>
-<h4 id="出发前准备">出发前准备</h4>
-<h5 id="购票">购票</h5>
+<h1 id="出发前准备">出发前准备</h1>
+<h2 id="购票">购票</h2>
 <p>华山景区门票在微信公众号「华山旅游服务平台」发售，新冠疫情期间已经取消现场售票窗口。一定要提前预约购买，确认出行日期，以免耽误个人行程。网络购票后无需取票，入口处刷身份证即可进入景区。旺季：¥160 / 人，淡季：¥100 / 人，学生票半价。</p>
-<h5 id="必备物品">必备物品</h5>
+<h2 id="必备物品">必备物品</h2>
 <p>根据此次旅游经验，我为大家整理了以下登山必备物品：</p>
 <ul>
 <li><strong>自热食品</strong></li>
@@ -228,7 +543,7 @@ blockquote,
 <li><strong>其他物品</strong></li>
 </ul>
 <p>其他必备物品，如证件、零钱、纸巾、湿巾、充电宝一类私人物品，根据个人需要携带，此处不再赘述。</p>
-<h5 id="按需购买的物品">按需购买的物品</h5>
+<h2 id="按需购买的物品">按需购买的物品</h2>
 <ul>
 <li><strong>遮阳帽</strong></li>
 </ul>
@@ -249,15 +564,15 @@ blockquote,
 <li><strong>厚衣服</strong></li>
 </ul>
 <p>山上到了晚上气温会降低，因此计划山上过夜、凌晨看日出的朋友一定要携带几件厚衣服，夜间可以保暖。如果不想带，山上的商家处也可以租用棉大衣。</p>
-<h4 id="交通路线">交通路线</h4>
-<h5 id="西安市---华阴市">📍西安市 - 📍华阴市</h5>
+<h1 id="交通路线">交通路线</h1>
+<h2 id="西安市---华阴市">📍西安市 - 📍华阴市</h2>
 <p>从西安市区出发，可购买 <strong>西安北 - 华山北</strong> 的高铁票前往华阴市。（全程约 30 分钟，票价 ¥54.5）</p>
-<h5 id="华山北站---华山游客中心">📍华山北站 - 📍华山游客中心</h5>
+<h2 id="华山北站---华山游客中心">📍华山北站 - 📍华山游客中心</h2>
 <p>华山北站与华山景区相距约 5 公里。华山北站出站后，搭乘旅游专线公交，直达华山游客中心。（全程约 15 分钟，票价 ¥2）</p>
-<h5 id="华山游客中心---玉泉院徒步登山起点">📍华山游客中心 - 📍玉泉院（徒步登山起点）</h5>
+<h2 id="华山游客中心---玉泉院徒步登山起点">📍华山游客中心 - 📍玉泉院（徒步登山起点）</h2>
 <p>到达华山游客中心后，前往 1 号停车场，搭乘免费接驳车至华山徒步登山起点——玉泉院，在玉泉院入口处刷身份证进入景区。（全程约 15 分钟）</p>
-<h4 id="登山记录">登山记录</h4>
-<h5 id="玉泉院---北峰">玉泉院 - 北峰</h5>
+<h1 id="登山记录">登山记录</h1>
+<h2 id="玉泉院---北峰">玉泉院 - 北峰</h2>
 <p>玉泉院是徒步上山的起点，此处为道教场所，其中还有部分景观。我因为着急赶路，并未在此多停留。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-02.webp" alt="huashan-mountain-tour-2021-02">玉泉院</p>
 <p>过了玉泉院，就到了山门检票处，由此处开启徒步登山之旅。</p>
@@ -269,14 +584,14 @@ blockquote,
 <p>从玉泉院到北峰顶，一路上走走停停，耗时将近 4 小时。这时候已经是午饭时间，我在北峰顶就餐并且休息了片刻。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-06.webp" alt="huashan-mountain-tour-2021-06">北峰顶</p>
 <p>北峰处设有索道，单程 ¥80 / 人，全程约 15 分钟，这里也是游客的主要上山途径之一。</p>
-<h5 id="北峰---东峰">北峰 - 东峰</h5>
+<h2 id="北峰---东峰">北峰 - 东峰</h2>
 <p>从北峰至东峰，是比玉泉院上山时要轻松一些的，一来是先前一路上山，已经适应了大量的爬坡，二来是因为峰与峰之间的高差，总比山脚到山顶的高差要小一些。</p>
 <p>这段路途中，在我心里最壮观的景点就是苍龙岭，这里也是很多华山介绍信息里出现的景象。苍龙岭这一段台阶 530 余级，坡度在 45° 以上，道路宽度大概 1 米左右，只能抓住两侧的栏杆向上爬，本来就恐高的我根本不敢回头看……</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-07.webp" alt="huashan-mountain-tour-2021-07">远看苍龙岭
 <img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-08.webp" alt="huashan-mountain-tour-2021-08">苍龙岭上山台阶路</p>
 <p>东峰是华山日出的最佳观赏地，附近建有饭店和旅馆。准备看日出的游客很多都是自带或租用帐篷，夜间在山顶的平台上搭设帐篷休息，等待凌晨最佳时机欣赏日出。由于我没有看日出的计划，在此打卡之后便继续赶往南峰。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-09.webp" alt="huashan-mountain-tour-2021-09">东峰顶景观</p>
-<h5 id="东峰---南峰">东峰 - 南峰</h5>
+<h2 id="东峰---南峰">东峰 - 南峰</h2>
 <p>东峰至南峰的路段有一处著名景点——「鹞子翻身」，只可惜我是在阴天爬山，途径此处时，眼前除了大片大片的云海之外，其他什么也看不到。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-10.webp" alt="huashan-mountain-tour-2021-10">前往南峰的路上，回望东峰<br>
 右侧山石顶部有一亭，名为「下棋亭」</p>
@@ -284,7 +599,7 @@ blockquote,
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-11.webp" alt="huashan-mountain-tour-2021-11">南峰顶</p>
 <p>终于登上了南峰顶，此处为华山五峰最高点。峰顶处是一块巨石，站在巨石顶端，山底的深渊被云海所遮挡，倒也察觉不出这里的险境。抬头一看，头顶之上的天空被云团整个包围，好似有万千天兵天将隐藏其中。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-12.webp" alt="huashan-mountain-tour-2021-12">南峰顶处的云团</p>
-<h5 id="南峰---西峰">南峰 - 西峰</h5>
+<h2 id="南峰---西峰">南峰 - 西峰</h2>
 <p>登顶南峰之后，这次的行程差不多已经完成了一半。由于南峰最高，接下来的行程下坡路偏多，相对轻松。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-13.webp" alt="huashan-mountain-tour-2021-13">站在南峰处，远眺西峰</p>
 <p>靠近西峰的地方也有一段险道，路开在一块巨石的脊背上，虽然道路两侧险峻，但是路本身相对苍龙岭那段还是很平缓的……</p>
@@ -294,30 +609,30 @@ blockquote,
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-15.webp" alt="huashan-mountain-tour-2021-15">西峰顶</p>
 <p>从西峰顶的这个角度看向对面，对面高一些的是东峰，矮一点的是中峰。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-16.webp" alt="huashan-mountain-tour-2021-16">对面的东峰与中峰</p>
-<h5 id="西峰---中峰">西峰 - 中峰</h5>
+<h2 id="西峰---中峰">西峰 - 中峰</h2>
 <p>之前本应该按「北 - 中 - 东 - 南 - 西」的官方推荐路线游览，由于过了北峰之后走错了路，直接上了东峰，因而错过了中峰。为了不给此次的华山之旅留下遗憾，我决定<del>拖着疲惫的身躯</del>再绕路去一趟中峰。</p>
 <p>终于来到登上中峰前的最后一段楼梯，两条腿爬了一天楼梯早已经是又酸又痛。眼前的楼梯我只能每走一段歇一会，最后才勉强走上去……</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-17.webp" alt="huashan-mountain-tour-2021-17">左侧巨石顶端即为中峰顶</p>
 <p>中峰相比其他四峰，气势上显得就不太足了，看起来要比周围矮很大一截。相比其他四峰的热闹，这里似乎少有人来。游客只有零星几人，周围也没有任何商贩。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-18.webp" alt="huashan-mountain-tour-2021-18">拍摄于中峰顶，这个角度对面是南峰</p>
-<h5 id="中峰---北峰">中峰 - 北峰</h5>
+<h2 id="中峰---北峰">中峰 - 北峰</h2>
 <p>从中峰下来，接下来便是返程阶段。再通过原路返回时，我的双腿已经颤颤巍巍…… 好在华山的部分危险路段，上下山的道路是分开的。比如苍龙岭处台阶路段只允许上山，在苍龙岭东侧另建有下山道路。</p>
 <p>到了下午的时候，遮住华山的乌云终于舍得散去一些，那些山底的深渊、远处的群山逐渐显露，这时我才真正感受到了 “天险” 的魅力。此时的我已经累到不行，一心只想着快点回去，已经无暇再欣赏沿路的风光了……</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-19.webp" alt="huashan-mountain-tour-2021-19">返回北峰途中，远眺北峰</p>
 <p>待我再次返回北峰，已是下午 18:30。按照最初的计划，我还要从这里沿着来时的路，徒步下山返回玉泉院，完成「徒步华山」的终极目标。可实际情况已经不允许我再如此「任性」：</p>
 <p>一是从北峰返回到玉泉院，下山至少还需要 2-3 小时，我担心赶不上回西安的高铁；二是此刻我已经非常疲惫，双腿的「耐久度」已经消耗殆尽，恐怕一失足直接就会滚下山…… 趁着还北峰索道还未停运（北峰索道每日 19:00 停止运营），火速买票逃离华山。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-20.webp" alt="huashan-mountain-tour-2021-20"></p>
-<h5 id="北峰索道---华山游客中心">北峰索道 - 华山游客中心</h5>
+<h2 id="北峰索道---华山游客中心">北峰索道 - 华山游客中心</h2>
 <p>乘坐索道下山时，和我搭乘同一缆车车厢的，是五个组团来的小伙子，年龄大概十八九二十岁的样子，听口音应该是来自广东的朋友。疲惫的我此刻已经不想说话，听他们全程聊了 20 分钟，一句都没听懂……</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-21.webp" alt="huashan-mountain-tour-2021-21">抵达山脚停车场</p>
 <p>索道下山之后，还需要转乘大巴前往游客中心，票价 ¥20，全程约 20 分钟。大巴抵达终点站下车，即可到达景区出口，这次的华山之旅到此就结束了。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/huashan-mountain-tour-2021-22.webp" alt="huashan-mountain-tour-2021-22"></p>
-<h4 id="旅行感悟">旅行感悟</h4>
+<h1 id="旅行感悟">旅行感悟</h1>
 <p>华山之「险」，透过照片只能传递出十之一二。特别是千尺幢、百尺峡、苍龙岭等场景，到了跟前才发现，以往听过的任何描述一点都不夸张。这些闻名中外的「险道」，如若不亲身体验，靠图片根本无法想象。</p>
 <p>我本人有些恐高，可真正登上各个峰顶时，恐惧已经被抛到脑后，我依旧会被山顶之处的场景所震撼。在崇山峻岭之间，无论是游客还是山路，都隐匿在了茂密的丛林之中。区区人类的力量，在大自然面前实在是太过渺小。</p>
 <p>根据史料记载，秦时就有人试图登山，直到唐代才开辟至山顶的道路。古时的探路人，既没有现成的楼梯，更没有索道，单靠双手和双脚便在这绝境之中开辟出一条险路。面对这样的环境，依靠充足的补给和高科技手段上山的现代人，真的是不值一提。虽然过程很辛苦，但见识过天险之后，我觉得还是很值。</p>
 <p>沿路见到了很多结伴而行的游客，有甜蜜的情侣，有幸福的一家三口，甚至碰见了几位老人，也是和我一起从玉泉院出发徒步上山，不知道我老了以后会不会和他们一样酷。路上还见到了一对父子，待我好不容易爬上北峰已经累到不行的时候，小孩子还在蹦蹦跳跳、兴高采烈地给爸爸讲自己看过的童话故事。瞬间顿悟，熊孩子这个称号不但可以透露出他们无敌的破坏力，还有可能代表着他们那惊人的体力……</p>
-<h4 id="旅行建议">旅行建议</h4>
+<h1 id="旅行建议">旅行建议</h1>
 <ul>
 <li>爬山前要休息好，出发前吃好早餐再上山。大早上因为着急赶路，我没吃早饭就匆忙上了山，没多久就累到不行。休息了一会儿，吃点东西缓了缓才感觉恢复；</li>
 <li>想要饱览华山美景的朋友，要提前查询天气情况，最好不要在阴天上山。虽然阴天利于爬山，但是绝大多数美景完全被云层遮盖，只能辜负……</li>
@@ -340,6 +655,7 @@ blockquote,
 </blockquote>
 
 
+
 <script src="https://giscus.app/client.js"
         data-repo="withduan/withduan.github.io"
         data-repo-id="R_kgDOK8qrXQ"
@@ -355,6 +671,7 @@ blockquote,
         crossorigin="anonymous"
         async>
 </script>
+
     </article>
   </div>
   <footer>
@@ -371,11 +688,6 @@ blockquote,
 </footer>
 
   
-  
-  
-
-  
-
   
 </body>
 

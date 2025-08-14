@@ -69,8 +69,158 @@ article {
   padding-bottom: 1em;
 }
 
-img {
+ 
+article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+  max-width: 80%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ 
+img.original-style {
   max-width: 100%;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.original-style:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+img.icon,
+img.logo,
+img.avatar,
+img.inline-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.icon:hover,
+img.logo:hover,
+img.avatar:hover,
+img.inline-icon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+nav img,
+footer img,
+.navbar img {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+nav img:hover,
+footer img:hover,
+.navbar img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+ 
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+ 
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #007bff;
+  line-height: 1.3;
+}
+
+ 
+article > h1:first-child {
+  font-size: 1.2rem;
+}
+
+ 
+article > h4:first-child {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #28a745;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 
 
@@ -157,13 +307,175 @@ code {
 
 blockquote,
 .blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 15px 20px;
+  margin: 1.5rem 0;
   font-size: 1em;
-  border-left: 5px solid #6c757d;
+  border-left: 4px solid #ff8c00;
+  background-color: #fffbf0;
+  border-radius: 4px;
+}
+
+blockquote p:last-child,
+.blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > *:last-child,
+.blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+
+ 
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-item a {
+  text-decoration: none;
+}
+
+.tag-item code {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: none !important;
+}
+
+.tag-item:hover code {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.tag-item small {
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+ 
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+}
+
+ 
+ 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+ 
+html, body, * {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+ 
+body {
+  overflow-y: overlay;  
+  overflow-x: auto;
+}
+
+ 
+pre {
+  overflow-x: overlay;
+}
+
+ 
+.table-responsive {
+  overflow-x: overlay;
+}
+
+ 
+div, article, section, main, aside, nav, header, footer {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
 </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+  
+  images.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      window.open(this.src, '_blank');
+    });
+  });
+});
+</script>
 </head>
 
 
@@ -185,7 +497,8 @@ blockquote,
   
   <div class="container">
     <article>
-      <h4>「没什么好总结的」—— 致我的 2023</h4>
+      
+<h4>「没什么好总结的」—— 致我的 2023</h4>
 2023/12/30
 
 
@@ -193,11 +506,13 @@ blockquote,
 
 </br>
 </br>
+
+
 <p>我通过 RSS 客户端订阅了很多独立博客。近日浏览各个博客文章更新的时候，发现大家陆陆续续都在做年终总结。虽然我的 2023 过得平平无奇，但为了能赶上这股潮流，也或许是因为博客转投 hugo 之后新鲜劲儿还没过，巴不得想写点什么，我也打算给我的 2023 做个总结。</p>
-<h4 id="我的-2023">我的 2023</h4>
-<h5 id="1工作">1.工作✅</h5>
+<h1 id="我的-2023">我的 2023</h1>
+<h2 id="1工作">1.工作✅</h2>
 <p>工作没什么可讲的（WPS 用得更熟练了 hhh），平日里的工作内容宛如和尚撞钟，完全没有分享的价值，也没有分享的欲望。😀</p>
-<h5 id="2旅游">2.旅游✅</h5>
+<h2 id="2旅游">2.旅游✅</h2>
 <p>在 2022 年下半年的时候，我小小的尝试了两次自驾游（太原 &amp; 延安），当时因疫情防控，出行多有不便。到了 2023 年，疫情解封，去的城市越来越多，路程也越来越远。以下是今年自驾游的小结：</p>
 <style>
   table {
@@ -280,18 +595,18 @@ blockquote,
 <p>不算不知道，一算吓👻一跳。自驾真的……挺🔥烧钱的……<br/>
 <small>*<strong>「总路程」是全程使用「一生足迹」App 记录所得出的结果</strong></small>
 <br/></p>
-<h5 id="3恋爱">3.恋爱⛔️</h5>
+<h2 id="3恋爱">3.恋爱⛔️</h2>
 <p>🐶</p>
-<h5 id="4阅读">4.阅读⛔️</h5>
+<h2 id="4阅读">4.阅读⛔️</h2>
 <p>年初立了 flag：每月读一本书。到了 12 月底，惊喜地发现：一本书都没看。
 🌚明年继续立 flag 吧……</p>
-<h5 id="5习惯">5.习惯</h5>
+<h2 id="5习惯">5.习惯</h2>
 <ul>
 <li>休息日想做到 0 点睡觉、7 点起床，试了一段时间真的很难；⛔️</li>
 <li>尝试用 Obsidian 做笔记，摘录信息；✅</li>
 <li>平均每周跑步 2 次✅</li>
 </ul>
-<h5 id="6好物清单">6.好物清单</h5>
+<h2 id="6好物清单">6.好物清单</h2>
 <ul>
 <li>薇姿洗发水 <span style="color:#CCCCCC;"><em>控油效果很好</em></span></li>
 <li>达霏欣·米诺地尔 <span style="color:#CCCCCC;"><em>涂起来有点麻烦但是有用</em></span></li>
@@ -302,7 +617,7 @@ blockquote,
 <li>CeraVe适乐肤身体乳 <span style="color:#CCCCCC;"><em>脸上、身上都可以涂，拯救爆皮</em></span></li>
 <li>罗技 G Pro X 鼠标 <span style="color:#CCCCCC;"><em>满足你对无线鼠标的全部幻想</em></span></li>
 </ul>
-<h5 id="7电影">7.电影</h5>
+<h2 id="7电影">7.电影</h2>
 <ul>
 <li>《深海》<span style="color:#CCCCCC;"><em>喜欢，二刷</em></span></li>
 <li>《流浪地球2》<span style="color:#CCCCCC;"><em>适合打发时间</em></span></li>
@@ -320,14 +635,14 @@ blockquote,
 <li>《三大队》<span style="color:#CCCCCC;"><em>拍的很好，但是感觉没有惊喜</em></span></li>
 <li>《泰勒·斯威夫特：时代巡回演唱会》<span style="color:#CCCCCC;"><em>无脑下单</em></span></li>
 </ul>
-<h5 id="8电视剧">8.电视剧</h5>
+<h2 id="8电视剧">8.电视剧</h2>
 <ul>
 <li>《人生之路》<span style="color:#CCCCCC;"><em>阴差阳错，磕磕绊绊</em></span></li>
 <li>《外婆的新世界》<span style="color:#CCCCCC;"><em>要追求自己的人生</em></span></li>
 <li>《新闻女王》<span style="color:#CCCCCC;"><em>剧情紧凑，很下饭</em></span></li>
 <li>《美国恐怖故事集 第三季》<span style="color:#CCCCCC;"><em>画面劲爆，很下饭</em></span></li>
 </ul>
-<h5 id="9音乐">9.音乐</h5>
+<h2 id="9音乐">9.音乐</h2>
 <blockquote>
 <p>Taylor Swift -《1989(Taylor&rsquo;s Version)》 </br>
 发布时间：2023/10/27 </br>
@@ -341,8 +656,8 @@ blockquote,
 </blockquote>
 <p><span style="color:#CCCCCC;"><em>音乐是全世界共同的语言，专辑主打曲《God Of Music》是 SEVENTEEN 所擅长的清新、甜蜜、欢快的曲风，歌曲本身为深处困境的人们带去支持和鼓励，歌词中蕴含的 SEVENTEEN 特有的温暖和力量，能轻易扫去脑海中的阴霾，为严寒冬日带来阵阵暖意。</em></span></p>
 <hr>
-<h4 id="给-2024-随便立几个-flag-">给 2024 随便立几个 flag 🌚</h4>
-<h5 id="1书单">1.书单</h5>
+<h1 id="给-2024-随便立几个-flag-">给 2024 随便立几个 flag 🌚</h1>
+<h2 id="1书单">1.书单</h2>
 <p>来源：以前没看完的，加上<a href="https://book.douban.com/annual/2023/">豆瓣 2023 读书榜单</a>里随便找的。</p>
 <p><input type="checkbox"> 《蒂姆·库克传》[美]利恩德·卡尼（Leander Kahney）/李世凡 梁德馨</br>
 <input type="checkbox"> 《中国古代文化常识》- 王力</br>
@@ -356,7 +671,7 @@ blockquote,
 <input type="checkbox"> 《太白金星有点烦》- 马伯庸</br>
 <input type="checkbox"> 《老实好人》- 顾湘</br>
 <input type="checkbox"> 《中华帝国晚期的性、法律与社会》- [美]苏成捷（Matthew H. Sommer）/谢美裕 尤陈俊</br></p>
-<h5 id="2其他愿望清单">2.其他愿望清单</h5>
+<h2 id="2其他愿望清单">2.其他愿望清单</h2>
 <p><input type="checkbox"> 继续养成定时作息的习惯⌛️</br>
 <input type="checkbox"> 坚持跑步🏃‍♂️</br>
 <input type="checkbox"> 尝试增肌💪</br>
@@ -367,6 +682,7 @@ blockquote,
 <input type="checkbox"> 每月至少更新一次博客</br></p>
 <hr>
 <p>我们明年再见👋</p>
+
 
 
 <script src="https://giscus.app/client.js"
@@ -384,6 +700,7 @@ blockquote,
         crossorigin="anonymous"
         async>
 </script>
+
     </article>
   </div>
   <footer>
@@ -400,11 +717,6 @@ blockquote,
 </footer>
 
   
-  
-  
-
-  
-
   
 </body>
 

@@ -69,8 +69,158 @@ article {
   padding-bottom: 1em;
 }
 
-img {
+ 
+article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+  max-width: 80%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+ 
+img.original-style {
   max-width: 100%;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.original-style:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+img.icon,
+img.logo,
+img.avatar,
+img.inline-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.icon:hover,
+img.logo:hover,
+img.avatar:hover,
+img.inline-icon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+nav img,
+footer img,
+.navbar img {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+nav img:hover,
+footer img:hover,
+.navbar img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+ 
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+ 
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+ 
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #007bff;
+  line-height: 1.3;
+}
+
+ 
+article > h1:first-child {
+  font-size: 1.2rem;
+}
+
+ 
+article > h4:first-child {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #28a745;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 
 
@@ -157,13 +307,175 @@ code {
 
 blockquote,
 .blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 15px 20px;
+  margin: 1.5rem 0;
   font-size: 1em;
-  border-left: 5px solid #6c757d;
+  border-left: 4px solid #ff8c00;
+  background-color: #fffbf0;
+  border-radius: 4px;
+}
+
+blockquote p:last-child,
+.blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > *:last-child,
+.blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+
+ 
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-item a {
+  text-decoration: none;
+}
+
+.tag-item code {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: none !important;
+}
+
+.tag-item:hover code {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.tag-item small {
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+ 
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+}
+
+ 
+ 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+ 
+html, body, * {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+ 
+body {
+  overflow-y: overlay;  
+  overflow-x: auto;
+}
+
+ 
+pre {
+  overflow-x: overlay;
+}
+
+ 
+.table-responsive {
+  overflow-x: overlay;
+}
+
+ 
+div, article, section, main, aside, nav, header, footer {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
 </style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+  
+  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+  
+  images.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      window.open(this.src, '_blank');
+    });
+  });
+});
+</script>
 </head>
 
 
@@ -185,7 +497,8 @@ blockquote,
   
   <div class="container">
     <article>
-      <h4>巧用开源方案，零成本实现验证码短信转发</h4>
+      
+<h4>巧用开源方案，零成本实现验证码短信转发</h4>
 2022/01/26
 
 
@@ -205,6 +518,8 @@ blockquote,
 
 </br>
 </br>
+
+
 <blockquote>
 <p>减少重复切换和操作，双机党们再也不用收到验证码的时候到处找备机啦。</p>
 </blockquote>
@@ -212,13 +527,13 @@ blockquote,
 <p>我有两个号码： A 和 B，因为号码 A 流量多，就把它留在了主力机上，号码 B 挪到了备用机。可大部分服务都是用号码 B 注册的，使用主力机时，时常因为各种原因，需要填写号码 B 收到的短信验证码，此时又得拿起备用机查看验证码。如此反复，真的令人非常不爽。</p>
 <p>为此我开始寻找 Android 短信转发的解决方案，最终通过 SmsForwarder + Bark 解决了这个问题，经过一段时间的使用，效果非常不错。现在我把这个 Android 手机短信转发给 iPhone 的方案分享给大家，有需要的朋友可以作为参考。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/forwarding-messages-from-android-to-iphone-01.webp" alt="forwarding-messages-from-android-to-iphone-01">短信转发至 iPhone 效果</p>
-<h4 id="在-iphone-中安装-bark-app">在 iPhone 中安装 Bark App</h4>
+<h1 id="在-iphone-中安装-bark-app">在 iPhone 中安装 Bark App</h1>
 <p>🔗 下载地址：<a href="https://apps.apple.com/cn/app/id1403753865">App Store</a></p>
 <p>Bark 是一款 Apple 生态内的自定义推送服务，它充分利用了 Apple 推送通知服务 (APNs) 进行工作，原理是将自定义推送内容通过 发送端 &gt; Bark 服务端 &gt; 苹果 APNs 服务器 &gt; 你的设备 &gt; Bark 进行传递。</p>
 <p>由于完全依赖 Apple 推送通知服务，app 本身无需前台运行，几乎不会对 iPhone 的续航产生影响。</p>
 <p>第一次打开 Bark 时，会自动为你的设备生成 key ，复制 app 首页自动生成的第一个带有 key 参数的 URL 备用。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/forwarding-messages-from-android-to-iphone-02.webp" alt="forwarding-messages-from-android-to-iphone-02">Bark</p>
-<h4 id="在-android-手机中安装短信转发器-smsforwarder">在 Android 手机中安装短信转发器 SmsForwarder</h4>
+<h1 id="在-android-手机中安装短信转发器-smsforwarder">在 Android 手机中安装短信转发器 SmsForwarder</h1>
 <p>🔗 下载地址：<a href="https://www.coolapk.com/apk/com.idormy.sms.forwarder">酷安</a></p>
 <p>SmsForwarder 是我在酷安找到的 <a href="https://github.com/pppscn/SmsForwarder">开源</a> Android 短信转发工具，它有一个简单直白的中文名称「短信转发器」，这款 app 在转发短信时，能设置转发模板，还能对短信内容设置多种筛选条件，可以利用钉钉、飞书、邮箱、企业微信、Server 酱、Telegram 等多种渠道进行推送。</p>
 <p>打开「短信转发器」，依次点击「发送通道」–「添加发送通道」，选择「Bark」，填入上一步在 iPhone 端 Bark 中生成的推送地址，点击「确定」保存设置。</p>
@@ -226,20 +541,21 @@ blockquote,
 <p>返回 app 首页，点击「转发规则」–「添加短信转发」，设置好你自己的短信转发规则。比如：当你只想转发备用机的验证码短信时，可以将短信内容匹配关键字设置为「验证码」，这样只有包含验证码的短信才会被转发，其它诸如广告营销、公益宣传等内容的短信则不会被转发。此处也可以根据自己的需要添加其它规则。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/forwarding-messages-from-android-to-iphone-04.webp" alt="forwarding-messages-from-android-to-iphone-04">设置短信转发规则</p>
 <p>除了转发短信，SmsForwarder 还可以转发 Android 手机的未接来电和应用通知，因为与本文主题无关，感兴趣的朋友可以自行下载体验。</p>
-<h4 id="为-smsforwarder-设置应用权限-">为 SmsForwarder 设置应用权限 ⚠️</h4>
+<h1 id="为-smsforwarder-设置应用权限-">为 SmsForwarder 设置应用权限 ⚠️</h1>
 <p>出于续航因素考虑，Android 手机的后台策略都非常保守，致使 SmsForwarder 在后台运行时，容易被系统 kill 软件后台进程。为保证短信转发功能的正常运作，需要在手机系统中设置好 app 的自启动、后台运行、电池优化等必要权限。由于各品牌手机的设置方式存在差异，在此不做详细说明。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/forwarding-messages-from-android-to-iphone-05.webp" alt="forwarding-messages-from-android-to-iphone-05">示例：realme UI 后台权限设置</p>
 <p>出于隐私角度考虑，一些国内的定制系统会默认隐藏包含验证码的短信，第三方应用即使被授予短信权限，也无法读取到这类型的短信。因此需要在手机短信设置中关闭相关防护功能，此类短信才能被读取并转发至其它设备。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/withduan/picx-images-hosting@master/forwarding-messages-from-android-to-iphone-06.webp" alt="forwarding-messages-from-android-to-iphone-06">realme UI 验证码安全保护</p>
-<h4 id="将-android-手机收到的验证码转发至-mac">将 Android 手机收到的验证码转发至 Mac</h4>
+<h1 id="将-android-手机收到的验证码转发至-mac">将 Android 手机收到的验证码转发至 Mac</h1>
 <p>根据同样的原理，你也可以在 Mac App Store 中搜索安装 <a href="https://apps.apple.com/cn/app/id1403753865">Bark</a>，生成推送地址后，在 SmsForwarder 中将其设置为第二个推送通道。这样你就可以在 iPhone 和 Mac 上同时收到来自 Android 手机的验证码短信，方便你在使用 Mac 时填写验证码。</p>
-<h4 id="总结">总结</h4>
+<h1 id="总结">总结</h1>
 <p>得益于 Apple 推送通知服务的稳定性，无论是 WiFi 还是蜂窝数据，这一套短信转发方案几乎都没有延迟，使用起来非常的方便。缺点是两台设备必须都要联网才能实现转发和接收，而且只能从 Android 转发短信到 iPhone，反向无效。</p>
 <p>如果对 Bark 提供的后端服务有隐私方面的顾虑，你也可以通过该项目在 <a href="https://github.com/Finb/bark-server">GitHub</a> 公开的后端代码自行搭建后端服务。除了本文中提到的 Bark，你还可以使用 <a href="https://github.com/easychen/pushdeer">PushDeer</a> 等其它类似的推送服务进行转发，工作原理和配置方法也是类似的。</p>
 <blockquote>
 <p>© 本文著作权归作者 <a href="https://sspai.com/u/iduan/updates">@JLDUAN</a> 所有，并授权少数派独家使用，未经少数派许可，不得转载使用。
 原文地址 <a href="https://sspai.com/post/71054">https://sspai.com/post/71054</a></p>
 </blockquote>
+
 
 
 <script src="https://giscus.app/client.js"
@@ -257,6 +573,7 @@ blockquote,
         crossorigin="anonymous"
         async>
 </script>
+
     </article>
   </div>
   <footer>
@@ -273,11 +590,6 @@ blockquote,
 </footer>
 
   
-  
-  
-
-  
-
   
 </body>
 
