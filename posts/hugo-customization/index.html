@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <meta name="generator" content="Hugo 0.129.0">
+
+  
+
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="https://iduan.me/apple-touch-icon.png">
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="https://iduan.me/favicon-32x32.png">
+
+  
+  <link rel="icon" type="image/png" sizes="16x16" href="https://iduan.me/favicon-16x16.png">
+
+  
+  <link rel="manifest" href="https://iduan.me/site.webmanifest">
+
+  
+  <link rel="mask-icon" href="https://iduan.me/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="msapplication-TileColor" content="#da532c">
+
+  <meta name="theme-color" content="#ffffff">
+  
+  <script defer src="https://api.iduan.me/api.js" data-website-id="d366feff-1fcf-43b5-9f3b-8c42fd001987"></script>
+
+  
+  <link rel="stylesheet" href="https://iduan.me/css/bootstrap.min.css" />
+
+  
+  <title>hugo 装修小记 | JL DUAN‘s Blog</title>
+  
+  
+  <style>
+body {
+  min-width: 300px;
+}
+
+.custom-navbar {
+  margin-bottom: 1em;
+  height: 60px;
+}
+
+.custom-navbar a {
+  display: inline-block; 
+  padding: 18px 0;
+  margin-right: 1em; 
+  font-weight: bold; 
+}
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  text-decoration: none; 
+}
+
+@media print {
+  .custom-navbar {
+    display: none;
+  }
+}
+
+article {
+  padding-bottom: 1em;
+}
+
+article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+  max-width: 80%;
+  max-height: 70vh;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+img.original-style {
+  max-width: 100%;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.original-style:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+img.icon,
+img.logo,
+img.avatar,
+img.inline-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+img.icon:hover,
+img.logo:hover,
+img.avatar:hover,
+img.inline-icon:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+nav img,
+footer img,
+.navbar img {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+nav img:hover,
+footer img:hover,
+.navbar img:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.image-container {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+img + em {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #2563eb;
+  line-height: 1.3;
+}
+
+article > h1:first-child {
+  font-size: 1.4rem;
+}
+
+article > h4:first-child {
+  font-size: 1.4rem;
+}
+
+.main-content h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  line-height: 1.4;
+  border-left: none;
+  padding-left: 0;
+  background: none;
+}
+
+.main-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #16a34a;
+}
+
+.main-content h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  line-height: 1.4;
+  background: none;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.main-content h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #dc2626;
+}
+
+.main-content h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.main-content h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #f59e0b;
+}
+
+.main-content h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.main-content h5::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #8b5cf6;
+}
+
+.main-content h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.main-content h6::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ec4899;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.8rem;
+  border-left: 4px solid #28a745;
+  line-height: 1.4;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding: 0.3rem 0.6rem;
+  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
+}
+
+body {
+  background-color: #fff;
+}
+
+
+
+body {
+  color: #212529;
+}
+
+
+
+a {
+  color: #007bff;
+}
+
+
+
+a:hover,
+a:focus {
+  color: #0056b3;
+}
+
+
+
+.custom-navbar {
+  background-color: #212529;
+}
+
+
+
+.custom-navbar a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+
+.custom-navbar a:hover,
+.custom-navbar a:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+
+
+.container {
+  max-width: 800px;
+}
+
+
+
+pre {
+  display: block;
+  padding: 9.5px;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit; 
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+}
+
+code {
+  padding: 2px 4px;
+  color: inherit; 
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: .9em;
+}
+
+
+
+blockquote,
+.blockquote {
+  padding: 15px 20px;
+  margin: 1.5rem 0;
+  font-size: 1em;
+  border-left: 4px solid #ff8c00;
+  background-color: #fffbf0;
+  border-radius: 4px;
+}
+
+blockquote p:last-child,
+.blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+blockquote > *:last-child,
+.blockquote > *:last-child {
+  margin-bottom: 0;
+}
+
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tag-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tag-item a {
+  text-decoration: none;
+}
+
+.tag-item code {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  text-transform: none !important;
+}
+
+.tag-item:hover code {
+  background-color: #dee2e6;
+  border-color: #adb5bd;
+}
+
+.tag-item small {
+  color: #6c757d;
+  margin-left: 0.25rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6;
+  padding: 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8rem;
+  }
+  
+  table th,
+  table td {
+    padding: 0.5rem;
+  }
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 4px !important;
+  transition: background 0.3s ease !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
+html, body, * {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+body {
+  overflow-y: overlay;
+  overflow-x: auto;
+}
+
+pre {
+  overflow-x: overlay;
+}
+
+.table-responsive {
+  overflow-x: overlay;
+}
+
+div, article, section, main, aside, nav, header, footer {
+  scrollbar-width: thin !important;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+}
+
+article a[href*="douban.com"] {
+  color: #28a745 !important;
+}
+
+.rss-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+.douban-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+.custom-footer {
+  margin-top: auto;
+  padding: 18px 0;
+  background-color: #212529;
+  color: rgba(255,255,255,.75);
+}
+
+.custom-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-footer small {
+  margin: 0;
+}
+
+.custom-footer a {
+  color: rgba(255,255,255,.75);
+  text-decoration: none;
+}
+
+.custom-footer a:hover,
+.custom-footer a:focus {
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+
+.notbyai-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+.douban-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .custom-footer .container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+.content-with-toc {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.toc {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  padding: 1rem;
+}
+
+.toc h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #495057;
+  font-size: 1rem;
+}
+
+.toc ul {
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.toc li {
+  margin-bottom: 0.25rem;
+}
+
+.toc a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.toc a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.toc .douban-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+@media (min-width: 1200px) {
+  .toc-desktop {
+    position: fixed;
+    left: calc(50% + 400px + 2rem);
+    top: calc(60px + 1em + 1rem);
+    width: 280px;
+    max-height: calc(100vh - 60px - 1em - 2rem);
+    overflow-y: auto;
+    z-index: 100;
+  }
+  
+  .toc-mobile {
+    display: none;
+  }
+  
+  .main-content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .toc-desktop {
+    position: fixed;
+    left: calc(50% + 400px + 1rem);
+    top: calc(60px + 1em + 1rem);
+    width: 250px;
+    max-height: calc(100vh - 60px - 1em - 2rem);
+    overflow-y: auto;
+    z-index: 100;
+  }
+  
+  .toc-mobile {
+    display: none;
+  }
+  
+  .main-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .toc-desktop {
+    display: none;
+  }
+  
+  .toc-mobile {
+    margin: 1.5rem 0;
+  }
+  
+  .main-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 991px) {
+  .toc-mobile {
+    max-width: 300px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+  
+  images.forEach(function(img) {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.open(this.src, '_blank');
+    });
+  });
+  
+  const doubanLinks = document.querySelectorAll('article a[href*="douban.com"]');
+  
+  doubanLinks.forEach(function(link) {
+    if (!link.querySelector('.douban-icon')) {
+      const icon = document.createElement('img');
+      icon.src = 'https://img.iduan.me/blog/douban.png';
+      icon.className = 'douban-icon original-style';
+      icon.alt = '豆瓣';
+      
+      link.insertBefore(icon, link.firstChild);
+    }
+  });
+  
+  const rssLinks = document.querySelectorAll('nav a');
+  
+  rssLinks.forEach(function(link) {
+    if (link.textContent.toLowerCase().includes('rss')) {
+      if (!link.querySelector('.rss-icon')) {
+        const icon = document.createElement('img');
+        icon.src = 'https://img.iduan.me/rss.png';
+        icon.className = 'rss-icon original-style';
+        icon.alt = 'RSS';
+        
+        link.insertBefore(icon, link.firstChild);
+      }
+    }
+  });
+});
+</script>
+</style>
+</head>
+
+
+<body>
+  <div class="page-wrapper">
+    <div class="content-wrapper">
+      <nav class="custom-navbar">
+  <div class="container">
+    <strong><span style="color:#FFFFFF;">JL DUAN‘s Blog  </span></strong><span style="color:#FFFFFF;">丨</span>
+    
+    <a href="/">
+      
+      
+      文章
+    </a>
+    
+    <a href="/tags/">
+      
+      
+      标签
+    </a>
+    
+    <a href="/about/">
+      
+      
+      关于
+    </a>
+    
+    <a href="/index.xml">
+      
+        <img src="https://img.iduan.me/rss.png" alt="RSS" class="rss-icon" />
+      
+      
+      RSS
+    </a>
+    
+  </div>
+</nav>
+      
+      <div class="container">
+        <article>
+          
+<h4>hugo 装修小记</h4>
+2025/08/19
+
+
+<code><a href="https://iduan.me/tags/blog">blog</a></code>
+
+
+<code><a href="https://iduan.me/tags/hugo">hugo</a></code>
+
+
+<code><a href="https://iduan.me/tags/typecho">typecho</a></code>
+
+
+<code><a href="https://iduan.me/tags/trae">trae</a></code>
+
+</br>
+</br>
+
+
+<div class="content-with-toc">
+  
+  <aside class="toc toc-mobile">
+      <h5>目录</h5>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#从-typecho-到-hugo">从 typecho 到 hugo</a></li>
+    <li><a href="#主要的改造项">主要的改造项</a>
+      <ul>
+        <li><a href="#1导航栏显示网站标题">1.导航栏显示网站标题</a></li>
+        <li><a href="#2区分独立页面和文章页面">2.区分独立页面和文章页面</a></li>
+        <li><a href="#3添加评论框可选是否启用页面评论区">3.添加评论框，可选是否启用页面评论区</a></li>
+        <li><a href="#4优化-markdown-标题样式">4.优化 markdown 标题样式</a></li>
+        <li><a href="#5为豆瓣网址添加豆瓣-logo-图标">5.为豆瓣网址添加豆瓣 logo 图标</a></li>
+        <li><a href="#6修改标签tags页面样式">6.修改标签（tags）页面样式</a></li>
+        <li><a href="#7删除不需要的功能">7.删除不需要的功能</a></li>
+        <li><a href="#8修改底栏">8.修改底栏</a></li>
+        <li><a href="#9为文章添加目录">9.为文章添加目录</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </aside>
+  
+  
+  <div class="main-content">
+    <p>我先前用的一个香港虚拟主机原本是 2025 年到期，但是考虑到博客建立的这几年也很少有什么内容输出，发的东西也没什么人看，为了博客单独搞一台服务器实在是没有必要，到期也不打算再续费了。到了 2023 年底，我开始准备把博客提前迁移到 GitHub Pages。</p>
+<p>由于 GitHub Pages 仅支持静态页面，之前使用的 typecho 也没法继续用。四处考察了一番，决定利用 hugo 重建博客，这期间找到了一个喜欢的主题 minimal-bootstrap。</p>
+<p>我当初是在 hugo 官网发现的这款主题，写文章的时候发现原 hugo 官网主题链接已经处于 404 状态。可能是因为主题已经不再维护，hugo 官网将其下架了。</p>
+<p>原 hugo themes 链接：<a href="https://themes.gohugo.io/themes/minimal-bootstrap-hugo-theme/">https://themes.gohugo.io/themes/minimal-bootstrap-hugo-theme/</a>（已失效）</p>
+<p>GitHub：<a href="https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme">https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme</a></p>
+<h1 id="从-typecho-到-hugo">从 typecho 到 hugo</h1>
+<p>我对 typecho 实在太熟悉了，再加上用的时间也久，可能是因为 typecho 本身就很简洁，源码文件结构清晰，即便是我这样完全不懂 php 的人来说（迄今为止，我的代码水平仅限于大学计算机基础课上学过的那一点点 C 语言…），看看源码，连蒙带猜也能修改很多东西，打造出自己满意的效果。</p>
+<p>换成 hugo 之后算是一夜回到解放前，hugo 的代码我不太看得懂，而且主题文件看起来比 typecho 复杂的多，幸好现在有了大模型编程工具的助力（我用的是字节的 Trae，指定的模型是 Claude-4-Sonnet Beta），基本上只要你能描述清楚需求，它改代码效率还是挺不错的，调试网页的过程中也极少报错。大模型似乎很擅长写前端代码，我改了很多次，基本都跑通了。我之前用它写过 macOS 应用，当时感觉不是很顺手。</p>
+<p>我选的主题 minimal-bootstrap 看起来和 typecho 的风格很像，虽然功能不丰富，默认样式也略显简陋，我碍于自身实力，也只能凑合着用，直到最近才意识到可以用 Trae 去改造它。</p>
+<h1 id="主要的改造项">主要的改造项</h1>
+<h2 id="1导航栏显示网站标题">1.导航栏显示网站标题</h2>
+<p>minimal-bootstrap 主题的导航栏简洁到甚至不显示网站标题，我希望它至少可以展示出网站的名称。当你看到这里时，不妨留意一下现在的顶栏，前面的「JL DUAN‘s Blog」就是我自己加上去的，原版主题中顶栏只有四个链接…</p>
+<p><img src="https://img.iduan.me/blog/hugo-customization-01.webp" alt="hugo-customization-01"></p>
+<p>修改方法是找到主题文件中 layout/partials/nav.html 文件，在适当位置插入：</p>
+<p><code>&lt;strong&gt;&lt;span style=&quot;color:#FFFFFF;&quot;&gt;{{.Site.Title}}&lt;/span&gt;&lt;/strong&gt;&lt;span style=&quot;color:#FFFFFF;&quot;&gt;丨&lt;/span&gt;</code></p>
+<p>这里只用了一小段 HTML 代码就能实现这个需求，顺便加了个「丨」将网站名称和后方的导航选项分隔开。而且这个改法是我自己摸索出来的，那时候还没有 Trae……</p>
+<h2 id="2区分独立页面和文章页面">2.区分独立页面和文章页面</h2>
+<p>独立页面和文章页面最大的区别是：独立页面不需要显示标题和发布时间，但是文章页面需要这两项内容。按照 minimal-bootstrap 的说明，主题本身应该可以支持设置不同的页面属性，可能是我的用法不对，反正一直都无从下手。直接把需求告诉 Trae，最终实现了这个效果。</p>
+<p>用法：
+创建页面时需要设定 <code>page</code>参数，<code>true</code>表示这是独立页面，<code>false</code>表示这是文章页面，默认为<code>false</code>。</p>
+<h2 id="3添加评论框可选是否启用页面评论区">3.添加评论框，可选是否启用页面评论区</h2>
+<p>hugo 自身不支持评论互动（哈哈其实很少有人会留言），我通过 giscus 这个项目为博客添加了一个评论框,默认的几个样式就非常简洁，完全不需要再改动什么了。但 giscus 会默认给所有页面都加上评论框，如果用户能手动控制是否启用页面的评论区就更好了，这里同样用 Trae 解决了这个需求。</p>
+<p><img src="https://img.iduan.me/blog/hugo-customization-02.webp" alt="hugo-customization-02"></p>
+<p>用法：
+创建页面时需要设定 <code>comment</code> 参数，<code>true</code> 或留空表示启用评论区，<code>false</code> 表示不需要评论区，默认为<code>true</code>。</p>
+<h2 id="4优化-markdown-标题样式">4.优化 markdown 标题样式</h2>
+<p>原版主题在显示 markdown 标题时，没有做任何特殊样式，仅是放大加粗了各级标题的字号，可读性方面不够友好。特别是 1-4 级标题字号大到离谱，我也不知道怎么缩小字号，迫使我之前写东西都直接从 4 级标题开始用，好在现在我可以直接用 Trae 修改 markdown 1-6 级标题的样式（一般用不到 6 级标题，对我个人而言最多 1-4 级足矣）。</p>
+<p><img src="https://img.iduan.me/blog/hugo-customization-03.webp" alt="hugo-customization-03"></p>
+<p>现在这个标题样式是 Trae 自己生成的，虽然也不算很好看，但总比之前单纯粗暴的加大加粗字号看起来更优雅、醒目，先就这么用着，留着以后再改吧。</p>
+<h2 id="5为豆瓣网址添加豆瓣-logo-图标">5.为豆瓣网址添加豆瓣 logo 图标</h2>
+<p>博客之前发过一些读书笔记，我在码字的时候，顺便给每本书都加上了豆瓣对应的链接，所以博客还是有很多豆瓣的外链的。因为有了 Trae，我想给豆瓣链接增加一些特别的样式：</p>
+<ul>
+<li>网站的外链默认是蓝色的，豆瓣的链接可以换成和豆瓣更适配的绿色；</li>
+<li>豆瓣链接前方可以加上豆瓣的 logo，让这个链接更加直观。</li>
+</ul>
+<p>把我的要求告诉 Trae，顺便准备好豆瓣的图标资源（刚好可以把图标上传到我之前利用 Cloudflare R2 做的图床）。Trae 告诉我，通过修改 CSS 样式表完成了这个任务。好吧，这已经触及到了我的知识盲区。</p>
+<p><img src="https://img.iduan.me/blog/hugo-customization-04.webp" alt="hugo-customization-04"></p>
+<h2 id="6修改标签tags页面样式">6.修改标签（tags）页面样式</h2>
+<p>在主题默认样式中，原本标签页面里每个标签都会另起一行显示。我写东西时标签都是随便加的，因此文章的标签有很多，导致这个页面变得很长……</p>
+<p><img src="https://img.iduan.me/blog/hugo-customization-05.webp" alt="hugo-customization-05"></p>
+<p>通过 Trae 修改了这个页面，让所有的标签都平铺显示，这下看起来就舒服很多了。</p>
+<h2 id="7删除不需要的功能">7.删除不需要的功能</h2>
+<p>主题默认支持 Google Analytics，只需要在配置文件填入 Google Analytics 后台提供的 GA 代码就能使用。不过现如今出于用户隐私的考虑，目前各大操作系统、浏览器、去广告插件都会拦截这类数据分析服务，导致在 Google Analytics 后台看不到任何统计信息。而且我自建了一个简单的统计服务 umami 用来替代 Google Analytics，所以通过 Trae 将 Google Analytics 相关代码文件都进行了删除。</p>
+<p>同理，主题中包含的 mastodon 相关代码也因为我自己用不到所以让 Trae 将其移除了。</p>
+<h2 id="8修改底栏">8.修改底栏</h2>
+<p>主题原版的底栏只是一行文字，导航栏又是深色，显得有一些头重脚轻。</p>
+<p><img src="https://img.iduan.me/blog/hugo-customization-06.webp" alt="hugo-customization-06"></p>
+<p>我通过 Trae 将其修改为和导航栏相似的样式，在视觉上和导航栏颜色、高度均一致，看起来平衡多了。</p>
+<h2 id="9为文章添加目录">9.为文章添加目录</h2>
+<p>根据主题的 readme 文件，主题原本应该支持自动为文章生成 table of content 目录，但是我摸索了许久，实在搞不懂要如何操作，这次直接用 Trae 满足这个需求。</p>
+<p><img src="https://img.iduan.me/blog/hugo-customization-07.webp" alt="hugo-customization-07"></p>
+
+    
+    
+    <script src="https://giscus.app/client.js"
+            data-repo="withduan/withduan.github.io"
+            data-repo-id="R_kgDOK8qrXQ"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOK8qrXc4Cb8Hw"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+    </script>
+    
+  </div>
+  
+  
+  <aside class="toc toc-desktop">
+      <h5>目录</h5>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#从-typecho-到-hugo">从 typecho 到 hugo</a></li>
+    <li><a href="#主要的改造项">主要的改造项</a>
+      <ul>
+        <li><a href="#1导航栏显示网站标题">1.导航栏显示网站标题</a></li>
+        <li><a href="#2区分独立页面和文章页面">2.区分独立页面和文章页面</a></li>
+        <li><a href="#3添加评论框可选是否启用页面评论区">3.添加评论框，可选是否启用页面评论区</a></li>
+        <li><a href="#4优化-markdown-标题样式">4.优化 markdown 标题样式</a></li>
+        <li><a href="#5为豆瓣网址添加豆瓣-logo-图标">5.为豆瓣网址添加豆瓣 logo 图标</a></li>
+        <li><a href="#6修改标签tags页面样式">6.修改标签（tags）页面样式</a></li>
+        <li><a href="#7删除不需要的功能">7.删除不需要的功能</a></li>
+        <li><a href="#8修改底栏">8.修改底栏</a></li>
+        <li><a href="#9为文章添加目录">9.为文章添加目录</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </aside>
+  
+</div>
+        </article>
+      </div>
+    </div>
+    <footer class="custom-footer">
+  <div class="container">
+    <small>
+      © 2016-2025 JL DUAN‘s Blog.
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a>
+    </small>
+    <img src="https://img.iduan.me/notbyai.png" alt="not by AI" width="70" class="notbyai-icon" />
+  </div>
+</footer>
+
+  </div>
+  
+  
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on JL DUAN‘s Blog</title>
+    <link>http://localhost:1313/tags/markdown/</link>
+    <description>Recent content in Markdown on JL DUAN‘s Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 19 Aug 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>markdown标题预览</title>
+      <link>http://localhost:1313/posts/markdown/</link>
+      <pubDate>Tue, 19 Aug 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/markdown/</guid>
+      <description>&lt;h1 id=&#34;这是一级标题&#34;&gt;这是一级标题&lt;/h1&gt;&#xA;&lt;h2 id=&#34;这是二级标题&#34;&gt;这是二级标题&lt;/h2&gt;&#xA;&lt;h3 id=&#34;这是三级标题&#34;&gt;这是三级标题&lt;/h3&gt;&#xA;&lt;h4 id=&#34;这是四级标题&#34;&gt;这是四级标题&lt;/h4&gt;&#xA;&lt;h5 id=&#34;这是五级标题&#34;&gt;这是五级标题&lt;/h5&gt;&#xA;&lt;h6 id=&#34;这是六级标题&#34;&gt;这是六级标题&lt;/h6&gt;&#xA;&lt;p&gt;这是正文字体。&lt;/p&gt;&#xA;</description>
+    </item>
+  </channel>
+</rss>

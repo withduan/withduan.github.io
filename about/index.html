@@ -69,7 +69,6 @@ article {
   padding-bottom: 1em;
 }
 
- 
 article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
   max-width: 80%;
   max-height: 70vh;
@@ -80,7 +79,6 @@ article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-s
   cursor: pointer;
 }
 
- 
 img.original-style {
   max-width: 100%;
   max-height: none;
@@ -98,7 +96,6 @@ img.original-style:hover {
   box-shadow: none;
 }
 
- 
 img.icon,
 img.logo,
 img.avatar,
@@ -122,7 +119,6 @@ img.inline-icon:hover {
   box-shadow: none;
 }
 
- 
 nav img,
 footer img,
 .navbar img {
@@ -144,13 +140,11 @@ footer img:hover,
   box-shadow: none;
 }
 
- 
 .image-container {
   text-align: center;
   margin: 1.5rem 0;
 }
 
- 
 img + em {
   display: block;
   text-align: center;
@@ -160,25 +154,127 @@ img + em {
   margin-top: 0.5rem;
 }
 
- 
 h1 {
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid #007bff;
+  border-bottom: 3px solid #2563eb;
   line-height: 1.3;
 }
 
- 
 article > h1:first-child {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
- 
 article > h4:first-child {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.main-content h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  line-height: 1.4;
+  border-left: none;
+  padding-left: 0;
+  background: none;
+}
+
+.main-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #16a34a;
+}
+
+.main-content h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  line-height: 1.4;
+  background: none;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.main-content h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #dc2626;
+}
+
+.main-content h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.main-content h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #f59e0b;
+}
+
+.main-content h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.main-content h5::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #8b5cf6;
+}
+
+.main-content h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.main-content h6::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ec4899;
 }
 
 h2 {
@@ -222,7 +318,6 @@ h6 {
   margin-top: 0.8rem;
   margin-bottom: 0.3rem;
 }
-
 
 body {
   background-color: #fff;
@@ -326,7 +421,6 @@ blockquote > *:last-child,
 }
 
 
- 
 .tags-container {
   display: flex;
   flex-wrap: wrap;
@@ -363,7 +457,6 @@ blockquote > *:last-child,
   margin-left: 0.25rem;
 }
 
- 
 table {
   width: 100%;
   border-collapse: collapse;
@@ -393,7 +486,6 @@ table tbody tr:hover {
   background-color: #e9ecef;
 }
 
- 
 @media (max-width: 768px) {
   table {
     font-size: 0.8rem;
@@ -405,8 +497,6 @@ table tbody tr:hover {
   }
 }
 
- 
- 
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
@@ -431,81 +521,323 @@ table tbody tr:hover {
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
- 
 html, body, * {
   scrollbar-width: thin !important;
   scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
- 
 body {
-  overflow-y: overlay;  
+  overflow-y: overlay;
   overflow-x: auto;
 }
 
- 
 pre {
   overflow-x: overlay;
 }
 
- 
 .table-responsive {
   overflow-x: overlay;
 }
 
- 
 div, article, section, main, aside, nav, header, footer {
   scrollbar-width: thin !important;
   scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
+article a[href*="douban.com"] {
+  color: #28a745 !important;
+}
+
+.rss-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+.douban-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+.custom-footer {
+  margin-top: auto;
+  padding: 18px 0;
+  background-color: #212529;
+  color: rgba(255,255,255,.75);
+}
+
+.custom-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-footer small {
+  margin: 0;
+}
+
+.custom-footer a {
+  color: rgba(255,255,255,.75);
+  text-decoration: none;
+}
+
+.custom-footer a:hover,
+.custom-footer a:focus {
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+
+.notbyai-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+.douban-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .custom-footer .container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+.content-with-toc {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.toc {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  padding: 1rem;
+}
+
+.toc h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #495057;
+  font-size: 1rem;
+}
+
+.toc ul {
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.toc li {
+  margin-bottom: 0.25rem;
+}
+
+.toc a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.toc a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.toc .douban-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+@media (min-width: 1200px) {
+  .toc-desktop {
+    position: fixed;
+    left: calc(50% + 400px + 2rem);
+    top: calc(60px + 1em + 1rem);
+    width: 280px;
+    max-height: calc(100vh - 60px - 1em - 2rem);
+    overflow-y: auto;
+    z-index: 100;
+  }
+  
+  .toc-mobile {
+    display: none;
+  }
+  
+  .main-content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .toc-desktop {
+    position: fixed;
+    left: calc(50% + 400px + 1rem);
+    top: calc(60px + 1em + 1rem);
+    width: 250px;
+    max-height: calc(100vh - 60px - 1em - 2rem);
+    overflow-y: auto;
+    z-index: 100;
+  }
+  
+  .toc-mobile {
+    display: none;
+  }
+  
+  .main-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .toc-desktop {
+    display: none;
+  }
+  
+  .toc-mobile {
+    margin: 1.5rem 0;
+  }
+  
+  .main-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 991px) {
+  .toc-mobile {
+    max-width: 300px;
+  }
+}
 </style>
 
 <script>
-
 document.addEventListener('DOMContentLoaded', function() {
-  
   const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
   
   images.forEach(function(img) {
     img.addEventListener('click', function(e) {
       e.preventDefault();
-      
       window.open(this.src, '_blank');
     });
   });
+  
+  const doubanLinks = document.querySelectorAll('article a[href*="douban.com"]');
+  
+  doubanLinks.forEach(function(link) {
+    if (!link.querySelector('.douban-icon')) {
+      const icon = document.createElement('img');
+      icon.src = 'https://img.iduan.me/blog/douban.png';
+      icon.className = 'douban-icon original-style';
+      icon.alt = '豆瓣';
+      
+      link.insertBefore(icon, link.firstChild);
+    }
+  });
+  
+  const rssLinks = document.querySelectorAll('nav a');
+  
+  rssLinks.forEach(function(link) {
+    if (link.textContent.toLowerCase().includes('rss')) {
+      if (!link.querySelector('.rss-icon')) {
+        const icon = document.createElement('img');
+        icon.src = 'https://img.iduan.me/rss.png';
+        icon.className = 'rss-icon original-style';
+        icon.alt = 'RSS';
+        
+        link.insertBefore(icon, link.firstChild);
+      }
+    }
+  });
 });
 </script>
+</style>
 </head>
 
 
 <body>
-  <nav class="custom-navbar">
+  <div class="page-wrapper">
+    <div class="content-wrapper">
+      <nav class="custom-navbar">
   <div class="container">
     <strong><span style="color:#FFFFFF;">JL DUAN‘s Blog  </span></strong><span style="color:#FFFFFF;">丨</span>
     
-    <a href="/">文章</a>
+    <a href="/">
+      
+      
+      文章
+    </a>
     
-    <a href="/tags/">tags</a>
+    <a href="/tags/">
+      
+      
+      标签
+    </a>
     
-    <a href="/about/">关于</a>
+    <a href="/about/">
+      
+      
+      关于
+    </a>
     
-    <a href="/index.xml">RSS</a>
+    <a href="/index.xml">
+      
+        <img src="https://img.iduan.me/rss.png" alt="RSS" class="rss-icon" />
+      
+      
+      RSS
+    </a>
     
   </div>
 </nav>
-  
-  <div class="container">
-    <article>
       
+      <div class="container">
+        <article>
+          
 
-<h1 id="-关于-jl-duan">👤 关于 JL DUAN</h1>
+<div class="content-with-toc">
+  
+  
+  <div class="main-content">
+    <h1 id="-关于-jl-duan">👤 关于 JL DUAN</h1>
 <p>不知道该如何介绍自己，反正就是普通人一个。</p>
 <p>📍0912 🐣1996</p>
 <h1 id="-关于博客">🌏 关于博客</h1>
 <p><code>iduan.me</code> 是 JL DUAN 的个人博客。</p>
 <p>网站使用 hugo 构建，托管于 GitHub Pages，使用的 hugo 主题是 <a href="https://github.com/zwbetz-gh/minimal-bootstrap-hugo-theme/">Minimal Bootstrap Hugo Theme</a>。</p>
-<p>搭建以及改造过程详见：<a href="https://iduan.me">还没写，占个位置😆</a></p>
+<p>博客搭建以及改造详见：<a href="https://iduan.me/posts/hugo-customization/">《hugo 装修小记》</a></p>
 <blockquote>
 <p>附：JL DUAN 的个人博客变迁史</p>
 <ul>
@@ -518,46 +850,52 @@ document.addEventListener('DOMContentLoaded', function() {
 <li>……</li>
 </ul>
 </blockquote>
+<h1 id="-获取更新">🆕 获取更新</h1>
+<p>如果你对博客的内容感兴趣，并且愿意持续关注，欢迎使用 RSS 工具订阅博客。博客 RSS 已经调整为全文输出，方便各位查看本站内容。RSS地址：<code>https://iduan.me/index.xml</code></p>
+<p>请注意：通过 RSS工具浏览博客内容时无法使用评论区互动，如需留言请在浏览器中打开网站。</p>
 <h1 id="-联系我">💬 联系我</h1>
 <p>你可以在本站文章或页面的评论区留言(需使用 GitHub 账号登录），我看到后会及时回复。若不想公开留言内容，请使用邮箱联络。</p>
-<p>邮箱：me<img src="https://img.iduan.me/blog/at-32.png" style="width: 15px" class="original-style">iduan.me</p>
+<p>邮箱：me<img src="https://img.iduan.me/blog/at-32.png" style="width: 15px" class="original-style">iduan<img src="https://img.iduan.me/blog/x-d-o-t.png" style="width: 3px" class="original-style">me</p>
 <p>少数派：<a href="https://sspai.com/u/iduan/posts"><img src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fsspai%2Fiduan&query=count&color=d71a1b&label=%E5%B0%91%E6%95%B0%E6%B4%BE&labelColor=282c34&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAF0klEQVR4nO1dvW7jOBD2I7gkh426pHS127pIeiN5AdsvsH4CIw8gwL1dpHaV0mWqu1aNLCrAAkbWwAKBYTiCcTBwgMEr%2FHN7e5aoH5JDS%2FqAAVIEtvV9nBlySI4ajRo1atSoIYPnOM05Y605Y60AoBMAdDhhXU5Y9%2FA3aXNC2nPGWti%2F9erhOU4zAOiElI04pa8hBS+ksOEURAZbhBReQspGnLCu5zhN7OeyFp7jNDkh7TmBp5CCl5HojKKwUQDQwX5mK8AJaYeUjXKMbiV28A7SxubBKE6jXfNIzygEeJywLjY3WvFvXLeH+MoIYduITyNEKfKE5zjNw0wGn9RcBvDMCXGwecyF46hHSa6q7eq8IaB0UBbyzyJQOsDmVYqrDzkSCym8YHMciwP58IJNkgERPOtW1XPGWpzCApscgyJsrKk5Hef2pYr3qQ17FT1nrFVZ8o+G5gme4zR5hcJOnIUUNsbXClVJuBlE8IwKUOapZgERzExRA0oH2A9rq2lfrFV6xpNWBF1li2Pcr8mXmLakXMf9TCKozQeckDb2Q+m0t5tbsbi7F8teX6xcV3xOp+Lnt0Ghz1QWig7zffqKTZJqoj+GQ7EeT8TO98U+isQlFBEhpLBRIgAnrItNnG6i47CdzYr9FhXbmzZvJaoiWpcAhb0gAOhgk2yC6DjsfL%2F47y%2FiBaZjPxbRcViPJ4WfKbcXHGv8lSD6EvZRJN4fHtU8c56y9ZzAk0rS3x8excp1rSP6Ena+L5a9vrpBB%2FCciXzVpebtbIbNaSz2USR2vi8+p1PxMRyKxd29co%2FPHIZUJt9lr4%2FN8f9wGuGLu3vxdnOrnPDLYShDMuYAz6q++HM6NUruPorE3z9+JP6PiuSawwvSlyeuIfz8GjpWriveHx7PI3pxd2+jAOnCECfEUfnFqgTY+f5%2FiE76ThsF4BREqiqp6sXXejxRIkAW0mwVINWGjcr4f4mMU+jYzmZi5brnZKiStO9fvlopQKo8oGuz%2FURy3KxDJWmyz1q5LooAnNJXuQcgHTWpggCpEjHOyKiGAJyCSDxXqrP+Y5MAH8MhmgCJdSHMrUeVAsgSei1ApQVIKElgbj+qFOD94dFaARLXArUAtQDVFgBzD7gqAiTmgLIIINuDQPWApANbZZkFyQTAXIjJBFBairZVgM%2FpFE2AxHXAcS+49AIUPvFWTAAnVoBGoxzFuLebWysFSFmMwzmIq7qGn3T0RcmJt3wCyO+SYd0DUC3AzvdjP2sfRSgCpDofhLUYUy2AbCtUx%2Fkfmc0JPEkFwErEqgX4+W2Q+Hkoa4G0V5c4QiJWLYAsEZsOQ5lOx2HkAR0b6bIjMUWvIWUUIP3BLIyShA4BZGHIpBdkvjNm+kqqDgFkYciUF4QUNpl7DJkOQ7rO8sjOpprwglzXVk1v0OsSII0X6C7O5b6yyg3OhmQCFLkwsXJdqQjfv3zV9WyLXOQ3GmYXZUkC7KOoEEFvN7fSI+u6KqSpFl82eEFSqFARImQV0qIix43+wg3+THlBnADb2UzZLRbZukD16rjw6DftBb%2FOWPZRJNbjifIrRH%2F98WesAIqnpMVH%2F1kAg1uVy15fLHt9rXe3lr2+WI8nYjubie1sJtbjiborqUdT3jeo7hGX3rS0L8Pcrrwm09rUtex9g5SY7hdA1E374i2kbKSV%2FBPqfHDBAJ6NNvW2uY+QaUPpqF53UTyTj9dJHfNKkw0WUtigv96kqjOjQ39QS155VbU29laM%2FN9xzAmlT8yHl71Z%2FGqrck9R6at174+5BNXtzmywkLLRVZB%2FQlmSs1XJNis8x2mq7r5i1uir1fE+LY7esMAnNLUtrnbUJ+FYyLNWiJDCJqB0cFWxPg8sFGJRCeJ%2FRwDQwcoRIYVNSOFlzlircsRfwkkMnSvqE+mcsG5NegI4IU5A6eDgHfnurB3J9kIKL3MCT9a8+%2FGawQlpBwCdAKDDCesGlA7OBtDhhLTrkFKjRo0aqfEPTet8XSy2Km4AAAAASUVORK5CYII%3D&suffix=+%E5%85%B3%E6%B3%A8&cacheSeconds=3600" alt="少数派@JLDUAN" class="original-style"></a>  👈🏻求关注</p>
 <h1 id="-版权声明">©️ <strong>版权声明</strong></h1>
 <p>本站所发布的文章内容，除个别文章包含的单独声明以外，其它均由 <a xmlns:cc="http://creativecommons.org/ns#" href="https://iduan.me" property="cc:attributionName" rel="cc:attributionURL">JL DUAN</a> 采用 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 进行许可。</p>
 
-
-
-<script src="https://giscus.app/client.js"
-        data-repo="withduan/withduan.github.io"
-        data-repo-id="R_kgDOK8qrXQ"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOK8qrXc4Cb8Hw"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
-
-    </article>
+    
+    
+    <script src="https://giscus.app/client.js"
+            data-repo="withduan/withduan.github.io"
+            data-repo-id="R_kgDOK8qrXQ"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOK8qrXc4Cb8Hw"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+    </script>
+    
   </div>
-  <footer>
-
-<p style="color:#999999">
-<p style="text-align:center;">
-<small>
-©️ 2016-2025 JL DUAN‘s Blog.
-<a style="color: #000000;" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a>
-</small>
-<img style="display: block; margin-left: auto; margin-right: auto;" src="https://img.iduan.me/notbyai.png" alt="not by AI" width="70" />
-</p>
-</p>
+  
+  
+</div>
+        </article>
+      </div>
+    </div>
+    <footer class="custom-footer">
+  <div class="container">
+    <small>
+      © 2016-2025 JL DUAN‘s Blog.
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a>
+    </small>
+    <img src="https://img.iduan.me/notbyai.png" alt="not by AI" width="70" class="notbyai-icon" />
+  </div>
 </footer>
 
+  </div>
   
   
 </body>

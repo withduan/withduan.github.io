@@ -69,7 +69,6 @@ article {
   padding-bottom: 1em;
 }
 
- 
 article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
   max-width: 80%;
   max-height: 70vh;
@@ -80,7 +79,6 @@ article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-s
   cursor: pointer;
 }
 
- 
 img.original-style {
   max-width: 100%;
   max-height: none;
@@ -98,7 +96,6 @@ img.original-style:hover {
   box-shadow: none;
 }
 
- 
 img.icon,
 img.logo,
 img.avatar,
@@ -122,7 +119,6 @@ img.inline-icon:hover {
   box-shadow: none;
 }
 
- 
 nav img,
 footer img,
 .navbar img {
@@ -144,13 +140,11 @@ footer img:hover,
   box-shadow: none;
 }
 
- 
 .image-container {
   text-align: center;
   margin: 1.5rem 0;
 }
 
- 
 img + em {
   display: block;
   text-align: center;
@@ -160,25 +154,127 @@ img + em {
   margin-top: 0.5rem;
 }
 
- 
 h1 {
   font-size: 1.2rem;
   font-weight: 700;
   margin-top: 2rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 3px solid #007bff;
+  border-bottom: 3px solid #2563eb;
   line-height: 1.3;
 }
 
- 
 article > h1:first-child {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
- 
 article > h4:first-child {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.main-content h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  line-height: 1.4;
+  border-left: none;
+  padding-left: 0;
+  background: none;
+}
+
+.main-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #16a34a;
+}
+
+.main-content h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+  line-height: 1.4;
+  background: none;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.main-content h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #dc2626;
+}
+
+.main-content h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.main-content h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #f59e0b;
+}
+
+.main-content h5 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.main-content h5::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #8b5cf6;
+}
+
+.main-content h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 0.8rem;
+  margin-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
+  position: relative;
+}
+
+.main-content h6::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #ec4899;
 }
 
 h2 {
@@ -222,7 +318,6 @@ h6 {
   margin-top: 0.8rem;
   margin-bottom: 0.3rem;
 }
-
 
 body {
   background-color: #fff;
@@ -326,7 +421,6 @@ blockquote > *:last-child,
 }
 
 
- 
 .tags-container {
   display: flex;
   flex-wrap: wrap;
@@ -363,7 +457,6 @@ blockquote > *:last-child,
   margin-left: 0.25rem;
 }
 
- 
 table {
   width: 100%;
   border-collapse: collapse;
@@ -393,7 +486,6 @@ table tbody tr:hover {
   background-color: #e9ecef;
 }
 
- 
 @media (max-width: 768px) {
   table {
     font-size: 0.8rem;
@@ -405,8 +497,6 @@ table tbody tr:hover {
   }
 }
 
- 
- 
 * {
   scrollbar-width: thin;
   scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
@@ -431,73 +521,311 @@ table tbody tr:hover {
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
- 
 html, body, * {
   scrollbar-width: thin !important;
   scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
- 
 body {
-  overflow-y: overlay;  
+  overflow-y: overlay;
   overflow-x: auto;
 }
 
- 
 pre {
   overflow-x: overlay;
 }
 
- 
 .table-responsive {
   overflow-x: overlay;
 }
 
- 
 div, article, section, main, aside, nav, header, footer {
   scrollbar-width: thin !important;
   scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
 }
 
+article a[href*="douban.com"] {
+  color: #28a745 !important;
+}
+
+.rss-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+.douban-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+.custom-footer {
+  margin-top: auto;
+  padding: 18px 0;
+  background-color: #212529;
+  color: rgba(255,255,255,.75);
+}
+
+.custom-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-footer small {
+  margin: 0;
+}
+
+.custom-footer a {
+  color: rgba(255,255,255,.75);
+  text-decoration: none;
+}
+
+.custom-footer a:hover,
+.custom-footer a:focus {
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+
+.notbyai-icon {
+  max-width: none;
+  max-height: none;
+  height: auto;
+  display: inline;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: default;
+  transition: none;
+}
+
+.douban-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .custom-footer .container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+.content-with-toc {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.toc {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+  padding: 1rem;
+}
+
+.toc h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: #495057;
+  font-size: 1rem;
+}
+
+.toc ul {
+  margin-bottom: 0;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  list-style: none;
+}
+
+.toc li {
+  margin-bottom: 0.25rem;
+}
+
+.toc a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.toc a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.toc .douban-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 4px;
+  vertical-align: text-bottom;
+  display: inline-block;
+}
+
+@media (min-width: 1200px) {
+  .toc-desktop {
+    position: fixed;
+    left: calc(50% + 400px + 2rem);
+    top: calc(60px + 1em + 1rem);
+    width: 280px;
+    max-height: calc(100vh - 60px - 1em - 2rem);
+    overflow-y: auto;
+    z-index: 100;
+  }
+  
+  .toc-mobile {
+    display: none;
+  }
+  
+  .main-content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .toc-desktop {
+    position: fixed;
+    left: calc(50% + 400px + 1rem);
+    top: calc(60px + 1em + 1rem);
+    width: 250px;
+    max-height: calc(100vh - 60px - 1em - 2rem);
+    overflow-y: auto;
+    z-index: 100;
+  }
+  
+  .toc-mobile {
+    display: none;
+  }
+  
+  .main-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .toc-desktop {
+    display: none;
+  }
+  
+  .toc-mobile {
+    margin: 1.5rem 0;
+  }
+  
+  .main-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) and (max-width: 991px) {
+  .toc-mobile {
+    max-width: 300px;
+  }
+}
 </style>
 
 <script>
-
 document.addEventListener('DOMContentLoaded', function() {
-  
   const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
   
   images.forEach(function(img) {
     img.addEventListener('click', function(e) {
       e.preventDefault();
-      
       window.open(this.src, '_blank');
     });
   });
+  
+  const doubanLinks = document.querySelectorAll('article a[href*="douban.com"]');
+  
+  doubanLinks.forEach(function(link) {
+    if (!link.querySelector('.douban-icon')) {
+      const icon = document.createElement('img');
+      icon.src = 'https://img.iduan.me/blog/douban.png';
+      icon.className = 'douban-icon original-style';
+      icon.alt = '豆瓣';
+      
+      link.insertBefore(icon, link.firstChild);
+    }
+  });
+  
+  const rssLinks = document.querySelectorAll('nav a');
+  
+  rssLinks.forEach(function(link) {
+    if (link.textContent.toLowerCase().includes('rss')) {
+      if (!link.querySelector('.rss-icon')) {
+        const icon = document.createElement('img');
+        icon.src = 'https://img.iduan.me/rss.png';
+        icon.className = 'rss-icon original-style';
+        icon.alt = 'RSS';
+        
+        link.insertBefore(icon, link.firstChild);
+      }
+    }
+  });
 });
 </script>
+</style>
 </head>
 
 
 <body>
-  <nav class="custom-navbar">
+  <div class="page-wrapper">
+    <div class="content-wrapper">
+      <nav class="custom-navbar">
   <div class="container">
     <strong><span style="color:#FFFFFF;">JL DUAN‘s Blog  </span></strong><span style="color:#FFFFFF;">丨</span>
     
-    <a href="/">文章</a>
+    <a href="/">
+      
+      
+      文章
+    </a>
     
-    <a href="/tags/">tags</a>
+    <a href="/tags/">
+      
+      
+      标签
+    </a>
     
-    <a href="/about/">关于</a>
+    <a href="/about/">
+      
+      
+      关于
+    </a>
     
-    <a href="/index.xml">RSS</a>
+    <a href="/index.xml">
+      
+        <img src="https://img.iduan.me/rss.png" alt="RSS" class="rss-icon" />
+      
+      
+      RSS
+    </a>
     
   </div>
 </nav>
-  
-  <div class="container">
-    <article>
       
+      <div class="container">
+        <article>
+          
 <h4>自驾游记录丨2023，我在路上</h4>
 2024/03/10
 
@@ -508,7 +836,84 @@ document.addEventListener('DOMContentLoaded', function() {
 </br>
 
 
-<p><em>本文字数约 10000 字，内容大多是作者在 2023 年自驾游期间的流水账，不感兴趣的朋友现在退出还来得及 🌚</em>
+<div class="content-with-toc">
+  
+  <aside class="toc toc-mobile">
+      <h5>目录</h5>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#第一站山西-太原忻州晋中">第一站：山西-太原/忻州/晋中</a>
+      <ul>
+        <li><a href="#晋祠">晋祠</a></li>
+        <li><a href="#蒙山太山">蒙山、太山</a></li>
+        <li><a href="#太原古县城">太原古县城</a></li>
+        <li><a href="#平遥古城">平遥古城</a></li>
+        <li><a href="#五台山">五台山</a></li>
+      </ul>
+    </li>
+    <li><a href="#第二站内蒙古-包头鄂尔多斯">第二站：内蒙古-包头/鄂尔多斯</a>
+      <ul>
+        <li><a href="#五当召">五当召</a></li>
+        <li><a href="#成吉思汗陵">成吉思汗陵</a></li>
+      </ul>
+    </li>
+    <li><a href="#第三站宁夏-银川">第三站：宁夏-银川</a>
+      <ul>
+        <li><a href="#览山公园">览山公园</a></li>
+        <li><a href="#贺兰山">贺兰山</a></li>
+        <li><a href="#镇北堡西部影城">镇北堡西部影城</a></li>
+        <li><a href="#西夏王陵">西夏王陵</a></li>
+        <li><a href="#怀远夜市">怀远夜市</a></li>
+      </ul>
+    </li>
+    <li><a href="#第四站内蒙古-呼和浩特乌兰察布">第四站：内蒙古-呼和浩特/乌兰察布</a>
+      <ul>
+        <li><a href="#美岱召">美岱召</a></li>
+        <li><a href="#昭君墓">昭君墓</a></li>
+        <li><a href="#大昭无量寺">大昭无量寺</a></li>
+        <li><a href="#公主府">公主府</a></li>
+        <li><a href="#乌兰哈达火山">乌兰哈达火山</a></li>
+        <li><a href="#卓资山熏鸡">卓资山熏鸡</a></li>
+        <li><a href="#敕勒川草原">敕勒川草原</a></li>
+      </ul>
+    </li>
+    <li><a href="#第五站甘肃-兰州">第五站：甘肃-兰州</a>
+      <ul>
+        <li><a href="#兰山">兰山</a></li>
+        <li><a href="#中山桥">中山桥</a></li>
+        <li><a href="#黄河水车博览园">黄河水车博览园</a></li>
+        <li><a href="#甘肃省博物馆">甘肃省博物馆</a></li>
+        <li><a href="#白塔山">白塔山</a></li>
+        <li><a href="#兰州水墨丹霞">兰州水墨丹霞</a></li>
+        <li><a href="#美食磨沟沿牛肉面">美食：磨沟沿牛肉面</a></li>
+        <li><a href="#美食放哈--甜醅子奶茶">美食：放哈 · 甜醅子奶茶</a></li>
+      </ul>
+    </li>
+    <li><a href="#第六站河南-洛阳郑州济源山西-晋城">第六站：河南-洛阳/郑州/济源、山西-晋城</a>
+      <ul>
+        <li><a href="#河南-洛阳郑州济源">河南-洛阳/郑州/济源</a></li>
+        <li><a href="#山西-晋城">山西-晋城</a></li>
+      </ul>
+    </li>
+    <li><a href="#第七站河北-石家庄保定">第七站：河北-石家庄/保定</a>
+      <ul>
+        <li><a href="#正定古县城">正定古县城</a></li>
+        <li><a href="#抱犊寨">抱犊寨</a></li>
+        <li><a href="#西柏坡">西柏坡</a></li>
+      </ul>
+    </li>
+    <li><a href="#2023-年自驾行程总结">2023 年自驾行程总结</a></li>
+    <li><a href="#我与黄河">我与黄河</a></li>
+    <li><a href="#我怎么做旅游攻略">我怎么做旅游攻略</a></li>
+    <li><a href="#下一站--2024">下一站 · 2024</a></li>
+    <li><a href="#参考资料">参考资料</a></li>
+  </ul>
+</nav>
+  </aside>
+  
+  
+  <div class="main-content">
+    <p><em>本文字数约 10000 字，内容大多是作者在 2023 年自驾游期间的流水账，不感兴趣的朋友现在退出还来得及 🌚</em>
 <em>原文地址：https://sspai.com/post/86593 ，搬运时略有删改。</em></p>
 <p>我生活在陕西省榆林市，这是一座位于陕西省最北部的小城。2020 年 9 月我拿到了驾照，但直到 2021 年 10 月我才开上了车。虽然看驾照时间的话，这时我已经过了实习期，但考虑到实际情况，我还是非常坚定的在车尾挂了一年的「实习」，直到 2022 年 9 月去山西太原参加朋友婚礼的时候，才将「实习」标志取下，这也是我第一次尝试自驾去外地。</p>
 <p>太原之行结束后没多久，我又自驾去延安玩了几天，这趟旅程也还算顺利。就这样前后积攒了两次开车出远门的经验，胆子也更大了。到了 2023 年，各地全面解封，想出门溜达也更方便，由此便开启了我这一年自驾的旅程。</p>
@@ -902,39 +1307,115 @@ document.addEventListener('DOMContentLoaded', function() {
 <li>内蒙古自治区人民政府网站：<a href="https://www.nmg.gov.cn/asnmg/yxnmg/lsrw/rwls/202102/t20210209_881763.html">清·和硕恪靖公主府</a>。</li>
 </ol>
 
-
-
-<script src="https://giscus.app/client.js"
-        data-repo="withduan/withduan.github.io"
-        data-repo-id="R_kgDOK8qrXQ"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOK8qrXc4Cb8Hw"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="light"
-        data-lang="zh-CN"
-        crossorigin="anonymous"
-        async>
-</script>
-
-    </article>
+    
+    
+    <script src="https://giscus.app/client.js"
+            data-repo="withduan/withduan.github.io"
+            data-repo-id="R_kgDOK8qrXQ"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOK8qrXc4Cb8Hw"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="light"
+            data-lang="zh-CN"
+            crossorigin="anonymous"
+            async>
+    </script>
+    
   </div>
-  <footer>
-
-<p style="color:#999999">
-<p style="text-align:center;">
-<small>
-©️ 2016-2025 JL DUAN‘s Blog.
-<a style="color: #000000;" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a>
-</small>
-<img style="display: block; margin-left: auto; margin-right: auto;" src="https://img.iduan.me/notbyai.png" alt="not by AI" width="70" />
-</p>
-</p>
+  
+  
+  <aside class="toc toc-desktop">
+      <h5>目录</h5>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#第一站山西-太原忻州晋中">第一站：山西-太原/忻州/晋中</a>
+      <ul>
+        <li><a href="#晋祠">晋祠</a></li>
+        <li><a href="#蒙山太山">蒙山、太山</a></li>
+        <li><a href="#太原古县城">太原古县城</a></li>
+        <li><a href="#平遥古城">平遥古城</a></li>
+        <li><a href="#五台山">五台山</a></li>
+      </ul>
+    </li>
+    <li><a href="#第二站内蒙古-包头鄂尔多斯">第二站：内蒙古-包头/鄂尔多斯</a>
+      <ul>
+        <li><a href="#五当召">五当召</a></li>
+        <li><a href="#成吉思汗陵">成吉思汗陵</a></li>
+      </ul>
+    </li>
+    <li><a href="#第三站宁夏-银川">第三站：宁夏-银川</a>
+      <ul>
+        <li><a href="#览山公园">览山公园</a></li>
+        <li><a href="#贺兰山">贺兰山</a></li>
+        <li><a href="#镇北堡西部影城">镇北堡西部影城</a></li>
+        <li><a href="#西夏王陵">西夏王陵</a></li>
+        <li><a href="#怀远夜市">怀远夜市</a></li>
+      </ul>
+    </li>
+    <li><a href="#第四站内蒙古-呼和浩特乌兰察布">第四站：内蒙古-呼和浩特/乌兰察布</a>
+      <ul>
+        <li><a href="#美岱召">美岱召</a></li>
+        <li><a href="#昭君墓">昭君墓</a></li>
+        <li><a href="#大昭无量寺">大昭无量寺</a></li>
+        <li><a href="#公主府">公主府</a></li>
+        <li><a href="#乌兰哈达火山">乌兰哈达火山</a></li>
+        <li><a href="#卓资山熏鸡">卓资山熏鸡</a></li>
+        <li><a href="#敕勒川草原">敕勒川草原</a></li>
+      </ul>
+    </li>
+    <li><a href="#第五站甘肃-兰州">第五站：甘肃-兰州</a>
+      <ul>
+        <li><a href="#兰山">兰山</a></li>
+        <li><a href="#中山桥">中山桥</a></li>
+        <li><a href="#黄河水车博览园">黄河水车博览园</a></li>
+        <li><a href="#甘肃省博物馆">甘肃省博物馆</a></li>
+        <li><a href="#白塔山">白塔山</a></li>
+        <li><a href="#兰州水墨丹霞">兰州水墨丹霞</a></li>
+        <li><a href="#美食磨沟沿牛肉面">美食：磨沟沿牛肉面</a></li>
+        <li><a href="#美食放哈--甜醅子奶茶">美食：放哈 · 甜醅子奶茶</a></li>
+      </ul>
+    </li>
+    <li><a href="#第六站河南-洛阳郑州济源山西-晋城">第六站：河南-洛阳/郑州/济源、山西-晋城</a>
+      <ul>
+        <li><a href="#河南-洛阳郑州济源">河南-洛阳/郑州/济源</a></li>
+        <li><a href="#山西-晋城">山西-晋城</a></li>
+      </ul>
+    </li>
+    <li><a href="#第七站河北-石家庄保定">第七站：河北-石家庄/保定</a>
+      <ul>
+        <li><a href="#正定古县城">正定古县城</a></li>
+        <li><a href="#抱犊寨">抱犊寨</a></li>
+        <li><a href="#西柏坡">西柏坡</a></li>
+      </ul>
+    </li>
+    <li><a href="#2023-年自驾行程总结">2023 年自驾行程总结</a></li>
+    <li><a href="#我与黄河">我与黄河</a></li>
+    <li><a href="#我怎么做旅游攻略">我怎么做旅游攻略</a></li>
+    <li><a href="#下一站--2024">下一站 · 2024</a></li>
+    <li><a href="#参考资料">参考资料</a></li>
+  </ul>
+</nav>
+  </aside>
+  
+</div>
+        </article>
+      </div>
+    </div>
+    <footer class="custom-footer">
+  <div class="container">
+    <small>
+      © 2016-2025 JL DUAN‘s Blog.
+      <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a>
+    </small>
+    <img src="https://img.iduan.me/notbyai.png" alt="not by AI" width="70" class="notbyai-icon" />
+  </div>
 </footer>
 
+  </div>
   
   
 </body>
