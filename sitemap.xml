@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://iduan.me/</loc>
+    <lastmod>2025-08-31T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://iduan.me/posts/</loc>
+    <lastmod>2025-08-31T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://iduan.me/tags/</loc>
+    <lastmod>2025-08-31T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://iduan.me/tags/%E7%9E%8E%E6%89%AF/</loc>
+    <lastmod>2025-08-31T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2025-08-31T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://iduan.me/posts/reading-notes-2025-08/</loc>
+    <lastmod>2025-08-31T00:00:00+08:00</lastmod>
+  </url><url>
     <loc>https://iduan.me/tags/blog/</loc>
     <lastmod>2025-08-19T00:00:00+08:00</lastmod>
   </url><url>
@@ -11,26 +29,11 @@
     <loc>https://iduan.me/posts/hugo-customization/</loc>
     <lastmod>2025-08-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/</loc>
-    <lastmod>2025-08-19T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://iduan.me/posts/</loc>
-    <lastmod>2025-08-19T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://iduan.me/tags/</loc>
-    <lastmod>2025-08-19T00:00:00+08:00</lastmod>
-  </url><url>
     <loc>https://iduan.me/tags/trae/</loc>
     <lastmod>2025-08-19T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://iduan.me/tags/typecho/</loc>
     <lastmod>2025-08-19T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://iduan.me/tags/%E7%9E%8E%E6%89%AF/</loc>
-    <lastmod>2025-07-31T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2025-07-31T00:00:00+08:00</lastmod>
   </url><url>
     <loc>https://iduan.me/posts/reading-notes-2025-07/</loc>
     <lastmod>2025-07-31T00:00:00+08:00</lastmod>
