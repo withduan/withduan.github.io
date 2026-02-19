@@ -2,297 +2,290 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on JL DUAN‘s Blog</title>
-    <link>https://localhost:1313/tags/</link>
+    <link>https://iduan.me/tags/</link>
     <description>Recent content in Tags on JL DUAN‘s Blog</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 30 Jan 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="https://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="https://iduan.me/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>瞎扯</title>
-      <link>https://localhost:1313/tags/%E7%9E%8E%E6%89%AF/</link>
-      <pubDate>Fri, 30 Jan 2026 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/%E7%9E%8E%E6%89%AF/</guid>
+      <link>https://iduan.me/tags/%E7%9E%8E%E6%89%AF/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0800</pubDate>
+      <guid>https://iduan.me/tags/%E7%9E%8E%E6%89%AF/</guid>
       <description></description>
     </item>
     <item>
       <title>读书笔记</title>
-      <link>https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
-      <pubDate>Fri, 30 Jan 2026 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>年终总结</title>
-      <link>https://localhost:1313/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Sun, 25 Jan 2026 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</guid>
+      <link>https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0800</pubDate>
+      <guid>https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</guid>
       <description></description>
     </item>
     <item>
       <title>Blog</title>
-      <link>https://localhost:1313/tags/blog/</link>
+      <link>https://iduan.me/tags/blog/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/blog/</guid>
+      <guid>https://iduan.me/tags/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>https://localhost:1313/tags/hugo/</link>
+      <link>https://iduan.me/tags/hugo/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/hugo/</guid>
+      <guid>https://iduan.me/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Trae</title>
-      <link>https://localhost:1313/tags/trae/</link>
+      <link>https://iduan.me/tags/trae/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/trae/</guid>
+      <guid>https://iduan.me/tags/trae/</guid>
       <description></description>
     </item>
     <item>
       <title>Typecho</title>
-      <link>https://localhost:1313/tags/typecho/</link>
+      <link>https://iduan.me/tags/typecho/</link>
       <pubDate>Tue, 19 Aug 2025 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/typecho/</guid>
+      <guid>https://iduan.me/tags/typecho/</guid>
       <description></description>
     </item>
     <item>
       <title>Android</title>
-      <link>https://localhost:1313/tags/android/</link>
+      <link>https://iduan.me/tags/android/</link>
       <pubDate>Tue, 11 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/android/</guid>
+      <guid>https://iduan.me/tags/android/</guid>
       <description></description>
     </item>
     <item>
       <title>Realme</title>
-      <link>https://localhost:1313/tags/realme/</link>
+      <link>https://iduan.me/tags/realme/</link>
       <pubDate>Tue, 11 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/realme/</guid>
+      <guid>https://iduan.me/tags/realme/</guid>
       <description></description>
     </item>
     <item>
       <title>RealmeUI</title>
-      <link>https://localhost:1313/tags/realmeui/</link>
+      <link>https://iduan.me/tags/realmeui/</link>
       <pubDate>Tue, 11 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/realmeui/</guid>
+      <guid>https://iduan.me/tags/realmeui/</guid>
       <description></description>
     </item>
     <item>
       <title>教程</title>
-      <link>https://localhost:1313/tags/%E6%95%99%E7%A8%8B/</link>
+      <link>https://iduan.me/tags/%E6%95%99%E7%A8%8B/</link>
       <pubDate>Tue, 11 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/%E6%95%99%E7%A8%8B/</guid>
+      <guid>https://iduan.me/tags/%E6%95%99%E7%A8%8B/</guid>
       <description></description>
     </item>
     <item>
       <title>真我</title>
-      <link>https://localhost:1313/tags/%E7%9C%9F%E6%88%91/</link>
+      <link>https://iduan.me/tags/%E7%9C%9F%E6%88%91/</link>
       <pubDate>Tue, 11 Feb 2025 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/%E7%9C%9F%E6%88%91/</guid>
+      <guid>https://iduan.me/tags/%E7%9C%9F%E6%88%91/</guid>
       <description></description>
     </item>
     <item>
       <title>旅游</title>
-      <link>https://localhost:1313/tags/%E6%97%85%E6%B8%B8/</link>
+      <link>https://iduan.me/tags/%E6%97%85%E6%B8%B8/</link>
       <pubDate>Sun, 10 Mar 2024 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/%E6%97%85%E6%B8%B8/</guid>
+      <guid>https://iduan.me/tags/%E6%97%85%E6%B8%B8/</guid>
       <description></description>
     </item>
     <item>
       <title>Chrome</title>
-      <link>https://localhost:1313/tags/chrome/</link>
+      <link>https://iduan.me/tags/chrome/</link>
       <pubDate>Fri, 09 Jun 2023 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/chrome/</guid>
+      <guid>https://iduan.me/tags/chrome/</guid>
       <description></description>
     </item>
     <item>
       <title>Sspai</title>
-      <link>https://localhost:1313/tags/sspai/</link>
+      <link>https://iduan.me/tags/sspai/</link>
       <pubDate>Fri, 09 Jun 2023 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/sspai/</guid>
+      <guid>https://iduan.me/tags/sspai/</guid>
       <description></description>
     </item>
     <item>
       <title>Ctm</title>
-      <link>https://localhost:1313/tags/ctm/</link>
+      <link>https://iduan.me/tags/ctm/</link>
       <pubDate>Sun, 30 Apr 2023 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/ctm/</guid>
+      <guid>https://iduan.me/tags/ctm/</guid>
       <description></description>
     </item>
     <item>
       <title>Esim</title>
-      <link>https://localhost:1313/tags/esim/</link>
+      <link>https://iduan.me/tags/esim/</link>
       <pubDate>Sun, 30 Apr 2023 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/esim/</guid>
+      <guid>https://iduan.me/tags/esim/</guid>
       <description></description>
     </item>
     <item>
       <title>Ipa</title>
-      <link>https://localhost:1313/tags/ipa/</link>
+      <link>https://iduan.me/tags/ipa/</link>
       <pubDate>Sat, 07 Jan 2023 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/ipa/</guid>
+      <guid>https://iduan.me/tags/ipa/</guid>
       <description></description>
     </item>
     <item>
       <title>自签名</title>
-      <link>https://localhost:1313/tags/%E8%87%AA%E7%AD%BE%E5%90%8D/</link>
+      <link>https://iduan.me/tags/%E8%87%AA%E7%AD%BE%E5%90%8D/</link>
       <pubDate>Sat, 07 Jan 2023 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/%E8%87%AA%E7%AD%BE%E5%90%8D/</guid>
+      <guid>https://iduan.me/tags/%E8%87%AA%E7%AD%BE%E5%90%8D/</guid>
       <description></description>
     </item>
     <item>
       <title>Covid-19</title>
-      <link>https://localhost:1313/tags/covid-19/</link>
+      <link>https://iduan.me/tags/covid-19/</link>
       <pubDate>Fri, 09 Dec 2022 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/covid-19/</guid>
+      <guid>https://iduan.me/tags/covid-19/</guid>
       <description></description>
     </item>
     <item>
       <title>工作</title>
-      <link>https://localhost:1313/tags/%E5%B7%A5%E4%BD%9C/</link>
+      <link>https://iduan.me/tags/%E5%B7%A5%E4%BD%9C/</link>
       <pubDate>Fri, 09 Dec 2022 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/%E5%B7%A5%E4%BD%9C/</guid>
+      <guid>https://iduan.me/tags/%E5%B7%A5%E4%BD%9C/</guid>
       <description></description>
     </item>
     <item>
       <title>Macos</title>
-      <link>https://localhost:1313/tags/macos/</link>
+      <link>https://iduan.me/tags/macos/</link>
       <pubDate>Tue, 25 Oct 2022 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/macos/</guid>
+      <guid>https://iduan.me/tags/macos/</guid>
       <description></description>
     </item>
     <item>
       <title>微信</title>
-      <link>https://localhost:1313/tags/%E5%BE%AE%E4%BF%A1/</link>
+      <link>https://iduan.me/tags/%E5%BE%AE%E4%BF%A1/</link>
       <pubDate>Fri, 29 Jul 2022 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/%E5%BE%AE%E4%BF%A1/</guid>
+      <guid>https://iduan.me/tags/%E5%BE%AE%E4%BF%A1/</guid>
       <description></description>
     </item>
     <item>
       <title>Newtab</title>
-      <link>https://localhost:1313/tags/newtab/</link>
+      <link>https://iduan.me/tags/newtab/</link>
       <pubDate>Thu, 21 Jul 2022 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/newtab/</guid>
+      <guid>https://iduan.me/tags/newtab/</guid>
       <description></description>
     </item>
     <item>
       <title>Self-Hosting</title>
-      <link>https://localhost:1313/tags/self-hosting/</link>
+      <link>https://iduan.me/tags/self-hosting/</link>
       <pubDate>Thu, 30 Jun 2022 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/self-hosting/</guid>
+      <guid>https://iduan.me/tags/self-hosting/</guid>
       <description></description>
     </item>
     <item>
       <title>Subconverter</title>
-      <link>https://localhost:1313/tags/subconverter/</link>
+      <link>https://iduan.me/tags/subconverter/</link>
       <pubDate>Thu, 30 Jun 2022 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/subconverter/</guid>
+      <guid>https://iduan.me/tags/subconverter/</guid>
       <description></description>
     </item>
     <item>
       <title>Bark</title>
-      <link>https://localhost:1313/tags/bark/</link>
+      <link>https://iduan.me/tags/bark/</link>
       <pubDate>Fri, 08 Apr 2022 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/bark/</guid>
+      <guid>https://iduan.me/tags/bark/</guid>
       <description></description>
     </item>
     <item>
       <title>Bark-Server</title>
-      <link>https://localhost:1313/tags/bark-server/</link>
+      <link>https://iduan.me/tags/bark-server/</link>
       <pubDate>Fri, 08 Apr 2022 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/bark-server/</guid>
+      <guid>https://iduan.me/tags/bark-server/</guid>
       <description></description>
     </item>
     <item>
       <title>Windows</title>
-      <link>https://localhost:1313/tags/windows/</link>
+      <link>https://iduan.me/tags/windows/</link>
       <pubDate>Wed, 30 Mar 2022 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/windows/</guid>
+      <guid>https://iduan.me/tags/windows/</guid>
       <description></description>
     </item>
     <item>
       <title>Iphone</title>
-      <link>https://localhost:1313/tags/iphone/</link>
+      <link>https://iduan.me/tags/iphone/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/iphone/</guid>
+      <guid>https://iduan.me/tags/iphone/</guid>
       <description></description>
     </item>
     <item>
       <title>Smsforwarder</title>
-      <link>https://localhost:1313/tags/smsforwarder/</link>
+      <link>https://iduan.me/tags/smsforwarder/</link>
       <pubDate>Wed, 26 Jan 2022 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/smsforwarder/</guid>
+      <guid>https://iduan.me/tags/smsforwarder/</guid>
       <description></description>
     </item>
     <item>
       <title>Ios</title>
-      <link>https://localhost:1313/tags/ios/</link>
+      <link>https://iduan.me/tags/ios/</link>
       <pubDate>Mon, 15 Nov 2021 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/ios/</guid>
+      <guid>https://iduan.me/tags/ios/</guid>
       <description></description>
     </item>
     <item>
       <title>Minecraft</title>
-      <link>https://localhost:1313/tags/minecraft/</link>
+      <link>https://iduan.me/tags/minecraft/</link>
       <pubDate>Thu, 30 Sep 2021 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/minecraft/</guid>
+      <guid>https://iduan.me/tags/minecraft/</guid>
       <description></description>
     </item>
     <item>
       <title>Aldente</title>
-      <link>https://localhost:1313/tags/aldente/</link>
+      <link>https://iduan.me/tags/aldente/</link>
       <pubDate>Sun, 12 Sep 2021 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/aldente/</guid>
+      <guid>https://iduan.me/tags/aldente/</guid>
       <description></description>
     </item>
     <item>
       <title>Safeincloud</title>
-      <link>https://localhost:1313/tags/safeincloud/</link>
+      <link>https://iduan.me/tags/safeincloud/</link>
       <pubDate>Fri, 25 Jun 2021 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/safeincloud/</guid>
+      <guid>https://iduan.me/tags/safeincloud/</guid>
       <description></description>
     </item>
     <item>
       <title>密码管理</title>
-      <link>https://localhost:1313/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86/</link>
+      <link>https://iduan.me/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86/</link>
       <pubDate>Fri, 25 Jun 2021 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86/</guid>
+      <guid>https://iduan.me/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86/</guid>
       <description></description>
     </item>
     <item>
       <title>Aukey</title>
-      <link>https://localhost:1313/tags/aukey/</link>
+      <link>https://iduan.me/tags/aukey/</link>
       <pubDate>Thu, 10 Jun 2021 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/aukey/</guid>
+      <guid>https://iduan.me/tags/aukey/</guid>
       <description></description>
     </item>
     <item>
       <title>Momax</title>
-      <link>https://localhost:1313/tags/momax/</link>
+      <link>https://iduan.me/tags/momax/</link>
       <pubDate>Thu, 10 Jun 2021 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/momax/</guid>
+      <guid>https://iduan.me/tags/momax/</guid>
       <description></description>
     </item>
     <item>
       <title>Nubia</title>
-      <link>https://localhost:1313/tags/nubia/</link>
+      <link>https://iduan.me/tags/nubia/</link>
       <pubDate>Mon, 10 May 2021 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/nubia/</guid>
+      <guid>https://iduan.me/tags/nubia/</guid>
       <description></description>
     </item>
     <item>
       <title>Apple</title>
-      <link>https://localhost:1313/tags/apple/</link>
+      <link>https://iduan.me/tags/apple/</link>
       <pubDate>Thu, 15 Apr 2021 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/apple/</guid>
+      <guid>https://iduan.me/tags/apple/</guid>
       <description></description>
     </item>
     <item>
       <title>Macbook</title>
-      <link>https://localhost:1313/tags/macbook/</link>
+      <link>https://iduan.me/tags/macbook/</link>
       <pubDate>Thu, 15 Apr 2021 00:00:00 +0800</pubDate>
-      <guid>https://localhost:1313/tags/macbook/</guid>
+      <guid>https://iduan.me/tags/macbook/</guid>
       <description></description>
     </item>
   </channel>
