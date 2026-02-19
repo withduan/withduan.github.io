@@ -2,270 +2,282 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://iduan.me/</loc>
+    <loc>https://localhost:1313/</loc>
+    <lastmod>2026-01-30T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/posts/</loc>
+    <lastmod>2026-01-30T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/tags/</loc>
+    <lastmod>2026-01-30T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/tags/%E7%9E%8E%E6%89%AF/</loc>
+    <lastmod>2026-01-30T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2026-01-30T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/posts/reading-notes-2026-01/</loc>
+    <lastmod>2026-01-30T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/posts/2025-buy-it-all-list/</loc>
+    <lastmod>2026-01-25T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93/</loc>
+    <lastmod>2026-01-25T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/posts/reading-notes-2025-12/</loc>
+    <lastmod>2025-12-30T00:00:00+08:00</lastmod>
+  </url><url>
+    <loc>https://localhost:1313/posts/reading-notes-2025-11/</loc>
     <lastmod>2025-11-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/</loc>
-    <lastmod>2025-11-30T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://iduan.me/tags/</loc>
-    <lastmod>2025-11-30T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://iduan.me/tags/%E7%9E%8E%E6%89%AF/</loc>
-    <lastmod>2025-11-30T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2025-11-30T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2025-11/</loc>
-    <lastmod>2025-11-30T00:00:00+08:00</lastmod>
-  </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2025-10/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2025-10/</loc>
     <lastmod>2025-10-31T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2025-09/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2025-09/</loc>
     <lastmod>2025-09-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2025-08/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2025-08/</loc>
     <lastmod>2025-08-31T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/blog/</loc>
+    <loc>https://localhost:1313/tags/blog/</loc>
     <lastmod>2025-08-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/hugo/</loc>
+    <loc>https://localhost:1313/tags/hugo/</loc>
     <lastmod>2025-08-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/hugo-customization/</loc>
+    <loc>https://localhost:1313/posts/hugo-customization/</loc>
     <lastmod>2025-08-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/trae/</loc>
+    <loc>https://localhost:1313/tags/trae/</loc>
     <lastmod>2025-08-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/typecho/</loc>
+    <loc>https://localhost:1313/tags/typecho/</loc>
     <lastmod>2025-08-19T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2025-07/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2025-07/</loc>
     <lastmod>2025-07-31T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/android/</loc>
+    <loc>https://localhost:1313/tags/android/</loc>
     <lastmod>2025-02-11T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/realme/</loc>
+    <loc>https://localhost:1313/tags/realme/</loc>
     <lastmod>2025-02-11T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/realme/</loc>
+    <loc>https://localhost:1313/posts/realme/</loc>
     <lastmod>2025-02-11T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/realmeui/</loc>
+    <loc>https://localhost:1313/tags/realmeui/</loc>
     <lastmod>2025-02-11T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://localhost:1313/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-02-11T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/%E7%9C%9F%E6%88%91/</loc>
+    <loc>https://localhost:1313/tags/%E7%9C%9F%E6%88%91/</loc>
     <lastmod>2025-02-11T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2025-01/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2025-01/</loc>
     <lastmod>2025-01-31T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2024-12/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2024-12/</loc>
     <lastmod>2024-12-31T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/cloudflare-r2-upic/</loc>
+    <loc>https://localhost:1313/posts/cloudflare-r2-upic/</loc>
     <lastmod>2024-12-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2024-11/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2024-11/</loc>
     <lastmod>2024-11-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/9-questions/</loc>
+    <loc>https://localhost:1313/posts/9-questions/</loc>
     <lastmod>2024-11-05T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2024-10/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2024-10/</loc>
     <lastmod>2024-10-31T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2024-05/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2024-05/</loc>
     <lastmod>2024-05-31T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2024-04/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2024-04/</loc>
     <lastmod>2024-04-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2024-03/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2024-03/</loc>
     <lastmod>2024-03-31T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/%E6%97%85%E6%B8%B8/</loc>
+    <loc>https://localhost:1313/tags/%E6%97%85%E6%B8%B8/</loc>
     <lastmod>2024-03-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/self-driving-tour-in-2024/</loc>
+    <loc>https://localhost:1313/posts/self-driving-tour-in-2024/</loc>
     <lastmod>2024-03-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2024-02/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2024-02/</loc>
     <lastmod>2024-02-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/reading-notes-2024-01/</loc>
+    <loc>https://localhost:1313/posts/reading-notes-2024-01/</loc>
     <lastmod>2024-01-31T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/about/</loc>
+    <loc>https://localhost:1313/about/</loc>
     <lastmod>2024-01-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/summary-of-2023/</loc>
+    <loc>https://localhost:1313/posts/summary-of-2023/</loc>
     <lastmod>2023-12-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/continue-with-hugo/</loc>
+    <loc>https://localhost:1313/posts/continue-with-hugo/</loc>
     <lastmod>2023-12-14T23:45:52+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/chrome/</loc>
+    <loc>https://localhost:1313/tags/chrome/</loc>
     <lastmod>2023-06-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/chrome-without-google/</loc>
+    <loc>https://localhost:1313/posts/chrome-without-google/</loc>
     <lastmod>2023-06-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/sspai/</loc>
+    <loc>https://localhost:1313/tags/sspai/</loc>
     <lastmod>2023-06-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/ctm/</loc>
+    <loc>https://localhost:1313/tags/ctm/</loc>
     <lastmod>2023-04-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/esim/</loc>
+    <loc>https://localhost:1313/tags/esim/</loc>
     <lastmod>2023-04-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/activate-ctm-sim/</loc>
+    <loc>https://localhost:1313/posts/activate-ctm-sim/</loc>
     <lastmod>2023-04-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/ipa/</loc>
+    <loc>https://localhost:1313/tags/ipa/</loc>
     <lastmod>2023-01-07T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/creating-certificate-for-ipa-signing/</loc>
+    <loc>https://localhost:1313/posts/creating-certificate-for-ipa-signing/</loc>
     <lastmod>2023-01-07T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/%E8%87%AA%E7%AD%BE%E5%90%8D/</loc>
+    <loc>https://localhost:1313/tags/%E8%87%AA%E7%AD%BE%E5%90%8D/</loc>
     <lastmod>2023-01-07T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/covid-19/</loc>
+    <loc>https://localhost:1313/tags/covid-19/</loc>
     <lastmod>2022-12-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/%E5%B7%A5%E4%BD%9C/</loc>
+    <loc>https://localhost:1313/tags/%E5%B7%A5%E4%BD%9C/</loc>
     <lastmod>2022-12-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/work-with-covid-19/</loc>
+    <loc>https://localhost:1313/posts/work-with-covid-19/</loc>
     <lastmod>2022-12-09T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/macos/</loc>
+    <loc>https://localhost:1313/tags/macos/</loc>
     <lastmod>2022-10-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/disable-macos-update/</loc>
+    <loc>https://localhost:1313/posts/disable-macos-update/</loc>
     <lastmod>2022-10-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/all-in-one-phone/</loc>
+    <loc>https://localhost:1313/posts/all-in-one-phone/</loc>
     <lastmod>2022-07-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/%E5%BE%AE%E4%BF%A1/</loc>
+    <loc>https://localhost:1313/tags/%E5%BE%AE%E4%BF%A1/</loc>
     <lastmod>2022-07-29T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/newtab/</loc>
+    <loc>https://localhost:1313/tags/newtab/</loc>
     <lastmod>2022-07-21T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/clear-newtab/</loc>
+    <loc>https://localhost:1313/posts/clear-newtab/</loc>
     <lastmod>2022-07-21T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/self-hosting/</loc>
+    <loc>https://localhost:1313/tags/self-hosting/</loc>
     <lastmod>2022-06-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/subconverter/</loc>
+    <loc>https://localhost:1313/tags/subconverter/</loc>
     <lastmod>2022-06-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/subconverter-self-hosting/</loc>
+    <loc>https://localhost:1313/posts/subconverter-self-hosting/</loc>
     <lastmod>2022-06-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/bark/</loc>
+    <loc>https://localhost:1313/tags/bark/</loc>
     <lastmod>2022-04-08T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/bark-server/</loc>
+    <loc>https://localhost:1313/tags/bark-server/</loc>
     <lastmod>2022-04-08T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/bark-server-self-hosting/</loc>
+    <loc>https://localhost:1313/posts/bark-server-self-hosting/</loc>
     <lastmod>2022-04-08T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/typecho-update-20220401/</loc>
+    <loc>https://localhost:1313/posts/typecho-update-20220401/</loc>
     <lastmod>2022-04-01T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/windows/</loc>
+    <loc>https://localhost:1313/tags/windows/</loc>
     <lastmod>2022-03-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/windows-remote-desktop/</loc>
+    <loc>https://localhost:1313/posts/windows-remote-desktop/</loc>
     <lastmod>2022-03-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/typecho-optimization/</loc>
+    <loc>https://localhost:1313/posts/typecho-optimization/</loc>
     <lastmod>2022-03-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/rebooting-the-blog/</loc>
+    <loc>https://localhost:1313/posts/rebooting-the-blog/</loc>
     <lastmod>2022-03-08T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/iphone/</loc>
+    <loc>https://localhost:1313/tags/iphone/</loc>
     <lastmod>2022-01-26T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/smsforwarder/</loc>
+    <loc>https://localhost:1313/tags/smsforwarder/</loc>
     <lastmod>2022-01-26T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/forwarding-messages-from-android-to-iphone/</loc>
+    <loc>https://localhost:1313/posts/forwarding-messages-from-android-to-iphone/</loc>
     <lastmod>2022-01-26T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/ios/</loc>
+    <loc>https://localhost:1313/tags/ios/</loc>
     <lastmod>2021-11-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/ios-accessibility-features-tips/</loc>
+    <loc>https://localhost:1313/posts/ios-accessibility-features-tips/</loc>
     <lastmod>2021-11-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/minecraft/</loc>
+    <loc>https://localhost:1313/tags/minecraft/</loc>
     <lastmod>2021-09-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/m1-mac-minecraft-error-255/</loc>
+    <loc>https://localhost:1313/posts/m1-mac-minecraft-error-255/</loc>
     <lastmod>2021-09-30T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/aldente/</loc>
+    <loc>https://localhost:1313/tags/aldente/</loc>
     <lastmod>2021-09-12T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/experience-of-aldente-pro/</loc>
+    <loc>https://localhost:1313/posts/experience-of-aldente-pro/</loc>
     <lastmod>2021-09-12T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/huashan-mountain-tour-2021/</loc>
+    <loc>https://localhost:1313/posts/huashan-mountain-tour-2021/</loc>
     <lastmod>2021-08-16T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/safeincloud/</loc>
+    <loc>https://localhost:1313/tags/safeincloud/</loc>
     <lastmod>2021-06-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/usage-of-the-safeincloud/</loc>
+    <loc>https://localhost:1313/posts/usage-of-the-safeincloud/</loc>
     <lastmod>2021-06-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86/</loc>
+    <loc>https://localhost:1313/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2021-06-25T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/aukey-powerbank-momax-cable/</loc>
+    <loc>https://localhost:1313/posts/aukey-powerbank-momax-cable/</loc>
     <lastmod>2021-06-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/aukey/</loc>
+    <loc>https://localhost:1313/tags/aukey/</loc>
     <lastmod>2021-06-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/momax/</loc>
+    <loc>https://localhost:1313/tags/momax/</loc>
     <lastmod>2021-06-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/nubia/</loc>
+    <loc>https://localhost:1313/tags/nubia/</loc>
     <lastmod>2021-05-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/nubia-redmagic-radiator/</loc>
+    <loc>https://localhost:1313/posts/nubia-redmagic-radiator/</loc>
     <lastmod>2021-05-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/apple/</loc>
+    <loc>https://localhost:1313/tags/apple/</loc>
     <lastmod>2021-04-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/tags/macbook/</loc>
+    <loc>https://localhost:1313/tags/macbook/</loc>
     <lastmod>2021-04-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/m1-macbook-air/</loc>
+    <loc>https://localhost:1313/posts/m1-macbook-air/</loc>
     <lastmod>2021-04-15T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/posts/safeincloud/</loc>
+    <loc>https://localhost:1313/posts/safeincloud/</loc>
     <lastmod>2021-03-10T00:00:00+08:00</lastmod>
   </url><url>
-    <loc>https://iduan.me/categories/</loc>
+    <loc>https://localhost:1313/categories/</loc>
   </url>
 </urlset>

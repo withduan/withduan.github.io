@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
@@ -10,19 +10,19 @@
   
 
   
-  <link rel="apple-touch-icon" sizes="180x180" href="https://iduan.me/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://localhost:1313/apple-touch-icon.png">
 
   
-  <link rel="icon" type="image/png" sizes="32x32" href="https://iduan.me/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://localhost:1313/favicon-32x32.png">
 
   
-  <link rel="icon" type="image/png" sizes="16x16" href="https://iduan.me/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://localhost:1313/favicon-16x16.png">
 
   
-  <link rel="manifest" href="https://iduan.me/site.webmanifest">
+  <link rel="manifest" href="https://localhost:1313/site.webmanifest">
 
   
-  <link rel="mask-icon" href="https://iduan.me/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="https://localhost:1313/safari-pinned-tab.svg" color="#5bbad5">
 
   <meta name="msapplication-TileColor" content="#da532c">
 
@@ -31,7 +31,7 @@
   <script defer src="https://api.iduan.me/api.js" data-website-id="d366feff-1fcf-43b5-9f3b-8c42fd001987"></script>
 
   
-  <link rel="stylesheet" href="https://iduan.me/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://localhost:1313/css/bootstrap.min.css" />
 
   
   
@@ -44,750 +44,1026 @@
   
   
   <style>
-body {
-  min-width: 300px;
-}
+  body {
+    min-width: 300px;
+  }
 
-.custom-navbar {
-  margin-bottom: 1em;
-  height: 60px;
-}
-
-.custom-navbar a {
-  display: inline-block; 
-  padding: 18px 0;
-  margin-right: 1em; 
-  font-weight: bold; 
-}
-
-.custom-navbar a:hover,
-.custom-navbar a:focus {
-  text-decoration: none; 
-}
-
-@media print {
   .custom-navbar {
-    display: none;
+    margin-bottom: 1em;
+    height: 60px;
   }
-}
 
-article {
-  padding-bottom: 1em;
-}
-
-article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
-  max-width: 80%;
-  max-height: 70vh;
-  height: auto;
-  display: block;
-  margin: 1rem auto;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-img.original-style {
-  max-width: 100%;
-  max-height: none;
-  height: auto;
-  display: inline;
-  margin: 0;
-  border-radius: 0;
-  box-shadow: none;
-  cursor: default;
-  transition: none;
-}
-
-img.original-style:hover {
-  transform: none;
-  box-shadow: none;
-}
-
-img.icon,
-img.logo,
-img.avatar,
-img.inline-icon {
-  max-width: none;
-  max-height: none;
-  height: auto;
-  display: inline;
-  margin: 0;
-  border-radius: 0;
-  box-shadow: none;
-  cursor: default;
-  transition: none;
-}
-
-img.icon:hover,
-img.logo:hover,
-img.avatar:hover,
-img.inline-icon:hover {
-  transform: none;
-  box-shadow: none;
-}
-
-nav img,
-footer img,
-.navbar img {
-  max-width: none;
-  max-height: none;
-  height: auto;
-  display: inline;
-  margin: 0;
-  border-radius: 0;
-  box-shadow: none;
-  cursor: default;
-  transition: none;
-}
-
-nav img:hover,
-footer img:hover,
-.navbar img:hover {
-  transform: none;
-  box-shadow: none;
-}
-
-.image-container {
-  text-align: center;
-  margin: 1.5rem 0;
-}
-
-img + em {
-  display: block;
-  text-align: center;
-  font-style: italic;
-  color: #666;
-  font-size: 0.9rem;
-  margin-top: 0.5rem;
-}
-
-h1 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid #2563eb;
-  line-height: 1.3;
-}
-
-article > h1:first-child {
-  font-size: 1.4rem;
-}
-
-article > h4:first-child {
-  font-size: 1.4rem;
-}
-
-.main-content h2 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-top: 1.8rem;
-  margin-bottom: 0.8rem;
-  padding-bottom: 0.5rem;
-  position: relative;
-  line-height: 1.4;
-  border-left: none;
-  padding-left: 0;
-  background: none;
-}
-
-.main-content h2::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #16a34a;
-}
-
-.main-content h3 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-top: 1.5rem;
-  margin-bottom: 0.6rem;
-  padding-bottom: 0.5rem;
-  position: relative;
-  line-height: 1.4;
-  background: none;
-  border-radius: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-}
-
-.main-content h3::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #dc2626;
-}
-
-.main-content h4 {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-top: 1.2rem;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.5rem;
-  position: relative;
-}
-
-.main-content h4::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #f59e0b;
-}
-
-.main-content h5 {
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin-top: 1rem;
-  margin-bottom: 0.4rem;
-  padding-bottom: 0.5rem;
-  position: relative;
-}
-
-.main-content h5::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #8b5cf6;
-}
-
-.main-content h6 {
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin-top: 0.8rem;
-  margin-bottom: 0.3rem;
-  padding-bottom: 0.5rem;
-  position: relative;
-}
-
-.main-content h6::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #ec4899;
-}
-
-h2 {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-top: 1.8rem;
-  margin-bottom: 0.8rem;
-  padding-left: 0.8rem;
-  border-left: 4px solid #28a745;
-  line-height: 1.4;
-}
-
-h3 {
-  font-size: 1.05rem;
-  font-weight: 600;
-  margin-top: 1.5rem;
-  margin-bottom: 0.6rem;
-  padding: 0.3rem 0.6rem;
-  background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
-  border-radius: 4px;
-  line-height: 1.4;
-}
-
-h4 {
-  font-size: 1rem;
-  font-weight: 500;
-  margin-top: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-h5 {
-  font-size: 0.95rem;
-  font-weight: 500;
-  margin-top: 1rem;
-  margin-bottom: 0.4rem;
-}
-
-h6 {
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin-top: 0.8rem;
-  margin-bottom: 0.3rem;
-}
-
-body {
-  background-color: #fff;
-}
-
-
-
-body {
-  color: #212529;
-}
-
-
-
-a {
-  color: #007bff;
-}
-
-
-
-a:hover,
-a:focus {
-  color: #0056b3;
-}
-
-
-
-.custom-navbar {
-  background-color: #212529;
-}
-
-
-
-.custom-navbar a {
-  color: rgba(255, 255, 255, 0.75);
-}
-
-
-
-.custom-navbar a:hover,
-.custom-navbar a:focus {
-  color: rgba(255, 255, 255, 1);
-}
-
-
-
-.container {
-  max-width: 800px;
-}
-
-
-
-pre {
-  display: block;
-  padding: 9.5px;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-pre code {
-  padding: 0;
-  font-size: inherit;
-  color: inherit; 
-  white-space: pre-wrap;
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
-}
-
-code {
-  padding: 2px 4px;
-  color: inherit; 
-  background-color: #f5f5f5;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: .9em;
-}
-
-
-
-blockquote,
-.blockquote {
-  padding: 15px 20px;
-  margin: 1.5rem 0;
-  font-size: 1em;
-  border-left: 4px solid #ff8c00;
-  background-color: #fffbf0;
-  border-radius: 4px;
-}
-
-blockquote p:last-child,
-.blockquote p:last-child {
-  margin-bottom: 0;
-}
-
-blockquote > *:last-child,
-.blockquote > *:last-child {
-  margin-bottom: 0;
-}
-
-
-.tags-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
-
-.tag-item {
-  display: inline-block;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.tag-item a {
-  text-decoration: none;
-}
-
-.tag-item code {
-  background-color: #e9ecef;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  text-transform: none !important;
-}
-
-.tag-item:hover code {
-  background-color: #dee2e6;
-  border-color: #adb5bd;
-}
-
-.tag-item small {
-  color: #6c757d;
-  margin-left: 0.25rem;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1rem 0;
-  font-size: 0.9rem;
-}
-
-table th,
-table td {
-  border: 1px solid #dee2e6;
-  padding: 0.75rem;
-  text-align: left;
-  vertical-align: top;
-}
-
-table th {
-  background-color: #f8f9fa;
-  font-weight: 600;
-  border-bottom: 2px solid #dee2e6;
-}
-
-table tbody tr:nth-child(even) {
-  background-color: #f8f9fa;
-}
-
-table tbody tr:hover {
-  background-color: #e9ecef;
-}
-
-@media (max-width: 768px) {
-  table {
-    font-size: 0.8rem;
+  .custom-navbar a {
+    display: inline-block;
+    padding: 18px 0;
+    margin-right: 1em;
+    font-weight: bold;
   }
-  
-  table th,
-  table td {
-    padding: 0.5rem;
+
+  .custom-navbar a:hover,
+  .custom-navbar a:focus {
+    text-decoration: none;
   }
-}
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
-}
+  @media print {
+    .custom-navbar {
+      display: none;
+    }
+  }
 
-::-webkit-scrollbar {
-  width: 8px !important;
-  height: 8px !important;
-}
+  article {
+    padding-bottom: 1em;
+  }
 
-::-webkit-scrollbar-track {
-  background: transparent !important;
-}
+  article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style) {
+    max-width: 80%;
+    max-height: 70vh;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 8px;
+    cursor: pointer;
+  }
 
-::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.2) !important;
-  border-radius: 4px !important;
-  transition: background 0.3s ease !important;
-}
+  img.original-style {
+    max-width: 100%;
+    max-height: none;
+    height: auto;
+    display: inline;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: default;
+    transition: none;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(0, 0, 0, 0.4) !important;
-}
+  img.original-style:hover {
+    transform: none;
+    box-shadow: none;
+  }
 
-html, body, * {
-  scrollbar-width: thin !important;
-  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
-}
+  img.icon,
+  img.logo,
+  img.avatar,
+  img.inline-icon {
+    max-width: none;
+    max-height: none;
+    height: auto;
+    display: inline;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: default;
+    transition: none;
+  }
 
-body {
-  overflow-y: overlay;
-  overflow-x: auto;
-}
+  img.icon:hover,
+  img.logo:hover,
+  img.avatar:hover,
+  img.inline-icon:hover {
+    transform: none;
+    box-shadow: none;
+  }
 
-pre {
-  overflow-x: overlay;
-}
+  nav img,
+  footer img,
+  .navbar img {
+    max-width: none;
+    max-height: none;
+    height: auto;
+    display: inline;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: default;
+    transition: none;
+  }
 
-.table-responsive {
-  overflow-x: overlay;
-}
+  nav img:hover,
+  footer img:hover,
+  .navbar img:hover {
+    transform: none;
+    box-shadow: none;
+  }
 
-div, article, section, main, aside, nav, header, footer {
-  scrollbar-width: thin !important;
-  scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
-}
-
-article a[href*="douban.com"] {
-  color: #28a745 !important;
-}
-
-.rss-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 2px;
-  vertical-align: text-bottom;
-  display: inline-block;
-}
-
-.douban-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 4px;
-  vertical-align: text-bottom;
-  display: inline-block;
-}
-
-html, body {
-  height: 100%;
-}
-
-.page-wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.content-wrapper {
-  flex: 1;
-}
-
-.custom-footer {
-  margin-top: auto;
-  padding: 18px 0;
-  background-color: #212529;
-  color: rgba(255,255,255,.75);
-}
-
-.custom-footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.custom-footer small {
-  margin: 0;
-}
-
-.custom-footer a {
-  color: rgba(255,255,255,.75);
-  text-decoration: none;
-}
-
-.custom-footer a:hover,
-.custom-footer a:focus {
-  color: rgba(255,255,255,1);
-  text-decoration: none;
-}
-
-.notbyai-icon {
-  max-width: none;
-  max-height: none;
-  height: auto;
-  display: inline;
-  margin: 0;
-  border-radius: 0;
-  box-shadow: none;
-  cursor: default;
-  transition: none;
-}
-
-.douban-icon {
-  width: 22px;
-  height: 22px;
-  margin-right: 4px;
-  vertical-align: text-bottom;
-  display: inline-block;
-}
-
-@media (max-width: 768px) {
-  .custom-footer .container {
-    flex-direction: column;
-    gap: 10px;
+  .image-container {
     text-align: center;
-  }
-}
-.content-with-toc {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.toc {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
-  border-radius: 0.375rem;
-  padding: 1rem;
-}
-
-.toc h5 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  color: #495057;
-  font-size: 1rem;
-}
-
-.toc ul {
-  margin-bottom: 0;
-  padding-left: 1.5rem;
-  font-size: 0.9rem;
-  list-style: none;
-}
-
-.toc li {
-  margin-bottom: 0.25rem;
-}
-
-.toc a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.toc a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-.toc .douban-icon {
-  width: 1rem;
-  height: 1rem;
-  margin-right: 4px;
-  vertical-align: text-bottom;
-  display: inline-block;
-}
-
-@media (min-width: 1200px) {
-  .toc-desktop {
-    position: fixed;
-    left: calc(50% + 400px + 2rem);
-    top: calc(60px + 1em + 1rem);
-    width: 280px;
-    max-height: calc(100vh - 60px - 1em - 2rem);
-    overflow-y: auto;
-    z-index: 100;
-  }
-  
-  .toc-mobile {
-    display: none;
-  }
-  
-  .main-content {
-    width: 100%;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  .toc-desktop {
-    position: fixed;
-    left: calc(50% + 400px + 1rem);
-    top: calc(60px + 1em + 1rem);
-    width: 250px;
-    max-height: calc(100vh - 60px - 1em - 2rem);
-    overflow-y: auto;
-    z-index: 100;
-  }
-  
-  .toc-mobile {
-    display: none;
-  }
-  
-  .main-content {
-    width: 100%;
-  }
-}
-
-@media (max-width: 991px) {
-  .toc-desktop {
-    display: none;
-  }
-  
-  .toc-mobile {
     margin: 1.5rem 0;
   }
-  
-  .main-content {
-    width: 100%;
-  }
-}
 
-@media (max-width: 768px) and (max-width: 991px) {
-  .toc-mobile {
-    max-width: 300px;
+  img+em {
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
   }
-}
+
+  h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #2563eb;
+    line-height: 1.3;
+  }
+
+  article>h1:first-child {
+    font-size: 1.4rem;
+  }
+
+  article>h4:first-child {
+    font-size: 1.4rem;
+  }
+
+  .main-content h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+    line-height: 1.4;
+    border-left: none;
+    padding-left: 0;
+    background: none;
+  }
+
+  .main-content h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #16a34a;
+  }
+
+  .main-content h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+    line-height: 1.4;
+    background: none;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  .main-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #dc2626;
+  }
+
+  .main-content h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+  }
+
+  .main-content h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #f59e0b;
+  }
+
+  .main-content h5 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+  }
+
+  .main-content h5::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #8b5cf6;
+  }
+
+  .main-content h6 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+  }
+
+  .main-content h6::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ec4899;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1.8rem;
+    margin-bottom: 0.8rem;
+    padding-left: 0.8rem;
+    border-left: 4px solid #28a745;
+    line-height: 1.4;
+  }
+
+  h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.6rem;
+    padding: 0.3rem 0.6rem;
+    background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 70%, transparent 100%);
+    border-radius: 4px;
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h5 {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  h6 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+    {
+      {
+      with .Site.Params.contentBackgroundColor
+    }
+  }
+
+  body {
+    background-color: {
+        {
+        . | safeCSS
+      }
+    }
+
+    ;
+  }
+
+    {
+      {
+      else
+    }
+  }
+
+  body {
+    background-color: #fff;
+  }
+
+    {
+      {
+      end
+    }
+  }
+
+    {
+      {
+      with .Site.Params.contentTextColor
+    }
+  }
+
+  body {
+    color: {
+        {
+        . | safeCSS
+      }
+    }
+
+    ;
+  }
+
+    {
+      {
+      else
+    }
+  }
+
+  body {
+    color: #212529;
+  }
+
+    {
+      {
+      end
+    }
+  }
+
+    {
+      {
+      with .Site.Params.contentLinkColor
+    }
+  }
+
+  a {
+    color: {
+        {
+        . | safeCSS
+      }
+    }
+
+    ;
+  }
+
+    {
+      {
+      else
+    }
+  }
+
+  a {
+    color: #007bff;
+  }
+
+    {
+      {
+      end
+    }
+  }
+
+    {
+      {
+      with .Site.Params.contentLinkHoverColor
+    }
+  }
+
+  a:hover,
+  a:focus {
+    color: {
+        {
+        . | safeCSS
+      }
+    }
+
+    ;
+  }
+
+    {
+      {
+      else
+    }
+  }
+
+  a:hover,
+  a:focus {
+    color: #0056b3;
+  }
+
+    {
+      {
+      end
+    }
+  }
+
+    {
+      {
+      with .Site.Params.navbarBackgroundColor
+    }
+  }
+
+  .custom-navbar {
+    background-color: {
+        {
+        . | safeCSS
+      }
+    }
+
+    ;
+  }
+
+    {
+      {
+      else
+    }
+  }
+
+  .custom-navbar {
+    background-color: #212529;
+  }
+
+    {
+      {
+      end
+    }
+  }
+
+    {
+      {
+      with .Site.Params.navbarLinkColor
+    }
+  }
+
+  .custom-navbar a {
+    color: {
+        {
+        . | safeCSS
+      }
+    }
+
+    ;
+  }
+
+    {
+      {
+      else
+    }
+  }
+
+  .custom-navbar a {
+    color: rgba(255, 255, 255, .75);
+  }
+
+    {
+      {
+      end
+    }
+  }
+
+    {
+      {
+      with .Site.Params.navbarLinkHoverColor
+    }
+  }
+
+  .custom-navbar a:hover,
+  .custom-navbar a:focus {
+    color: {
+        {
+        . | safeCSS
+      }
+    }
+
+    ;
+  }
+
+    {
+      {
+      else
+    }
+  }
+
+  .custom-navbar a:hover,
+  .custom-navbar a:focus {
+    color: rgba(255, 255, 255, 1);
+  }
+
+    {
+      {
+      end
+    }
+  }
+
+    {
+      {
+      with .Site.Params.wrapperMaxWidth
+    }
+  }
+
+  .container {
+    max-width: {
+        {
+        . | safeCSS
+      }
+    }
+
+    ;
+  }
+
+    {
+      {
+      else
+    }
+  }
+
+  .container {
+    max-width: 800px;
+  }
+
+    {
+      {
+      end
+    }
+  }
+
+    {
+      {
+      if eq .Site.Params.customCodeStyle true
+    }
+  }
+
+  pre {
+    display: block;
+    padding: 9.5px;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+  }
+
+  code {
+    padding: 2px 4px;
+    color: inherit;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: .9em;
+  }
+
+    {
+      {
+      end
+    }
+  }
+
+    {
+      {
+      if eq .Site.Params.customBlockquoteStyle true
+    }
+  }
+
+  blockquote,
+  .blockquote {
+    padding: 15px 20px;
+    margin: 1.5rem 0;
+    font-size: 1em;
+    border-left: 4px solid #ff8c00;
+    background-color: #fffbf0;
+    border-radius: 4px;
+  }
+
+  blockquote p:last-child,
+  .blockquote p:last-child {
+    margin-bottom: 0;
+  }
+
+  blockquote>*:last-child,
+  .blockquote>*:last-child {
+    margin-bottom: 0;
+  }
+
+    {
+      {
+      end
+    }
+  }
+
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .tag-item {
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tag-item a {
+    text-decoration: none;
+  }
+
+  .tag-item code {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    text-transform: none !important;
+  }
+
+  .tag-item:hover code {
+    background-color: #dee2e6;
+    border-color: #adb5bd;
+  }
+
+  .tag-item small {
+    color: #6c757d;
+    margin-left: 0.25rem;
+  }
+
+   
+  .custom-emoji {
+    display: inline-block !important;
+    height: 1.2em !important;
+    width: auto !important;
+    max-width: 1.2em !important;
+    vertical-align: text-bottom !important;
+    margin: 0 0.1em !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+
+   
+  p .custom-emoji,
+  .main-content .custom-emoji {
+    display: inline-block !important;
+    height: 1.2em !important;
+    width: auto !important;
+    max-width: 1.2em !important;
+  }
+
+   
+  .giscus-container {
+    min-height: 300px;
+    margin-top: 3rem;
+    transition: min-height 0.3s ease;
+  }
+
+   
+  .giscus-container:has(.giscus) {
+    min-height: 0;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+  }
+
+  table th,
+  table td {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+  }
+
+  table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+
+  table tbody tr:hover {
+    background-color: #e9ecef;
+  }
+
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.8rem;
+    }
+
+    table th,
+    table td {
+      padding: 0.5rem;
+    }
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent !important;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 4px !important;
+    transition: background 0.3s ease !important;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4) !important;
+  }
+
+  html,
+  body,
+  * {
+    scrollbar-width: thin !important;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+  }
+
+  body {
+    overflow-y: overlay;
+    overflow-x: auto;
+  }
+
+  pre {
+    overflow-x: overlay;
+  }
+
+  .table-responsive {
+    overflow-x: overlay;
+  }
+
+  div,
+  article,
+  section,
+  main,
+  aside,
+  nav,
+  header,
+  footer {
+    scrollbar-width: thin !important;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent !important;
+  }
+
+  article a[href*="douban.com"] {
+    color: #28a745 !important;
+  }
+
+  .rss-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 2px;
+    vertical-align: text-bottom;
+    display: inline-block;
+  }
+
+  .douban-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    vertical-align: text-bottom;
+    display: inline-block;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  .page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-wrapper {
+    flex: 1;
+  }
+
+  .custom-footer {
+    margin-top: auto;
+    padding: 18px 0;
+    background-color: #212529;
+    color: rgba(255, 255, 255, .75);
+  }
+
+  .custom-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .custom-footer small {
+    margin: 0;
+  }
+
+  .custom-footer a {
+    color: rgba(255, 255, 255, .75);
+    text-decoration: none;
+  }
+
+  .custom-footer a:hover,
+  .custom-footer a:focus {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+  }
+
+  .notbyai-icon {
+    max-width: none;
+    max-height: none;
+    height: auto;
+    display: inline;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    cursor: default;
+    transition: none;
+  }
+
+  .douban-icon {
+    width: 22px;
+    height: 22px;
+    margin-right: 4px;
+    vertical-align: text-bottom;
+    display: inline-block;
+  }
+
+  @media (max-width: 768px) {
+    .custom-footer .container {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  }
+
+  .content-with-toc {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .toc {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 1rem;
+  }
+
+  .toc h5 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #495057;
+    font-size: 1rem;
+  }
+
+  .toc ul {
+    margin-bottom: 0;
+    padding-left: 1.5rem;
+    font-size: 0.9rem;
+    list-style: none;
+  }
+
+  .toc li {
+    margin-bottom: 0.25rem;
+  }
+
+  .toc a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .toc a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+
+  .toc .douban-icon {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 4px;
+    vertical-align: text-bottom;
+    display: inline-block;
+  }
+
+  @media (min-width: 1200px) {
+    .toc-desktop {
+      position: fixed;
+      left: calc(50% + 400px + 2rem);
+      top: calc(60px + 1em + 1rem);
+      width: 280px;
+      max-height: calc(100vh - 60px - 1em - 2rem);
+      overflow-y: auto;
+      z-index: 100;
+    }
+
+    .toc-mobile {
+      display: none;
+    }
+
+    .main-content {
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .toc-desktop {
+      position: fixed;
+      left: calc(50% + 400px + 1rem);
+      top: calc(60px + 1em + 1rem);
+      width: 250px;
+      max-height: calc(100vh - 60px - 1em - 2rem);
+      overflow-y: auto;
+      z-index: 100;
+    }
+
+    .toc-mobile {
+      display: none;
+    }
+
+    .main-content {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .toc-desktop {
+      display: none;
+    }
+
+    .toc-mobile {
+      margin: 1.5rem 0;
+    }
+
+    .main-content {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) and (max-width: 991px) {
+    .toc-mobile {
+      max-width: 300px;
+    }
+  }
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
-  
-  images.forEach(function(img) {
-    img.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.open(this.src, '_blank');
+  document.addEventListener('DOMContentLoaded', function () {
+    const images = document.querySelectorAll('article img:not(.icon):not(.logo):not(.avatar):not(.inline-icon):not(.original-style)');
+
+    images.forEach(function (img) {
+      img.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.open(this.src, '_blank');
+      });
     });
-  });
-  
-  const doubanLinks = document.querySelectorAll('article a[href*="douban.com"]');
-  
-  doubanLinks.forEach(function(link) {
-    if (!link.querySelector('.douban-icon')) {
-      const icon = document.createElement('img');
-      icon.src = 'https://img.iduan.me/blog/douban.png';
-      icon.className = 'douban-icon original-style';
-      icon.alt = '豆瓣';
-      
-      link.insertBefore(icon, link.firstChild);
-    }
-  });
-  
-  const rssLinks = document.querySelectorAll('nav a');
-  
-  rssLinks.forEach(function(link) {
-    if (link.textContent.toLowerCase().includes('rss')) {
-      if (!link.querySelector('.rss-icon')) {
+
+    const doubanLinks = document.querySelectorAll('article a[href*="douban.com"]');
+
+    doubanLinks.forEach(function (link) {
+      if (!link.querySelector('.douban-icon')) {
         const icon = document.createElement('img');
-        icon.src = 'https://img.iduan.me/rss.png';
-        icon.className = 'rss-icon original-style';
-        icon.alt = 'RSS';
-        
+        icon.src = 'https://img.iduan.me/blog/douban.png';
+        icon.className = 'douban-icon original-style';
+        icon.alt = '豆瓣';
+
         link.insertBefore(icon, link.firstChild);
       }
-    }
+    });
+
+    const rssLinks = document.querySelectorAll('nav a');
+
+    rssLinks.forEach(function (link) {
+      if (link.textContent.toLowerCase().includes('rss')) {
+        if (!link.querySelector('.rss-icon')) {
+          const icon = document.createElement('img');
+          icon.src = 'https://img.iduan.me/rss.png';
+          icon.className = 'rss-icon original-style';
+          icon.alt = 'RSS';
+
+          link.insertBefore(icon, link.firstChild);
+        }
+      }
+    });
   });
-});
 </script>
 </style>
 </head>
@@ -833,770 +1109,1037 @@ document.addEventListener('DOMContentLoaded', function() {
         <article>
           
 
-  
-    
-  
 
 
 
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2025-11/">读书笔记 2025.11</a>
-    
-    
-    <br>
-    <small class="text-secondary">2025/11/30</small>
-    
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
-    
-  </p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2025-10/">读书笔记 2025.10</a>
-    
-    
-    <br>
-    <small class="text-secondary">2025/10/31</small>
-    
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
-    
-  </p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2025-09/">读书笔记 2025.09</a>
-    
-    
-    <br>
-    <small class="text-secondary">2025/09/30</small>
-    
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
-    
-  </p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2025-08/">读书笔记 2025.08</a>
-    
-    
-    <br>
-    <small class="text-secondary">2025/08/31</small>
-    
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
-    
-  </p>
 
-  <p>
-    <a href="https://iduan.me/posts/hugo-customization/">hugo 装修小记</a>
-    
-    
-    <br>
-    <small class="text-secondary">2025/08/19</small>
-    
 
-<small><code><a href="https://iduan.me/tags/blog">blog</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/hugo">hugo</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/typecho">typecho</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/trae">trae</a></code></small>
 
-    
-  </p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2025-07/">读书笔记 2025.07</a>
-    
-    
-    <br>
-    <small class="text-secondary">2025/07/31</small>
-    
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
-    
-  </p>
 
-  <p>
-    <a href="https://iduan.me/posts/realme/">realme Q3s &amp; realmeUI 2.0 系统 App 精简列表</a>
-    
-    
-    <br>
-    <small class="text-secondary">2025/02/11</small>
-    
 
-<small><code><a href="https://iduan.me/tags/%E6%95%99%E7%A8%8B">教程</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/android">Android</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/realme">realme</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/realmeui">realmeUI</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9C%9F%E6%88%91">真我</a></code></small>
 
-    
-  </p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2025-01/">读书笔记 2025.01</a>
-    
-    
-    <br>
-    <small class="text-secondary">2025/01/31</small>
-    
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
-    
-  </p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-12/">读书笔记 2024.12</a>
-    
-    
-    <br>
-    <small class="text-secondary">2024/12/31</small>
-    
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
-    
-  </p>
 
-  <p>
-    <a href="https://iduan.me/posts/cloudflare-r2-upic/">利用 Cloudflare R2 + uPic 打造私人图床</a>
-    
-    
-    <br>
-    <small class="text-secondary">2024/12/09</small>
-    
 
-<small><code><a href="https://iduan.me/tags/blog">blog</a></code></small>
 
-    
-  </p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-11/">读书笔记 2024.11</a>
-    
-    
-    <br>
-    <small class="text-secondary">2024/11/30</small>
-    
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
-    
-  </p>
 
-  <p>
-    <a href="https://iduan.me/posts/9-questions/">假装被采访丨关于博客的几个问题</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>
+    <a href="https://localhost:1313/posts/9-questions/">假装被采访丨关于博客的几个问题🔝</a>
     
     
     <br>
     <small class="text-secondary">2024/11/05</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-10/">读书笔记 2024.10</a>
+
+
+
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2026-01/">读书笔记 2026.01</a>
+    
+    
+    <br>
+    <small class="text-secondary">2026/01/30</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/2025-buy-it-all-list/">年末总结 - 2025 年剁手清单</a>
+    
+    
+    <br>
+    <small class="text-secondary">2026/01/25</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/%E5%B9%B4%E7%BB%88%E6%80%BB%E7%BB%93">年终总结</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2025-12/">读书笔记 2025.12</a>
+    
+    
+    <br>
+    <small class="text-secondary">2025/12/30</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2025-11/">读书笔记 2025.11</a>
+    
+    
+    <br>
+    <small class="text-secondary">2025/11/30</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2025-10/">读书笔记 2025.10</a>
+    
+    
+    <br>
+    <small class="text-secondary">2025/10/31</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2025-09/">读书笔记 2025.09</a>
+    
+    
+    <br>
+    <small class="text-secondary">2025/09/30</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2025-08/">读书笔记 2025.08</a>
+    
+    
+    <br>
+    <small class="text-secondary">2025/08/31</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/hugo-customization/">hugo 装修小记</a>
+    
+    
+    <br>
+    <small class="text-secondary">2025/08/19</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/blog">blog</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/hugo">hugo</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/typecho">typecho</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/trae">trae</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2025-07/">读书笔记 2025.07</a>
+    
+    
+    <br>
+    <small class="text-secondary">2025/07/31</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/realme/">realme Q3s &amp; realmeUI 2.0 系统 App 精简列表</a>
+    
+    
+    <br>
+    <small class="text-secondary">2025/02/11</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/%E6%95%99%E7%A8%8B">教程</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/android">Android</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/realme">realme</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/realmeui">realmeUI</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/%E7%9C%9F%E6%88%91">真我</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2025-01/">读书笔记 2025.01</a>
+    
+    
+    <br>
+    <small class="text-secondary">2025/01/31</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2024-12/">读书笔记 2024.12</a>
+    
+    
+    <br>
+    <small class="text-secondary">2024/12/31</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/cloudflare-r2-upic/">利用 Cloudflare R2 + uPic 打造私人图床</a>
+    
+    
+    <br>
+    <small class="text-secondary">2024/12/09</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/blog">blog</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2024-11/">读书笔记 2024.11</a>
+    
+    
+    <br>
+    <small class="text-secondary">2024/11/30</small>
+    
+
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+
+
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+
+    
+</p>
+
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2024-10/">读书笔记 2024.10</a>
     
     
     <br>
     <small class="text-secondary">2024/10/31</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-05/">读书笔记 2024.05</a>
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2024-05/">读书笔记 2024.05</a>
     
     
     <br>
     <small class="text-secondary">2024/05/31</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-04/">读书笔记 2024.04</a>
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2024-04/">读书笔记 2024.04</a>
     
     
     <br>
     <small class="text-secondary">2024/04/30</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-03/">读书笔记 2024.03</a>
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2024-03/">读书笔记 2024.03</a>
     
     
     <br>
     <small class="text-secondary">2024/03/31</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/self-driving-tour-in-2024/">自驾游记录丨2023，我在路上</a>
+<p>
+    <a href="https://localhost:1313/posts/self-driving-tour-in-2024/">自驾游记录丨2023，我在路上</a>
     
     
     <br>
     <small class="text-secondary">2024/03/10</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E6%97%85%E6%B8%B8">旅游</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E6%97%85%E6%B8%B8">旅游</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-02/">读书笔记 2024.02</a>
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2024-02/">读书笔记 2024.02</a>
     
     
     <br>
     <small class="text-secondary">2024/02/29</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/reading-notes-2024-01/">读书笔记 2024.01</a>
+<p>
+    <a href="https://localhost:1313/posts/reading-notes-2024-01/">读书笔记 2024.01</a>
     
     
     <br>
     <small class="text-secondary">2024/01/31</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0">读书笔记</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/summary-of-2023/">「没什么好总结的」—— 致我的 2023</a>
+<p>
+    <a href="https://localhost:1313/posts/summary-of-2023/">「没什么好总结的」—— 致我的 2023</a>
     
     
     <br>
     <small class="text-secondary">2023/12/30</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/continue-with-hugo/">博客又又又搬家了</a>
+<p>
+    <a href="https://localhost:1313/posts/continue-with-hugo/">博客又又又搬家了</a>
     
     
     <br>
     <small class="text-secondary">2023/12/14</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/chrome-without-google/">Chrome，但是 without Google</a>
+<p>
+    <a href="https://localhost:1313/posts/chrome-without-google/">Chrome，但是 without Google</a>
     
     
     <br>
     <small class="text-secondary">2023/06/09</small>
     
 
-<small><code><a href="https://iduan.me/tags/chrome">chrome</a></code></small>
+<small><code><a href="https://localhost:1313/tags/chrome">chrome</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/activate-ctm-sim/">如何激活 +853 澳门电信 CTM 预付卡</a>
+<p>
+    <a href="https://localhost:1313/posts/activate-ctm-sim/">如何激活 +853 澳门电信 CTM 预付卡</a>
     
     
     <br>
     <small class="text-secondary">2023/04/30</small>
     
 
-<small><code><a href="https://iduan.me/tags/esim">esim</a></code></small>
+<small><code><a href="https://localhost:1313/tags/esim">esim</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/ctm">ctm</a></code></small>
+<small><code><a href="https://localhost:1313/tags/ctm">ctm</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/creating-certificate-for-ipa-signing/">利用 Apple 个人开发者账户创建可用于 ipa 自签名的证书</a>
+<p>
+    <a href="https://localhost:1313/posts/creating-certificate-for-ipa-signing/">利用 Apple 个人开发者账户创建可用于 ipa 自签名的证书</a>
     
     
     <br>
     <small class="text-secondary">2023/01/07</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E8%87%AA%E7%AD%BE%E5%90%8D">自签名</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E8%87%AA%E7%AD%BE%E5%90%8D">自签名</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/ipa">ipa</a></code></small>
+<small><code><a href="https://localhost:1313/tags/ipa">ipa</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/work-with-covid-19/">当我也成了「大白」</a>
+<p>
+    <a href="https://localhost:1313/posts/work-with-covid-19/">当我也成了「大白」</a>
     
     
     <br>
     <small class="text-secondary">2022/12/09</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/covid-19">covid-19</a></code></small>
+<small><code><a href="https://localhost:1313/tags/covid-19">covid-19</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E5%B7%A5%E4%BD%9C">工作</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E5%B7%A5%E4%BD%9C">工作</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/disable-macos-update/">屏蔽 macOS 更新？我有新招</a>
+<p>
+    <a href="https://localhost:1313/posts/disable-macos-update/">屏蔽 macOS 更新？我有新招</a>
     
     
     <br>
     <small class="text-secondary">2022/10/25</small>
     
 
-<small><code><a href="https://iduan.me/tags/macos">macOS</a></code></small>
+<small><code><a href="https://localhost:1313/tags/macos">macOS</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/all-in-one-phone/">兜兜转转，回归单机</a>
+<p>
+    <a href="https://localhost:1313/posts/all-in-one-phone/">兜兜转转，回归单机</a>
     
     
     <br>
     <small class="text-secondary">2022/07/29</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E5%BE%AE%E4%BF%A1">微信</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E5%BE%AE%E4%BF%A1">微信</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E5%B7%A5%E4%BD%9C">工作</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E5%B7%A5%E4%BD%9C">工作</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/clear-newtab/">恢复浏览器空白页，还你纯净冲浪体验</a>
+<p>
+    <a href="https://localhost:1313/posts/clear-newtab/">恢复浏览器空白页，还你纯净冲浪体验</a>
     
     
     <br>
     <small class="text-secondary">2022/07/21</small>
     
 
-<small><code><a href="https://iduan.me/tags/chrome">chrome</a></code></small>
+<small><code><a href="https://localhost:1313/tags/chrome">chrome</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/newtab">newtab</a></code></small>
+<small><code><a href="https://localhost:1313/tags/newtab">newtab</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/subconverter-self-hosting/">subconverter 部署记录</a>
+<p>
+    <a href="https://localhost:1313/posts/subconverter-self-hosting/">subconverter 部署记录</a>
     
     
     <br>
     <small class="text-secondary">2022/06/30</small>
     
 
-<small><code><a href="https://iduan.me/tags/subconverter">subconverter</a></code></small>
+<small><code><a href="https://localhost:1313/tags/subconverter">subconverter</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/self-hosting">self-hosting</a></code></small>
+<small><code><a href="https://localhost:1313/tags/self-hosting">self-hosting</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/bark-server-self-hosting/">自建 Bark 后端服务</a>
+<p>
+    <a href="https://localhost:1313/posts/bark-server-self-hosting/">自建 Bark 后端服务</a>
     
     
     <br>
     <small class="text-secondary">2022/04/08</small>
     
 
-<small><code><a href="https://iduan.me/tags/bark">bark</a></code></small>
+<small><code><a href="https://localhost:1313/tags/bark">bark</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/bark-server">bark-server</a></code></small>
+<small><code><a href="https://localhost:1313/tags/bark-server">bark-server</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/self-hosting">self-hosting</a></code></small>
+<small><code><a href="https://localhost:1313/tags/self-hosting">self-hosting</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/typecho-update-20220401/">只要活得够久……</a>
+<p>
+    <a href="https://localhost:1313/posts/typecho-update-20220401/">只要活得够久……</a>
     
     
     <br>
     <small class="text-secondary">2022/04/01</small>
     
 
-<small><code><a href="https://iduan.me/tags/blog">blog</a></code></small>
+<small><code><a href="https://localhost:1313/tags/blog">blog</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/typecho">typecho</a></code></small>
+<small><code><a href="https://localhost:1313/tags/typecho">typecho</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/windows-remote-desktop/">巧用 Windows 远程桌面，跨设备操作自如切换</a>
+<p>
+    <a href="https://localhost:1313/posts/windows-remote-desktop/">巧用 Windows 远程桌面，跨设备操作自如切换</a>
     
     
     <br>
     <small class="text-secondary">2022/03/30</small>
     
 
-<small><code><a href="https://iduan.me/tags/windows">windows</a></code></small>
+<small><code><a href="https://localhost:1313/tags/windows">windows</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/macos">macos</a></code></small>
+<small><code><a href="https://localhost:1313/tags/macos">macos</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/typecho-optimization/">Typecho 功能优化小结</a>
+<p>
+    <a href="https://localhost:1313/posts/typecho-optimization/">Typecho 功能优化小结</a>
     
     
     <br>
     <small class="text-secondary">2022/03/10</small>
     
 
-<small><code><a href="https://iduan.me/tags/blog">blog</a></code></small>
+<small><code><a href="https://localhost:1313/tags/blog">blog</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/typecho">typecho</a></code></small>
+<small><code><a href="https://localhost:1313/tags/typecho">typecho</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/rebooting-the-blog/">起死回生的博客</a>
+<p>
+    <a href="https://localhost:1313/posts/rebooting-the-blog/">起死回生的博客</a>
     
     
     <br>
     <small class="text-secondary">2022/03/08</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E7%9E%8E%E6%89%AF">瞎扯</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/forwarding-messages-from-android-to-iphone/">巧用开源方案，零成本实现验证码短信转发</a>
+<p>
+    <a href="https://localhost:1313/posts/forwarding-messages-from-android-to-iphone/">巧用开源方案，零成本实现验证码短信转发</a>
     
     
     <br>
     <small class="text-secondary">2022/01/26</small>
     
 
-<small><code><a href="https://iduan.me/tags/iphone">iphone</a></code></small>
+<small><code><a href="https://localhost:1313/tags/iphone">iphone</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/android">android</a></code></small>
+<small><code><a href="https://localhost:1313/tags/android">android</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/smsforwarder">smsforwarder</a></code></small>
+<small><code><a href="https://localhost:1313/tags/smsforwarder">smsforwarder</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/bark">bark</a></code></small>
+<small><code><a href="https://localhost:1313/tags/bark">bark</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/ios-accessibility-features-tips/">iOS「辅助功能」里你可能不知道的那些小技巧</a>
+<p>
+    <a href="https://localhost:1313/posts/ios-accessibility-features-tips/">iOS「辅助功能」里你可能不知道的那些小技巧</a>
     
     
     <br>
     <small class="text-secondary">2021/11/15</small>
     
 
-<small><code><a href="https://iduan.me/tags/ios">ios</a></code></small>
+<small><code><a href="https://localhost:1313/tags/ios">ios</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/iphone">iphone</a></code></small>
+<small><code><a href="https://localhost:1313/tags/iphone">iphone</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/m1-mac-minecraft-error-255/">在 M1 Mac 设备中解决 Minecraft Error 255</a>
+<p>
+    <a href="https://localhost:1313/posts/m1-mac-minecraft-error-255/">在 M1 Mac 设备中解决 Minecraft Error 255</a>
     
     
     <br>
     <small class="text-secondary">2021/09/30</small>
     
 
-<small><code><a href="https://iduan.me/tags/macos">macos</a></code></small>
+<small><code><a href="https://localhost:1313/tags/macos">macos</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/minecraft">minecraft</a></code></small>
+<small><code><a href="https://localhost:1313/tags/minecraft">minecraft</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/experience-of-aldente-pro/">你的 MacBook 电池管家 — AlDente Pro 使用体验</a>
+<p>
+    <a href="https://localhost:1313/posts/experience-of-aldente-pro/">你的 MacBook 电池管家 — AlDente Pro 使用体验</a>
     
     
     <br>
     <small class="text-secondary">2021/09/12</small>
     
 
-<small><code><a href="https://iduan.me/tags/aldente">aldente</a></code></small>
+<small><code><a href="https://localhost:1313/tags/aldente">aldente</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/macos">macos</a></code></small>
+<small><code><a href="https://localhost:1313/tags/macos">macos</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/huashan-mountain-tour-2021/">华山个人游，独自登山的不完全记录</a>
+<p>
+    <a href="https://localhost:1313/posts/huashan-mountain-tour-2021/">华山个人游，独自登山的不完全记录</a>
     
     
     <br>
     <small class="text-secondary">2021/08/16</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E6%97%85%E6%B8%B8">旅游</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E6%97%85%E6%B8%B8">旅游</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/usage-of-the-safeincloud/">使用 SafeInCloud 管理密码，我还发现了这些好用法</a>
+<p>
+    <a href="https://localhost:1313/posts/usage-of-the-safeincloud/">使用 SafeInCloud 管理密码，我还发现了这些好用法</a>
     
     
     <br>
     <small class="text-secondary">2021/06/25</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86">密码管理</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86">密码管理</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/safeincloud">safeincloud</a></code></small>
+<small><code><a href="https://localhost:1313/tags/safeincloud">safeincloud</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/macos">macos</a></code></small>
+<small><code><a href="https://localhost:1313/tags/macos">macos</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/aukey-powerbank-momax-cable/">618的百元好物——iPhone 用户的外出随身快充套装</a>
+<p>
+    <a href="https://localhost:1313/posts/aukey-powerbank-momax-cable/">618的百元好物——iPhone 用户的外出随身快充套装</a>
     
     
     <br>
     <small class="text-secondary">2021/06/10</small>
     
 
-<small><code><a href="https://iduan.me/tags/iphone">iphone</a></code></small>
+<small><code><a href="https://localhost:1313/tags/iphone">iphone</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/aukey">aukey</a></code></small>
+<small><code><a href="https://localhost:1313/tags/aukey">aukey</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/momax">momax</a></code></small>
+<small><code><a href="https://localhost:1313/tags/momax">momax</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/nubia-redmagic-radiator/">努比亚红魔散热背夹</a>
+<p>
+    <a href="https://localhost:1313/posts/nubia-redmagic-radiator/">努比亚红魔散热背夹</a>
     
     
     <br>
     <small class="text-secondary">2021/05/10</small>
     
 
-<small><code><a href="https://iduan.me/tags/iphone">iphone</a></code></small>
+<small><code><a href="https://localhost:1313/tags/iphone">iphone</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/nubia">nubia</a></code></small>
+<small><code><a href="https://localhost:1313/tags/nubia">nubia</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/m1-macbook-air/">这台 Mac 不 Pro — M1 MacBook Air 简单上手体验</a>
+<p>
+    <a href="https://localhost:1313/posts/m1-macbook-air/">这台 Mac 不 Pro — M1 MacBook Air 简单上手体验</a>
     
     
     <br>
     <small class="text-secondary">2021/04/15</small>
     
 
-<small><code><a href="https://iduan.me/tags/macbook">macbook</a></code></small>
+<small><code><a href="https://localhost:1313/tags/macbook">macbook</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/apple">apple</a></code></small>
+<small><code><a href="https://localhost:1313/tags/apple">apple</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/macos">macos</a></code></small>
+<small><code><a href="https://localhost:1313/tags/macos">macos</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
-  <p>
-    <a href="https://iduan.me/posts/safeincloud/">搞定密码管理，我选 SafeInCloud</a>
+<p>
+    <a href="https://localhost:1313/posts/safeincloud/">搞定密码管理，我选 SafeInCloud</a>
     
     
     <br>
     <small class="text-secondary">2021/03/10</small>
     
 
-<small><code><a href="https://iduan.me/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86">密码管理</a></code></small>
+<small><code><a href="https://localhost:1313/tags/%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86">密码管理</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/safeincloud">safeincloud</a></code></small>
+<small><code><a href="https://localhost:1313/tags/safeincloud">safeincloud</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/macos">macos</a></code></small>
+<small><code><a href="https://localhost:1313/tags/macos">macos</a></code></small>
 
 
-<small><code><a href="https://iduan.me/tags/sspai">sspai</a></code></small>
+<small><code><a href="https://localhost:1313/tags/sspai">sspai</a></code></small>
 
     
-  </p>
+</p>
 
         </article>
       </div>
@@ -1604,13 +2147,12 @@ document.addEventListener('DOMContentLoaded', function() {
     <footer class="custom-footer">
   <div class="container">
     <small>
-      © 2016-2025 JL DUAN‘s Blog.
+      © 2016-2026 JL DUAN‘s Blog.
       <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">BY-NC-SA 4.0</a>
     </small>
     <img src="https://img.iduan.me/notbyai.png" alt="not by AI" width="70" class="notbyai-icon" />
   </div>
 </footer>
-
   </div>
   
   
